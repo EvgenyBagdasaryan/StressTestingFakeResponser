@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BODY xmlns:tsc="http://www.oracle.com/XSL/Transform/java/ru.tsconsulting.vtb24.soa.utils.xpath.TSCFunctions"
+      xmlns:mar="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/DocVerificationMassInsertReqA/GetEDocVerificationMassInsert_bp_client_ep"
+      xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/DocVerificationMassInsertReqA/GetEDocVerificationMassInsert_bp_client_ep">
+    <mar:Status>OK</mar:Status>
+    <mar:ApplicationID>${appId}</mar:ApplicationID>
+    <mar:PotocolId>${appId}</mar:PotocolId>
+    <mar:ReturnCode>0</mar:ReturnCode>
+    <mar:ReturnMsg>Ошибка 1</mar:ReturnMsg>
+    <mar:TOTALCOUNT>0</mar:TOTALCOUNT>
+    <mar:Result/>
+</BODY>

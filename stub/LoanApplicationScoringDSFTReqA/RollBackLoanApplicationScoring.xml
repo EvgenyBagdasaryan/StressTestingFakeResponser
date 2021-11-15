@@ -1,0 +1,6 @@
+﻿<RollBackLoanApplicationScoringResponse xmlns:ns18="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/ApplicationScoring/RollbackLoanApplicationScoring" xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/ApplicationScoring/RollbackLoanApplicationScoring">
+<ns18:ApplicationID type="java.lang.String">${appId}</ns18:ApplicationID>
+<ns18:RollbackDecisionType type="java.lang.String">Откат</ns18:RollbackDecisionType>
+<ns18:RollbackComment type="java.lang.String"/>
+<ns18:StatusBrief type="java.lang.String">inProgress</ns18:StatusBrief>
+</RollBackLoanApplicationScoringResponse>

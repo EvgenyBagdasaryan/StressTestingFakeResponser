@@ -1,0 +1,11 @@
+{
+  "Date": 1468972800000,
+  "State": "StateName",
+  "Amount": 3.3,
+  "List": [
+    {
+      "Payment": 40.1,
+      "BankProductBrief": "BankProductBrief"
+    }
+  ]
+}

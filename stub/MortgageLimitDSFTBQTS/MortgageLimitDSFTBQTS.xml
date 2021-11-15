@@ -1,0 +1,13 @@
+<ChangeMortgageLimitResponse xmlns:tns="http://www.example.org/MortageLimit" xmlns="http://www.example.org/MortageLimit">
+<tns:Status type="java.lang.String">OK</tns:Status>
+<tns:ApplicationID type="java.lang.String">${appId}</tns:ApplicationID>
+<tns:F119 type="java.lang.String">119</tns:F119>
+<tns:F110 type="java.lang.String">110</tns:F110>
+<tns:IndividSsudaF120 type="java.lang.String">is120</tns:IndividSsudaF120>
+<tns:IndividSsudaF122 type="java.lang.String">is122</tns:IndividSsudaF122>
+<tns:IndividSsudaF123 type="java.lang.String">is123</tns:IndividSsudaF123>
+<tns:IndividSsudaF124 type="java.lang.String">is124</tns:IndividSsudaF124>
+<tns:IndividSsudaF125 type="java.lang.String">is125</tns:IndividSsudaF125>
+<tns:IndividSsudaF126 type="java.lang.String">26</tns:IndividSsudaF126>
+<tns:IndividSsudaF127 type="java.lang.String">27</tns:IndividSsudaF127>
+</ChangeMortgageLimitResponse>

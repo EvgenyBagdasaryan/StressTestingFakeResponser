@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<BODY>
+<Status type="java.lang.String">OK</Status>
+<TOTALCOUNT type="java.lang.Integer">1</TOTALCOUNT>
+<Result type="java.util.Map">
+    <CreditContractList type="java.util.List">
+        <Item type="java.util.Map">
+            <ContractNumber type="java.lang.String">001/0010-4102018</ContractNumber>
+            <LoanAmount type="java.math.BigDecimal">4000000</LoanAmount>
+            <LoanRestAmount type="java.math.BigDecimal">3000000</LoanRestAmount>
+            <LoanCurrency type="java.lang.String">Рубль</LoanCurrency>
+            <ContractBeginDate type="java.util.Date">2017-10-04T03:00:00:000+0300</ContractBeginDate>
+            <ContractEndDate type="java.util.Date">2017-10-04T03:00:00:000+0300</ContractEndDate>
+        </Item>
+    </CreditContractList>
+</Result>
+</BODY>

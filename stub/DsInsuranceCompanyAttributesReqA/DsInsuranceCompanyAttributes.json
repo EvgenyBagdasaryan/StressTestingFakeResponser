@@ -1,0 +1,16 @@
+{
+  "statusCode": 200,
+  "statusText": "ошибок нет",
+  "PaymentDetails": [
+    {
+      "PaymentInstructionID": 123,
+      "PayemtnInstructionName": "PayemtnInstructionName",
+      "PayeeBankBIC": "PayeeBankBIC",
+      "PayeeAccountNumber": "PayeeAccountNumber",
+      "ActiveFlag": true,
+      "PaymentInstructionKind": 1,
+      "PaymentInstructionType": 1,
+      "ParticipantID": "ParticipantID"
+    }
+  ]
+}

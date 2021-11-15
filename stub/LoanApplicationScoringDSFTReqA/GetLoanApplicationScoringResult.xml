@@ -1,0 +1,199 @@
+﻿<GetLoanApplicationScoringResultResponse xmlns:ns21="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/ApplicationScoring/GetLoanApplicationScoringResult" xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/ApplicationScoring/GetLoanApplicationScoringResult">
+<ns21:DecisionBO type="java.util.Map">
+<ns21:AppDecision type="java.util.List">
+<ns21:ListItems>
+<ns21:Item type="java.util.Map">
+<ns21:ApplicationID type="java.lang.String">${appId}</ns21:ApplicationID>
+<ns21:StatusBrief type="java.lang.String">approvedClientWithoutCollateral</ns21:StatusBrief>
+<ns21:StageCode type="java.lang.String">Заявка направлена во фронт с предварительным решением</ns21:StageCode>
+<ns21:DecisionDate type="java.util.Date">2017-01-17T17:21:52:935+0400</ns21:DecisionDate>
+<ns21:IncomeAmt type="java.math.BigDecimal">87000</ns21:IncomeAmt>
+<ns21:DecisionDetailsFinState type="java.lang.String">Хорошее</ns21:DecisionDetailsFinState>
+<ns21:DecisionCategory type="java.lang.String">Consideration</ns21:DecisionCategory>
+<ns21:DecisionComment type="java.lang.String"/>
+<ns21:DecisionDetailsMortgage type="java.util.List">
+<ns21:ListItems>
+<ns21:Item type="java.util.Map">
+<ns21:MaxMonthlyPayment type="java.math.BigDecimal">80463.31093885572</ns21:MaxMonthlyPayment>
+<ns21:Score type="java.lang.Integer"/>
+<ns21:CutOff type="java.lang.Integer"/>
+<ns21:TriggeredMinRequirements type="java.lang.String"/>
+<ns21:DTI type="java.math.BigDecimal"/>
+<ns21:ThresholdN6 type="java.math.BigDecimal"/>
+<ns21:PINorm type="java.math.BigDecimal"/>
+<ns21:PICalc1 type="java.math.BigDecimal"/>
+<ns21:PICalc2 type="java.math.BigDecimal"/>
+<ns21:L1INorm type="java.math.BigDecimal"/>
+<ns21:L1ICalc1 type="java.math.BigDecimal"/>
+<ns21:L1ICalc2 type="java.math.BigDecimal"/>
+<ns21:L2INorm type="java.math.BigDecimal"/>
+<ns21:L2ICalc1 type="java.math.BigDecimal"/>
+<ns21:L2ICalc2 type="java.math.BigDecimal"/>
+<ns21:L2IMCNorm type="java.math.BigDecimal"/>
+<ns21:L2IMCCalc1 type="java.math.BigDecimal"/>
+<ns21:L2IMCCalc2 type="java.math.BigDecimal"/>
+<ns21:TotalLiab1 type="java.math.BigDecimal"/>
+<ns21:TotalLiab2 type="java.math.BigDecimal"/>
+</ns21:Item>
+</ns21:ListItems>
+</ns21:DecisionDetailsMortgage>
+<ns21:ProductClientDecision type="java.util.List">
+<ns21:ListItems>
+<ns21:Item type="java.util.Map">
+<ns21:OfferID type="java.lang.String">1</ns21:OfferID>
+<ns21:ClientID type="java.lang.Long">222777</ns21:ClientID>
+<ns21:OfferPriorityFlag type="java.lang.Boolean"/>
+<ns21:DecisionCode type="java.lang.String">Одобрено</ns21:DecisionCode>
+<ns21:DecisionCategory type="java.lang.String">Approve</ns21:DecisionCategory>
+<ns21:DecisionDetailsBeginOfAmtRange type="java.math.BigDecimal"/>
+<ns21:DecisionDetailsEndOfAmtRange type="java.math.BigDecimal"/>
+<ns21:DecisionDetailsRateOfRange type="java.math.BigDecimal"/>
+<ns21:DecisionDetailsTermOfRange type="java.lang.Integer"/>
+<ns21:SalaryCategoryFlag type="java.lang.Boolean">false</ns21:SalaryCategoryFlag>
+<ns21:Score type="java.lang.Integer"/>
+<ns21:CutOff type="java.lang.Integer"/>
+<ns21:TriggeredMinRequirements type="java.lang.String"/>
+<ns21:DTI type="java.math.BigDecimal"/>
+<ns21:TotalMonthlyVerifiedIncome type="java.math.BigDecimal">87000.0</ns21:TotalMonthlyVerifiedIncome>
+<ns21:MonthlyPayment type="java.math.BigDecimal">48642.207292570485</ns21:MonthlyPayment>
+<ns21:PaymentHoliday type="java.lang.Boolean"/>
+<ns21:SBCommentFES type="java.lang.String">Ответ сформирован автоматически. ;Ответ сформирован автоматически.</ns21:SBCommentFES>
+<ns21:CustAnalysisFlag type="java.lang.Boolean">true</ns21:CustAnalysisFlag>
+<ns21:Deposits type="java.util.List">
+<ns21:ListItems/>
+</ns21:Deposits>
+<ns21:CurrentAccounts type="java.util.List">
+<ns21:ListItems/>
+</ns21:CurrentAccounts>
+<ns21:Liabililies type="java.util.List">
+<ns21:ListItems>
+<ns21:Item type="java.util.Map">
+<ns21:LoanID type="java.lang.String"/>
+<ns21:InitialAmount type="java.math.BigDecimal"/>
+<ns21:OutstandingAmount type="java.math.BigDecimal"/>
+<ns21:PastDueAmount type="java.math.BigDecimal"/>
+<ns21:PastDueTerm type="java.lang.Integer"/>
+<ns21:MonthlyPaymentAmt type="java.math.BigDecimal"/>
+<ns21:ClientID type="java.lang.Long"/>
+<ns21:ProductCode type="java.lang.String"/>
+<ns21:PmtString84M type="java.lang.String"/>
+<ns21:PmtString84MOpenDate type="java.lang.String"/>
+<ns21:Delq5 type="java.lang.Integer">0</ns21:Delq5>
+<ns21:DelqF6T30 type="java.lang.Integer">0</ns21:DelqF6T30>
+<ns21:DelqF31T60 type="java.lang.Integer">0</ns21:DelqF31T60>
+<ns21:DelqF61T90 type="java.lang.Integer">0</ns21:DelqF61T90>
+<ns21:MaxPastDueAmount type="java.math.BigDecimal"/>
+<ns21:MaxPastDueTerm type="java.math.BigDecimal"/>
+<ns21:InitialCreditNumber type="java.lang.String"/>
+<ns21:ProlongationAmt type="java.lang.Integer"/>
+<ns21:Delq90Plus type="java.lang.Integer">0</ns21:Delq90Plus>
+<ns21:InterestRate type="java.math.BigDecimal"/>
+<ns21:DelqF6T30L12M type="java.lang.Integer"/>
+<ns21:DelqF31T60L12M type="java.lang.Integer"/>
+<ns21:DelqF61T90L12M type="java.lang.Integer"/>
+<ns21:Delq90PlusL12M type="java.lang.Integer"/>
+<ns21:ApplyFlag type="java.lang.Boolean"/>
+<ns21:FullSaleFlag type="java.lang.Boolean"/>
+<ns21:RefinanceFlag type="java.lang.Boolean"/>
+<ns21:PrincipalRepaymentPart type="java.math.BigDecimal"/>
+<ns21:RepaymentSpeed type="java.math.BigDecimal"/>
+<ns21:ReducedDocumentSetFlag type="java.lang.Boolean"/>
+<ns21:DebtRecoveryInCourtFlag type="java.lang.Boolean"/>
+<ns21:RepayByCollateralFlag type="java.lang.Boolean"/>
+<ns21:RepayByCollateralStateInfo type="java.lang.String"/>
+</ns21:Item>
+<ns21:Item type="java.util.Map">
+<ns21:LoanID type="java.lang.String"/>
+<ns21:InitialAmount type="java.math.BigDecimal"/>
+<ns21:OutstandingAmount type="java.math.BigDecimal"/>
+<ns21:PastDueAmount type="java.math.BigDecimal"/>
+<ns21:PastDueTerm type="java.lang.Integer"/>
+<ns21:MonthlyPaymentAmt type="java.math.BigDecimal"/>
+<ns21:ClientID type="java.lang.Long"/>
+<ns21:ProductCode type="java.lang.String"/>
+<ns21:PmtString84M type="java.lang.String"/>
+<ns21:PmtString84MOpenDate type="java.lang.String"/>
+<ns21:Delq5 type="java.lang.Integer">0</ns21:Delq5>
+<ns21:DelqF6T30 type="java.lang.Integer">0</ns21:DelqF6T30>
+<ns21:DelqF31T60 type="java.lang.Integer">0</ns21:DelqF31T60>
+<ns21:DelqF61T90 type="java.lang.Integer">0</ns21:DelqF61T90>
+<ns21:MaxPastDueAmount type="java.math.BigDecimal"/>
+<ns21:MaxPastDueTerm type="java.math.BigDecimal"/>
+<ns21:InitialCreditNumber type="java.lang.String"/>
+<ns21:ProlongationAmt type="java.lang.Integer"/>
+<ns21:Delq90Plus type="java.lang.Integer">0</ns21:Delq90Plus>
+<ns21:InterestRate type="java.math.BigDecimal"/>
+<ns21:DelqF6T30L12M type="java.lang.Integer"/>
+<ns21:DelqF31T60L12M type="java.lang.Integer"/>
+<ns21:DelqF61T90L12M type="java.lang.Integer"/>
+<ns21:Delq90PlusL12M type="java.lang.Integer"/>
+<ns21:ApplyFlag type="java.lang.Boolean"/>
+<ns21:FullSaleFlag type="java.lang.Boolean"/>
+<ns21:RefinanceFlag type="java.lang.Boolean"/>
+<ns21:PrincipalRepaymentPart type="java.math.BigDecimal"/>
+<ns21:RepaymentSpeed type="java.math.BigDecimal"/>
+<ns21:ReducedDocumentSetFlag type="java.lang.Boolean"/>
+<ns21:DebtRecoveryInCourtFlag type="java.lang.Boolean"/>
+<ns21:RepayByCollateralFlag type="java.lang.Boolean"/>
+<ns21:RepayByCollateralStateInfo type="java.lang.String"/>
+</ns21:Item>
+</ns21:ListItems>
+</ns21:Liabililies>
+</ns21:Item>
+<ns21:Item type="java.util.Map">
+<ns21:OfferID type="java.lang.String">1</ns21:OfferID>
+<ns21:ClientID type="java.lang.Long">222777</ns21:ClientID>
+<ns21:OfferPriorityFlag type="java.lang.Boolean"/>
+<ns21:DecisionCode type="java.lang.String">Одобрено</ns21:DecisionCode>
+<ns21:DecisionCategory type="java.lang.String">Approve</ns21:DecisionCategory>
+<ns21:DecisionDetailsBeginOfAmtRange type="java.math.BigDecimal"/>
+<ns21:DecisionDetailsEndOfAmtRange type="java.math.BigDecimal"/>
+<ns21:DecisionDetailsRateOfRange type="java.math.BigDecimal"/>
+<ns21:DecisionDetailsTermOfRange type="java.lang.Integer"/>
+<ns21:SalaryCategoryFlag type="java.lang.Boolean">false</ns21:SalaryCategoryFlag>
+<ns21:Score type="java.lang.Integer"/>
+<ns21:CutOff type="java.lang.Integer"/>
+<ns21:TriggeredMinRequirements type="java.lang.String"/>
+<ns21:DTI type="java.math.BigDecimal"/>
+<ns21:TotalMonthlyVerifiedIncome type="java.math.BigDecimal">43500.0</ns21:TotalMonthlyVerifiedIncome>
+<ns21:MonthlyPayment type="java.math.BigDecimal">31821.103646285243</ns21:MonthlyPayment>
+<ns21:PaymentHoliday type="java.lang.Boolean"/>
+<ns21:SBCommentFES type="java.lang.String">Ответ сформирован автоматически.</ns21:SBCommentFES>
+<ns21:CustAnalysisFlag type="java.lang.Boolean">true</ns21:CustAnalysisFlag>
+<ns21:Deposits type="java.util.List">
+<ns21:ListItems/>
+</ns21:Deposits>
+<ns21:CurrentAccounts type="java.util.List">
+<ns21:ListItems/>
+</ns21:CurrentAccounts>
+<ns21:Liabililies type="java.util.List">
+<ns21:ListItems/>
+</ns21:Liabililies>
+</ns21:Item>
+</ns21:ListItems>
+</ns21:ProductClientDecision>
+</ns21:Item>
+</ns21:ListItems>
+</ns21:AppDecision>
+<ns21:SDRResults type="java.util.List">
+<ns21:ListItems>
+<ns21:Item type="java.util.Map">
+<ns21:SBOnSiteDecision type="java.lang.String">01</ns21:SBOnSiteDecision>
+<ns21:SBurlReportLpr type="java.lang.String"/>
+<ns21:Operator_id type="java.lang.String">EXP</ns21:Operator_id>
+<ns21:SBCodeGroup type="java.lang.String"/>
+<ns21:SBCode type="java.lang.String"/>
+<ns21:SBActualLevel type="java.lang.String">1</ns21:SBActualLevel>
+<ns21:SBDecisionStage type="java.lang.String">1</ns21:SBDecisionStage>
+<ns21:SBCheckLog type="java.lang.String"/>
+<ns21:SBMaxLevel type="java.lang.String">1</ns21:SBMaxLevel>
+<ns21:SBCommentFES type="java.lang.String">Ответ сформирован автоматически. ;Ответ сформирован автоматически.</ns21:SBCommentFES>
+<ns21:CommentRisk type="java.lang.String">http://dev-globex:5353/Inquiry.aspx?id=2198644</ns21:CommentRisk>
+</ns21:Item>
+</ns21:ListItems>
+</ns21:SDRResults>
+<ns21:NotificationList type="java.util.List">
+<ns21:ListItems/>
+</ns21:NotificationList>
+</ns21:DecisionBO>
+</GetLoanApplicationScoringResultResponse>

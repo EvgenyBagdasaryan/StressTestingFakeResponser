@@ -1,0 +1,9 @@
+{
+	"messageResponse": {
+		"cifcontactReference": [{
+			"systemNumber": "DSFT",
+			"externalId": "421695788",
+			"endDate": "2026-07-01T00:00:00"
+		}]
+	}
+}

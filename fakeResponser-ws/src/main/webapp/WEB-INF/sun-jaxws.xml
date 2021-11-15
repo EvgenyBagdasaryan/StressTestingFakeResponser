@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints  xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+
+    <!-- endpoint name="WS"
+        interface="ru.diasoft.integration.vtb.service.stub.flexadt.WSPORTTYPE"
+        implementation="ru.diasoft.integration.vtb.service.stub.impl.FlexAdtStub"
+        wsdl="WEB-INF/wsdl/WS.wsdl"
+        service="{http://support.diasoft.ru}vtbadtws"
+        port="{http://support.diasoft.ru}WSPORT"
+        url-pattern="/vtbadtws" />
+        
+     <endpoint name="OrganizationMatchService"
+        interface="ru.diasoft.integration.vtb.service.stub.orgmatch.OrganizationMatchService"
+        implementation="ru.diasoft.integration.vtb.service.stub.impl.MatchOrganizationStub"
+        wsdl="WEB-INF/wsdl/EDM/VTB24/ApplicationObjectLibrary/MDM/wsdls/Organization/V1/OrganizationMatchService.wsdl"
+        service="{http://siebel.com/DataQuality}OrganizationMatchService"
+        port="{http://siebel.com/DataQuality}OrganizationMatchService"
+        url-pattern="/OrganizationService" />
+        
+    <endpoint name="PersonMatchService"
+        interface="com.siebel.dataquality.PersonMatchService"
+        implementation="ru.diasoft.integration.vtb.service.stub.impl.PersonMatchStub"
+        wsdl="WEB-INF/wsdl/EDM/VTB24/ApplicationObjectLibrary/MDM/wsdls/Person/V1/PersonMatchService.wsdl"
+        service="{http://siebel.com/DataQuality}PersonMatchService"
+        port="{http://siebel.com/DataQuality}PersonMatchServicePort"
+        url-pattern="/PersonMatchService" />
+ 
+     <endpoint name="PersonService"
+        interface="ru.diasoft.integration.vtb.service.stub.person.PersonService"
+        implementation="ru.diasoft.integration.vtb.service.stub.impl.PersonServiceStub"
+        wsdl="WEB-INF/wsdl/EDM/VTB24/ApplicationObjectLibrary/MDM/wsdls/Person/V1/PersonService.wsdl"
+        service="{http://xmlns.oracle.com/apps/mdm/customer}PersonService"
+        port="{http://xmlns.oracle.com/apps/mdm/customer}PersonServicePort"
+        url-pattern="/PersonService" /-->
+        
+      <endpoint name="ULBS"
+        interface="ru.diasoft.integration.vtb.service.stub.flexadt.WSPORTTYPE"
+        implementation="ru.diasoft.integration.vtb.service.stub.impl.UlbsStub"
+        wsdl="WEB-INF/wsdl/WS.wsdl"
+        service="{http://support.diasoft.ru}vtbadtws"
+        port="{http://support.diasoft.ru}WSPORT"
+        url-pattern="/*" />          
+        
+</endpoints>
+
+<!--
+
+{http://www.siebel.com/xml/SwiPersonIOCreateResponse}ContactType -> {http://www.siebel.com/xml/SwiPersonIOCreateResponse}Contact_INSPersonalAddress
+
+
+http://localhost:8080/matchOrganization?wsdl
+
+http://vtbbus:8090/mockPerson_spcMatch?WSDL
+
+http://vtbbus:8090/mockPersonService?wsdl
+
+-->

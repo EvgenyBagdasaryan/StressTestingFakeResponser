@@ -1,0 +1,69 @@
+{
+    "messageResponse": {
+        "person": [
+            {
+                "rezidentFlag": true,
+                "taxRezident": false,
+                "firstName": "Перс",
+                "lastName": "Персонов",
+                "middleName": "Персонович",
+                "partyUId": "1537977005",
+                "previousLastName": "Человеков",
+                "previousFirstName": "Перс",
+                "previousMiddleName": "Персонович",
+                "birthPlace": "г.Москва",
+                "type": "1",
+                "birthDate": "1965-10-10",
+                "genderCode": "0",
+                "maritalStatusCode": "5",
+                "nationalityCountryCode": "24",
+                "tin": "12345678",
+				"fullNameDative": "Жукову Сергею Сергеевичу",
+                "fullNameGenitive": "Жукова Сергея Сергеевича",
+                "fullNameAblative": "Жукова Сергея Сергеевича",
+				"lastNameLat": "Жуков",
+                "firstNameLat": "Сергей",
+				"bankEmployee": "4",
+                "contactPhoneCommunication": [
+                    {
+                        "notFormFullPhone": "4954345654",
+                        "phoneType": "8",
+                        "completeNumber": "4954345654"
+                    }
+                ],
+                "address": [
+                    {
+                        "typeCode": "1",
+                        "fulladdress": "119415, г. Москва, проспект Вернадского, д.59а, кв.47",
+                        "city": "Москва",
+                        "country": "643",
+                        "street": "Вернадского",
+                        "house": "59",
+                        "notFormAddrName": "119415 Россия г Москва пр-кт Вернадского дом 59А кв 47",
+                        "zipCode": "119415",
+                        "state": "22",
+                        "provinceType": "г",
+                        "province": "Москва",
+                        "streetType": "пр-кт",
+                        "housing": "а",
+                        "building": "7",
+                        "apartmentNumber": "47",
+                        "kladr": "77000000000095300",
+                        "okato": "4546456456456"
+                    }
+                ],
+                "personDocumentIdentity": [
+                    {
+                        "number": "555555",
+                        "series": "55 55",
+                        "issueDate": "2012-06-04",
+                        "endDate": "02/17/2021",
+                        "typeCode": "21",
+                        "issueName": "УВД г.Москвы",
+                        "issueCode": "156-059"
+                    }
+                ]
+            }
+        ]
+    }
+}

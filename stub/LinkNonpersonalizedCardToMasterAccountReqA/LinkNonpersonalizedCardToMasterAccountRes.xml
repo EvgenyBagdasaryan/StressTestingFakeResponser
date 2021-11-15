@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinkNonpersonalizedCardToMasterAccountRes
+        xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/LinkNonpersonalizedCardToMasterAccount"
+        xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/LinkNonpersonalizedCardToMasterAccount">
+    <tns:DecisionBO>
+        <tns:TaskID>TS1034086-11062020</tns:TaskID>
+        <tns:StatusID/>
+        <tns:NotificationList>
+            <tns:ListItems>
+                <tns:Item>
+                    <tns:NTFID>1</tns:NTFID>
+                    <tns:NTFMessage>Общая ошибка</tns:NTFMessage>
+                </tns:Item>
+            </tns:ListItems>
+        </tns:NotificationList>
+    </tns:DecisionBO>
+</LinkNonpersonalizedCardToMasterAccountRes>

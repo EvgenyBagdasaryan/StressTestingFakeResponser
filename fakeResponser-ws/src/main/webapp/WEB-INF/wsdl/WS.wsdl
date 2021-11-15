@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:tns="http://support.diasoft.ru"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+             targetNamespace="http://support.diasoft.ru" name="TRULESWS">
+    <types>
+        <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+                    targetNamespace="http://support.diasoft.ru" elementFormDefault="qualified"
+                    xmlns:typ="http://vtb24.ru/bankgateway/types"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+            <complexType name="DSCALLRESPONSE">
+                <sequence>
+                    <element type="xsd:string" name="commandresult"></element>
+                </sequence>
+            </complexType>
+            <element type="tns:DSCALLRESPONSE" name="DSCALLRESPONSE"></element>
+
+            <complexType name="DSCALL">
+                <sequence>
+                    <element type="xsd:string" name="commandtext"></element>
+                    <element type="xsd:string" name="commanddata"></element>
+                    <xsd:element name="contextdata" type="tns:ContextData"></xsd:element>
+                </sequence>
+            </complexType>
+            <element type="tns:DSCALL" name="DSCALL"></element>
+
+            <element type="tns:DSCALLFAULT" name="DSCALLFAULT"></element>
+            <complexType name="DSCALLFAULT">
+                <sequence>
+                    <element type="xsd:int" name="faultcode"></element>
+                    <element type="xsd:string" name="faultmessage"></element>
+                </sequence>
+            </complexType>
+            <complexType name="DSCALLASYNC">
+                <sequence>
+                    <element type="xsd:string" name="commandtext"></element>
+                    <element type="xsd:string" name="commanddata"></element>
+                    <xsd:element name="contextdata" type="tns:ContextData"></xsd:element>
+                </sequence>
+            </complexType>
+            <element type="tns:DSCALLASYNC" name="DSCALLASYNC"></element>
+            <xsd:complexType name="ContextData">
+                <xsd:sequence>
+                    <xsd:element name="fromSystem" type="xsd:string"></xsd:element>
+                    <xsd:element name="toSystem" type="xsd:string"></xsd:element>
+                    <xsd:element name="sessionId" type="xsd:string"></xsd:element>
+                    <xsd:element name="processId" type="xsd:long"></xsd:element>
+                    <xsd:element name="locale" type="xsd:language"></xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="DSCALLCALLBACK">
+                <xsd:sequence>
+                    <xsd:element name="commandtext" type="string"></xsd:element>
+                    <xsd:element name="commanddata" type="string"></xsd:element>
+                    <xsd:element name="contextdata"
+                                 type="tns:ContextData">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="DSCALLCALLBACKRESPONSE">
+                <xsd:sequence>
+                    <xsd:element name="commandresult" type="string"></xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+
+            <xsd:element name="DSCALLCALLBACK" type="tns:DSCALLCALLBACK"></xsd:element>
+
+            <xsd:element name="DSCALLCALLBACKRESPONSE"
+                         type="tns:DSCALLCALLBACKRESPONSE">
+            </xsd:element>
+
+
+        </xsd:schema>
+        <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+                    targetNamespace="http://vtb24.ru/bankgateway/types" elementFormDefault="qualified"
+                    xmlns:typ="http://vtb24.ru/bankgateway/types"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+            <xsd:element name="Request">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:any/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name="Response">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:any/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+        </xsd:schema>
+
+        <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+                    targetNamespace="http://support.diasoft.ru/type" elementFormDefault="qualified"
+                    xmlns:type="http://support.diasoft.ru/type"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+            <xsd:element name="DSMortgageMiniAppGetListLKKAttrByIDReq">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:any/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name="DSMortgageMiniAppGetListLKKAttrByIDRes">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:any/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+        </xsd:schema>
+    </types>
+
+    <message name="Request">
+        <part element="typ:Request" name="Request" xmlns:typ="http://vtb24.ru/bankgateway/types"/>
+    </message>
+    <message name="Response">
+        <part element="typ:Response" name="Response" xmlns:typ="http://vtb24.ru/bankgateway/types"/>
+    </message>
+    <message name="DSMortgageMiniAppGetListLKKAttrByIDReq">
+        <part element="type:DSMortgageMiniAppGetListLKKAttrByIDReq" name="DSMortgageMiniAppGetListLKKAttrByIDReq" xmlns:type="http://support.diasoft.ru/type"/>
+    </message>
+    <message name="DSMortgageMiniAppGetListLKKAttrByIDRes">
+        <part element="type:DSMortgageMiniAppGetListLKKAttrByIDRes" name="DSMortgageMiniAppGetListLKKAttrByIDRes" xmlns:type="http://support.diasoft.ru/type"/>
+    </message>
+    <message name="DSCALL">
+        <part element="tns:DSCALL" name="parameters"></part>
+    </message>
+    <message name="DSCALLRESPONSE">
+        <part element="tns:DSCALLRESPONSE" name="result"></part>
+    </message>
+    <message name="DSCALLFAULT">
+        <part element="tns:DSCALLFAULT" name="DSCALLFAULT"></part>
+    </message>
+    <message name="DSCALLASYNC">
+        <part element="tns:DSCALLASYNC" name="parameters"></part>
+    </message>
+    <message name="DSCALLCALLBACKRequest">
+        <part name="parameters" element="tns:DSCALLCALLBACK"></part>
+    </message>
+    <message name="DSCALLCALLBACKResponse">
+        <part name="parameters" element="tns:DSCALLCALLBACKRESPONSE"></part>
+    </message>
+    <message name="DSCALLCALLBACKFault">
+        <part name="parameters" element="tns:DSCALLFAULT"></part>
+    </message>
+
+    <portType name="WSPORTTYPE">
+        <operation name="DSCALL">
+            <input message="tns:DSCALL" name="DSCALL"></input>
+            <output message="tns:DSCALLRESPONSE" name="DSCALLRESPONSE"></output>
+            <fault message="tns:DSCALLFAULT" name="DSCALLFAULT"></fault>
+        </operation>
+        <operation name="DSCALLASYNC">
+            <input message="tns:DSCALLASYNC" name="DSCALLASYNC"></input>
+        </operation>
+        <operation name="DSCALLCALLBACK">
+            <input message="tns:DSCALLCALLBACKRequest"></input>
+            <output message="tns:DSCALLCALLBACKResponse"></output>
+            <fault name="fault" message="tns:DSCALLCALLBACKFault"></fault>
+        </operation>
+        <wsdl:operation name="Request">
+            <wsdl:input wsaw:Action="http://vtb24.ru/webservices/Request"
+                        name="Request" message="tns:Request"/>
+            <wsdl:output wsaw:Action="http://vtb24.ru/webservices/Response"
+                         name="Response" message="tns:Response"/>
+        </wsdl:operation>
+        <wsdl:operation name="DSMortgageMiniAppGetListLKKAttrByIDReq">
+            <wsdl:input wsaw:Action="http://vtb24.ru/webservices/Request"
+                        name="DSMortgageMiniAppGetListLKKAttrByIDReq" message="tns:DSMortgageMiniAppGetListLKKAttrByIDReq"/>
+            <wsdl:output wsaw:Action="http://vtb24.ru/webservices/Response"
+                         name="DSMortgageMiniAppGetListLKKAttrByIDRes" message="tns:DSMortgageMiniAppGetListLKKAttrByIDRes"/>
+        </wsdl:operation>
+    </portType>
+
+    <binding type="tns:WSPORTTYPE" name="WSBINDING">
+
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+        <operation name="DSCALL">
+            <soap:operation soapAction="http://support.diasoft.ru/DSCALL"/>
+            <input name="DSCALL">
+                <soap:body use="literal"/>
+            </input>
+            <output name="DSCALLRESPONSE">
+                <soap:body use="literal"/>
+            </output>
+            <fault name="DSCALLFAULT">
+                <soap:fault use="literal" name="DSCALLFAULT"/>
+            </fault>
+        </operation>
+
+        <operation name="DSCALLASYNC">
+            <soap:operation
+                    soapAction="http://support.diasoft.ru/DSCALLASYNC"/>
+            <input name="DSCALLASYNC">
+                <soap:body use="literal"/>
+            </input>
+        </operation>
+
+        <operation name="DSCALLCALLBACK">
+            <soap:operation
+                    soapAction="http://support.diasoft.ru/DSCALLCALLBACK"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="fault">
+                <soap:fault use="literal" name="fault"/>
+            </fault>
+        </operation>
+
+        <operation name="Request">
+            <soap:operation soapAction="http://vtb24.ru/bankgateway/types/Request"/>
+            <input name="Request">
+                <soap:body use="literal"/>
+            </input>
+            <output name="Response">
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+        <operation name="DSMortgageMiniAppGetListLKKAttrByIDReq">
+            <soap:operation soapAction="http://vtb24.ru/bankgateway/types/Request"/>
+            <input name="DSMortgageMiniAppGetListLKKAttrByIDReq">
+                <soap:body use="literal"/>
+            </input>
+            <output name="DSMortgageMiniAppGetListLKKAttrByIDRes">
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+    </binding>
+    <service name="vtbadtws">
+        <port binding="tns:WSBINDING" name="WSPORT">
+            <soap:address location="WS"/>
+        </port>
+    </service>
+</definitions>

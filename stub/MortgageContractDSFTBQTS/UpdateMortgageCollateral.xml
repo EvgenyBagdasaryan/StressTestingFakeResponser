@@ -1,0 +1,59 @@
+<UpdateMortgageCollateralResponse xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">
+<Status xmlns="" type="java.lang.String">OK</Status>
+<ZalLoanList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<ObjectID type="java.lang.Long"/>
+<mNum type="java.lang.String">46236482146</mNum>
+</Item>
+</ListItems>
+</ZalLoanList>
+<PoruchLoanList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<PoruchLoanNum type="java.lang.String">62356265</PoruchLoanNum>
+<ClientID type="java.lang.Long">123</ClientID>
+</Item>
+</ListItems>
+</PoruchLoanList>
+<AcctList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<mNum type="java.lang.String">40817810099910004312</mNum>
+</Item>
+<Item type="java.util.Map">
+<mNum type="java.lang.String">40817810084748521222</mNum>
+</Item>
+</ListItems>
+</AcctList>
+<FactgrfList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<FactgrfNun type="java.lang.Integer">789</FactgrfNun>
+<MDateBegin type="java.util.Date">2021-10-27T12:08:49:974+0400</MDateBegin>
+<MDateEnd type="java.util.Date">2021-10-27T12:08:49:974+0400</MDateEnd>
+<MCurr type="java.lang.String">RUB</MCurr>
+<SummPayment type="java.math.BigDecimal"/>
+<DolgPayment type="java.math.BigDecimal"/>
+<PercentPayment type="java.math.BigDecimal"/>
+<Balanse type="java.math.BigDecimal">456</Balanse>
+</Item>
+</ListItems>
+</FactgrfList>
+<LoanNumber xmlns="" type="java.lang.String">4164616451</LoanNumber>
+<IDOrderCrediting xmlns="" type="java.lang.String">35geguitw5</IDOrderCrediting>
+<LoanStatus xmlns="" type="java.lang.String">hfuwueuwue</LoanStatus>
+<RatePsk xmlns="" type="java.math.BigDecimal">1</RatePsk>
+<MaxCredSum xmlns="" type="java.math.BigDecimal">2</MaxCredSum>
+<Payment xmlns="" type="java.math.BigDecimal">3</Payment>
+<EndDatePaymentPeriod xmlns="" type="java.util.Date">2021-10-27T12:08:49:974+0400</EndDatePaymentPeriod>
+<F119 xmlns="" type="java.lang.String">12345</F119>
+<F110 xmlns="" type="java.lang.String">612345</F110>
+<IndividSsudaF122 xmlns="" type="java.lang.String">2121913</IndividSsudaF122>
+<IndividSsudaF123 xmlns="" type="java.lang.String">2112113</IndividSsudaF123>
+<IndividSsudaF120 xmlns="" type="java.lang.String">212113</IndividSsudaF120>
+<IndividSsudaF124 xmlns="" type="java.lang.String">3212113</IndividSsudaF124>
+<IndividSsudaF125 xmlns="" type="java.lang.String">2123113</IndividSsudaF125>
+<IndividSsudaF126 xmlns="" type="java.lang.String">21214513</IndividSsudaF126>
+<IndividSsudaF127 xmlns="" type="java.lang.String">21213313</IndividSsudaF127>
+</UpdateMortgageCollateralResponse>

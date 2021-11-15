@@ -1,0 +1,15 @@
+{
+    "messageResponse": {
+        "contact": [
+            {
+                "partyUId": "1537977005",
+                "cifcontactReference": [
+                    {
+                        "systemNumber": "DSFT",
+                        "externalId": "421695788"
+                    }
+                ]
+            }
+		]
+	}
+}

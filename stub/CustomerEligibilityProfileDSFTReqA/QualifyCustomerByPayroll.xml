@@ -1,0 +1,17 @@
+<QualifyCustomerByPayrollResponse xmlns:tsc="http://www.oracle.com/XSL/Transform/java/ru.tsconsulting.vtb24.soa.utils.xpath.TSCFunctions" 
+	xmlns:ns8="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/QualifyCustomerByPayroll" xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/QualifyCustomerByPayroll">
+	<ns8:PayrollList type="java.util.List">
+		<ns8:ListItems>
+			<ns8:Item type="java.util.Map">
+				<ns8:SalaryClientFlag type="java.lang.Boolean">true</ns8:SalaryClientFlag>
+				<ns8:AverageAnnualIncome type="java.math.BigDecimal">100</ns8:AverageAnnualIncome>
+				<ns8:SalaryType type="java.lang.Integer">1</ns8:SalaryType>
+			</ns8:Item>
+		</ns8:ListItems>
+	</ns8:PayrollList>
+	<ns8:NotificationList type="java.util.List">
+		<ns8:NTFID type="java.lang.Integer"/>
+		<ns8:NTFMessage type="java.lang.String"/>
+	</ns8:NotificationList>
+	<ns8:MessageID type="java.lang.Long"/>
+</QualifyCustomerByPayrollResponse>

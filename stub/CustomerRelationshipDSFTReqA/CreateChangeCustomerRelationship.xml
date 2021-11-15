@@ -1,0 +1,4 @@
+<CreateChangeCustomerRelationshipRs xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/CreateChangeCustomerRelationship">
+	<MainParticipantID type="java.lang.Long" xmlns="">${mainId}</MainParticipantID>
+	<AfflParticipantID type="java.lang.Long" xmlns="">${afflId}</AfflParticipantID>
+</CreateChangeCustomerRelationshipRs>

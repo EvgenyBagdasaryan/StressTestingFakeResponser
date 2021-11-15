@@ -1,0 +1,10 @@
+<CreateChangeOrganizationResponse>  
+  <LegalIDList type="java.util.List">
+    <ListItems>
+      <Item type="java.util.Map">
+        <MDMID type="java.lang.String">${mdmid}</MDMID>
+        <LegalID type="java.lang.Long">${legalid}</LegalID>
+      </Item>
+    </ListItems>
+  </LegalIDList>  
+</CreateChangeOrganizationResponse>

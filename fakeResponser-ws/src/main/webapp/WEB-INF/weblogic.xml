@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90">
+	<context-root>/fakeResponser</context-root>
+	<servlet-descriptor>
+		<servlet-name>WSPORT</servlet-name>
+		<init-as-principal-name>OracleSystemUser</init-as-principal-name>
+	</servlet-descriptor>
+</weblogic-web-app>

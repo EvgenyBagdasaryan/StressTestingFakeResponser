@@ -1,0 +1,45 @@
+<CreateCreditingOrderResponse xmlns:exsl="http://exslt.org/common" xmlns:ns9="BaseMortageContract" xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">
+<tns:Status xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">OK</tns:Status>
+<tns:ZalLoanList xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">
+<tns:ListItems>
+<tns:Item>
+<tns:ObjectID/>
+<tns:mNum>46236482146</tns:mNum>
+</tns:Item>
+</tns:ListItems>
+</tns:ZalLoanList>
+<tns:PoruchLoanList xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">
+<tns:PoruchLoanNum>62356265</tns:PoruchLoanNum>
+<tns:ClientID>123</tns:ClientID>
+</tns:PoruchLoanList>
+<tns:AcctList xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">
+<tns:mNum>40817810099910004312</tns:mNum>
+<tns:mNum>40817810084748521222</tns:mNum>
+</tns:AcctList>
+<tns:FactgrfList xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">
+<tns:FactgrfNun>789</tns:FactgrfNun>
+<tns:MDateBegin>2021-10-27T12:08:49:974+0400</tns:MDateBegin>
+<tns:MDateEnd>2021-10-27T12:08:49:974+0400</tns:MDateEnd>
+<tns:MCurr>RUB</tns:MCurr>
+<tns:SummPayment/>
+<tns:DolgPayment/>
+<tns:PercentPayment/>
+<tns:Balanse>456</tns:Balanse>
+</tns:FactgrfList>
+<tns:LoanNumber xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">4164616451</tns:LoanNumber>
+<tns:IDOrderCrediting xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">35geguitw5</tns:IDOrderCrediting>
+<tns:LoanStatus xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">hfuwueuwue</tns:LoanStatus>
+<tns:RatePsk xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">1</tns:RatePsk>
+<tns:MaxCredSum xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">2</tns:MaxCredSum>
+<tns:Payment xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">3</tns:Payment>
+<tns:EndDatePaymentPeriod xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">2021-10-27T12:08:49:974+0400</tns:EndDatePaymentPeriod>
+<tns:F119 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">12345</tns:F119>
+<tns:F110 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">612345</tns:F110>
+<tns:IndividSsudaF122 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">2121913</tns:IndividSsudaF122>
+<tns:IndividSsudaF123 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">2112113</tns:IndividSsudaF123>
+<tns:IndividSsudaF120 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">212113</tns:IndividSsudaF120>
+<tns:IndividSsudaF124 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">3212113</tns:IndividSsudaF124>
+<tns:IndividSsudaF125 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">2123113</tns:IndividSsudaF125>
+<tns:IndividSsudaF126 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">21214513</tns:IndividSsudaF126>
+<tns:IndividSsudaF127 xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/MortageContract">21213313</tns:IndividSsudaF127>
+</CreateCreditingOrderResponse>

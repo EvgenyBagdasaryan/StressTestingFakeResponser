@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CreateUpdateAutoLoanContractResponse>
+	<Status type="java.lang.String">OK</Status>
+	<LoanNumber type="java.lang.String">622/0000-0000272</LoanNumber>
+	<IDOrderCrediting type="java.lang.String">0</IDOrderCrediting>
+	<LoanStatus type="java.lang.String">ВВЕД</LoanStatus>
+	<ZalLoanList type="java.util.List">
+		<ListItems>
+			<Item type="java.util.Map">
+				<ZalLoanNum type="java.lang.String">622/0000-0000272-з01</ZalLoanNum>
+				<ObjectID type="java.lang.Long">379024</ObjectID>
+			</Item>
+		</ListItems>
+	</ZalLoanList>
+	<AcctList type="java.util.List">
+		<ListItems>
+			<Item type="java.util.Map">
+				<MNum type="java.lang.String">40817810700000601681</MNum>
+			</Item>
+		</ListItems>
+	</AcctList>
+	<FactgrfList type="java.util.List">
+		<ListItems>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">1</FactgrfNun>
+				<MDate type="java.util.Date">2017-11-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">5320.11</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">0.0</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">5320.11</PercentPayment>
+				<Balanse type="java.math.BigDecimal">360000.0</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">2</FactgrfNun>
+				<MDate type="java.util.Date">2017-12-11T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">7868.25</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">5320.11</PercentPayment>
+				<Balanse type="java.math.BigDecimal">352131.75</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">3</FactgrfNun>
+				<MDate type="java.util.Date">2018-01-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">8152.39</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">5035.97</PercentPayment>
+				<Balanse type="java.math.BigDecimal">343979.36</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">4</FactgrfNun>
+				<MDate type="java.util.Date">2018-02-12T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">7777.05</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">5411.31</PercentPayment>
+				<Balanse type="java.math.BigDecimal">336202.31</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">5</FactgrfNun>
+				<MDate type="java.util.Date">2018-03-12T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">8700.75</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4487.61</PercentPayment>
+				<Balanse type="java.math.BigDecimal">327501.56</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">6</FactgrfNun>
+				<MDate type="java.util.Date">2018-04-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">8660.76</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4527.6</PercentPayment>
+				<Balanse type="java.math.BigDecimal">318840.8</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">7</FactgrfNun>
+				<MDate type="java.util.Date">2018-05-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">8628.5</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4559.86</PercentPayment>
+				<Balanse type="java.math.BigDecimal">310212.3</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">8</FactgrfNun>
+				<MDate type="java.util.Date">2018-06-11T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">8456.14</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4732.22</PercentPayment>
+				<Balanse type="java.math.BigDecimal">301756.16</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">9</FactgrfNun>
+				<MDate type="java.util.Date">2018-07-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">9016.68</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4171.68</PercentPayment>
+				<Balanse type="java.math.BigDecimal">292739.48</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">10</FactgrfNun>
+				<MDate type="java.util.Date">2018-08-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">8862.23</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4326.13</PercentPayment>
+				<Balanse type="java.math.BigDecimal">283877.25</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">11</FactgrfNun>
+				<MDate type="java.util.Date">2018-09-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">8993.2</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4195.16</PercentPayment>
+				<Balanse type="java.math.BigDecimal">274884.05</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">12</FactgrfNun>
+				<MDate type="java.util.Date">2018-10-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">9257.14</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">3931.22</PercentPayment>
+				<Balanse type="java.math.BigDecimal">265626.91</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">13</FactgrfNun>
+				<MDate type="java.util.Date">2018-11-12T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">9009.65</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">4178.71</PercentPayment>
+				<Balanse type="java.math.BigDecimal">256617.26</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">14</FactgrfNun>
+				<MDate type="java.util.Date">2018-12-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">9763.05</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">3425.31</PercentPayment>
+				<Balanse type="java.math.BigDecimal">246854.21</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">15</FactgrfNun>
+				<MDate type="java.util.Date">2019-01-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">9540.33</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">3648.03</PercentPayment>
+				<Balanse type="java.math.BigDecimal">237313.88</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">16</FactgrfNun>
+				<MDate type="java.util.Date">2019-02-11T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">9568.19</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">3620.17</PercentPayment>
+				<Balanse type="java.math.BigDecimal">227745.69</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">17</FactgrfNun>
+				<MDate type="java.util.Date">2019-03-11T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10148.42</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">3039.94</PercentPayment>
+				<Balanse type="java.math.BigDecimal">217597.27</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">18</FactgrfNun>
+				<MDate type="java.util.Date">2019-04-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10076.42</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">3111.94</PercentPayment>
+				<Balanse type="java.math.BigDecimal">207520.85</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">19</FactgrfNun>
+				<MDate type="java.util.Date">2019-05-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10220.53</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">2967.83</PercentPayment>
+				<Balanse type="java.math.BigDecimal">197300.32</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">20</FactgrfNun>
+				<MDate type="java.util.Date">2019-06-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10272.64</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">2915.72</PercentPayment>
+				<Balanse type="java.math.BigDecimal">187027.68</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">21</FactgrfNun>
+				<MDate type="java.util.Date">2019-07-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10513.61</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">2674.75</PercentPayment>
+				<Balanse type="java.math.BigDecimal">176514.07</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">22</FactgrfNun>
+				<MDate type="java.util.Date">2019-08-12T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10411.53</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">2776.83</PercentPayment>
+				<Balanse type="java.math.BigDecimal">166102.54</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">23</FactgrfNun>
+				<MDate type="java.util.Date">2019-09-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10892.05</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">2296.31</PercentPayment>
+				<Balanse type="java.math.BigDecimal">155210.49</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">24</FactgrfNun>
+				<MDate type="java.util.Date">2019-10-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10968.64</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">2219.72</PercentPayment>
+				<Balanse type="java.math.BigDecimal">144241.85</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">25</FactgrfNun>
+				<MDate type="java.util.Date">2019-11-11T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">10987.98</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">2200.38</PercentPayment>
+				<Balanse type="java.math.BigDecimal">133253.87</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">26</FactgrfNun>
+				<MDate type="java.util.Date">2019-12-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">11346.17</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">1842.19</PercentPayment>
+				<Balanse type="java.math.BigDecimal">121907.7</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">27</FactgrfNun>
+				<MDate type="java.util.Date">2020-01-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">11388.39</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">1799.97</PercentPayment>
+				<Balanse type="java.math.BigDecimal">110519.31</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">28</FactgrfNun>
+				<MDate type="java.util.Date">2020-02-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">11559.56</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">1628.8</PercentPayment>
+				<Balanse type="java.math.BigDecimal">98959.75</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">29</FactgrfNun>
+				<MDate type="java.util.Date">2020-03-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">11824.01</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">1364.35</PercentPayment>
+				<Balanse type="java.math.BigDecimal">87135.74</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">30</FactgrfNun>
+				<MDate type="java.util.Date">2020-04-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">11904.18</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">1284.18</PercentPayment>
+				<Balanse type="java.math.BigDecimal">75231.56</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">31</FactgrfNun>
+				<MDate type="java.util.Date">2020-05-11T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">12079.62</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">1108.74</PercentPayment>
+				<Balanse type="java.math.BigDecimal">63151.94</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">32</FactgrfNun>
+				<MDate type="java.util.Date">2020-06-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">12287.67</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">900.69</PercentPayment>
+				<Balanse type="java.math.BigDecimal">50864.27</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">33</FactgrfNun>
+				<MDate type="java.util.Date">2020-07-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">12462.92</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">725.44</PercentPayment>
+				<Balanse type="java.math.BigDecimal">38401.35</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">34</FactgrfNun>
+				<MDate type="java.util.Date">2020-08-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">12622.41</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">565.95</PercentPayment>
+				<Balanse type="java.math.BigDecimal">25778.94</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">35</FactgrfNun>
+				<MDate type="java.util.Date">2020-09-10T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">13188.36</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">12808.44</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">379.92</PercentPayment>
+				<Balanse type="java.math.BigDecimal">12970.5</Balanse>
+			</Item>
+			<Item type="java.util.Map">
+				<FactgrfNun type="java.lang.Integer">36</FactgrfNun>
+				<MDate type="java.util.Date">2020-10-12T03:00:00:000+0300</MDate>
+				<SummPayment type="java.math.BigDecimal">12970.5</SummPayment>
+				<DolgPayment type="java.math.BigDecimal">12970.5</DolgPayment>
+				<PercentPayment type="java.math.BigDecimal">0.0</PercentPayment>
+				<Balanse type="java.math.BigDecimal">0.0</Balanse>
+			</Item>
+		</ListItems>
+	</FactgrfList>
+	<RatePsk type="java.math.BigDecimal">17.375</RatePsk>
+	<MaxCredSum type="java.math.BigDecimal">0.0</MaxCredSum>
+	<Payment type="java.math.BigDecimal">0.0</Payment>
+	<EndDatePaymentPeriod type="java.util.Date">2020-10-10T03:00:00:000+0300</EndDatePaymentPeriod>
+</CreateUpdateAutoLoanContractResponse>

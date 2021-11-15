@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreateUpdateMortgageContractResponse>
+   <Status type="java.lang.String">OK</Status>
+   <ZalLoanList type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <ObjectID type="java.lang.Long"/>
+            <mNum type="java.lang.String">46236482146</mNum>
+         </Item>
+      </ListItems>
+   </ZalLoanList>
+   <PoruchLoanList type="java.util.List">
+	  <ListItems>
+         <Item type="java.util.Map">
+			<PoruchLoanNum type="java.lang.Long">62356265</PoruchLoanNum>
+			<ClientID type="java.lang.Long">123</ClientID>
+		 </Item>
+      </ListItems> 		 
+   </PoruchLoanList>
+   <AcctList type="java.util.List">
+	  <ListItems>
+         <Item type="java.util.Map">	
+			<mNum type="java.lang.String">40817810099910004312</mNum>
+		 </Item>	
+		 <Item type="java.util.Map">	
+			<mNum type="java.lang.String">40817810084748521222</mNum>
+		 </Item>	
+      </ListItems> 	 			
+   </AcctList>
+   <FactgrfList type="java.util.List">
+	  <ListItems>
+         <Item type="java.util.Map">
+			  <FactgrfNun type="java.math.BigDecimal">789</FactgrfNun>
+			  <MDateBegin type="java.util.Date">2021-10-27T12:08:49:974+0400</MDateBegin>
+			  <MDateEnd type="java.util.Date">2021-10-27T12:08:49:974+0400</MDateEnd>
+			  <MCurr type="java.lang.String">RUB</MCurr>
+			  <SummPayment />
+			  <DolgPayment />
+			  <PercentPayment />
+			  <Balanse type="java.math.BigDecimal">456</Balanse>
+	      </Item>	
+      </ListItems>		  
+   </FactgrfList>
+   <LoanNumber type="java.lang.String">4164616451</LoanNumber>
+   <IDOrderCrediting type="java.lang.String">35geguitw5</IDOrderCrediting>
+   <LoanStatus type="java.lang.String">hfuwueuwue</LoanStatus>
+   <RatePsk type="java.math.BigDecimal">1</RatePsk>
+   <MaxCredSum type="java.math.BigDecimal">2</MaxCredSum>
+   <Payment type="java.math.BigDecimal">3</Payment>
+   <EndDatePaymentPeriod type="java.util.Date">2021-10-27T12:08:49:974+0400</EndDatePaymentPeriod>
+   <F119 type="java.math.BigDecimal">12345</F119>
+   <F110 type="java.math.BigDecimal">612345</F110>
+   <IndividSsudaF122 type="java.math.BigDecimal">2121913</IndividSsudaF122>
+   <IndividSsudaF123 type="java.math.BigDecimal">2112113</IndividSsudaF123>
+   <IndividSsudaF120 type="java.math.BigDecimal">212113</IndividSsudaF120>
+   <IndividSsudaF124 type="java.math.BigDecimal">3212113</IndividSsudaF124>
+   <IndividSsudaF125 type="java.math.BigDecimal">2123113</IndividSsudaF125>
+   <IndividSsudaF126 type="java.math.BigDecimal">21214513</IndividSsudaF126>
+   <IndividSsudaF127 type="java.math.BigDecimal">21213313</IndividSsudaF127>
+   <pricePsk type="java.math.BigDecimal">1500000</pricePsk>
+   <amountPsk type="java.math.BigDecimal">45000</amountPsk>
+</CreateUpdateMortgageContractResponse>

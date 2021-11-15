@@ -1,0 +1,44 @@
+{
+  "messageResponse": {
+    "person": [
+    {
+        "partyUId": "1537977005",
+        "matchScore": "90",
+        "surName": "Петров",
+        "firstName": "Петр",
+        "middleName": "Петрович",
+        "birthDate": "1988-10-10",
+        "typePerson": "1",
+        "birthPlace": "Мурманск",
+        "mf": "0",
+        "tin": "13775455",
+		"personalAddress": [
+		{
+			"personalAddressType": "1",
+			"addressName": "119415, г. Москва, проспект Вернадского, д.59а, кв.47",
+			"notFormAddrName": "119415 Россия г Москва пр-кт Вернадского дом 59А кв 47",
+			"country": "643",
+			"zipCode": "119415",
+			"stateType": "г",
+			"personalPrefState": "Москва",
+			"streetType": "пр-кт",
+			"personalPrefStreet": "Вернадского",
+			"house": "59",
+			"housing": "а",
+			"apartamentNumber": "47",
+			"startDate": "2016-03-01"
+		}],
+		"contactIdentity": [
+		{
+			"type": "21",
+			"series": "11 11",
+			"number": "222222",
+			"issued": "ПВО ОВД района Текстильщики г. Москвы",
+			"issueDate": "2005-07-12",
+			"divisionCode": "798-084"
+		}],
+		"segment": [],
+		"phoneCommunication": []
+	}]
+  }
+}

@@ -1,0 +1,4 @@
+<GetLeadApplicationStatusBGDSFTTSRes>
+    <Status xmlns="" type="java.lang.String">OK</Status>
+    <NTFID xmlns="" type="java.lang.Long"/>
+</GetLeadApplicationStatusBGDSFTTSRes>

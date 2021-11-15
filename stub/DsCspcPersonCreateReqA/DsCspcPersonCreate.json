@@ -1,0 +1,13 @@
+{
+    "messageResponse": {
+        "partyUId": "1537977005",
+        "person": [
+            {
+                "firstName": "Иван",
+                "lastName": "Артюшкин",
+                "middleName": "Маркович",
+                "status": "1"
+			}
+        ]
+    }
+}

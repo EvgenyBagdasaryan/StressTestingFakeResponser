@@ -1,0 +1,1 @@
+this is config directory for Diasoft platform for fakeResponser

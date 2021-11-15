@@ -1,0 +1,21 @@
+{
+  "ExpirationDate": 1468972800000,
+  "MaxMonthlyPayment": 1.1,
+  "FLoanAppNumber": "2108542",
+  "StateName": "StateName",
+  "Amount": 3.3,
+  "CreditContractNumber": "CreditContractNumber",
+  "MakeDecisionDateTime": 1468800000000,
+  "DecisionComment": "DecisionComment",
+  "TransitionComment": "TransitionComment",
+  "FMatrixList": [
+    {
+      "AnnuityPayment": 40.1,
+      "CreditInterestRate": 30.1,
+      "CreditAmount": 20.1,
+      "CreditTerm": 10.1,
+      "BankProductBrief": "BankProductBrief"
+    }
+  ],
+  "MaxCreditAmountCC": 2.2
+}

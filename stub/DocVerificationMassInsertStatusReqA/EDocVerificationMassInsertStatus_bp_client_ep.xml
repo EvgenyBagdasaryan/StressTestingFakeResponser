@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EDocVerificationMassInsertStatusRes
+        xmlns:tsc="http://www.oracle.com/XSL/Transform/java/ru.tsconsulting.vtb24.soa.utils.xpath.TSCFunctions"
+        xmlns:mar="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/EDocVerificationMassInsertStatusReqA/EDocVerificationMassInsertStatus_bp_client_ep"
+        xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/EDocVerificationMassInsertStatusReqA/EDocVerificationMassInsertStatus_bp_client_ep">
+    <mar:DecisionBO>
+        <mar:TaskID>1</mar:TaskID>
+        <mar:StatusID>2</mar:StatusID>
+        <mar:UserID>3</mar:UserID>
+        <mar:Comment>111</mar:Comment>
+        <mar:Description>Описание</mar:Description>
+        <mar:NotificationList>
+            <mar:NTFID/>
+            <mar:NTFMessage>Ошибка 1</mar:NTFMessage>
+        </mar:NotificationList>
+        <mar:NotificationList>
+            <mar:NTFID>2</mar:NTFID>
+            <mar:NTFMessage/>
+        </mar:NotificationList>
+    </mar:DecisionBO>
+</EDocVerificationMassInsertStatusRes>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDossierCreditTaskVerificationRes xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/EDocVerificationMassInsert" xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable" xmlns:ns2="urn:oasis:names:tc:xacml:2.0:context:schema:cd:04" xmlns:ns1="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/LoanContract/V1" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:ns4="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/BankAccount/V1" xmlns:ns3="http://xmlns.oracle.com/EnterpriseObjects/Core/Custom/Common/V2" xmlns:ns6="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/LoanApplication/V1" xmlns:ns5="http://schemas.xmlsoap.org/ws/2003/03/addressing" xmlns:ns8="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/CustomerParty/V1" xmlns:ns7="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/SalaryProductDeal/V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns13="http://xmlns.oracle.com/EnterpriseObjects/Core/Common/V2" xmlns:ns12="urn:oasis:names:tc:xacml:2.0:policy:schema:cd:04" xmlns:ns9="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/BankCard/V1" xmlns:ns11="http://www.vtb24.ru/EnterpriseObjectLibrary/Core/Common/V1" xmlns:ns10="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/LetterOfCreditContract/V1" xmlns:ns17="http://support.diasoft.ru" xmlns:ns16="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/EscrowContract/V1" xmlns:ns15="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/PayrollContract/V1" xmlns:ns14="http://www.vtb24.ru/EnterpriseObjectLibrary/Business/Common/Model/DossierVerificationTask/V1" xmlns:ebs="http://xmlns.vtb24.ru/EnterpriseBusinessServiceLibrary/DossierVerificationTaskBS/V1" xmlns:tns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/EDocVerificationMassInsert">
+    <tns:DecisionBO>
+        <tns:TaskID>TS1034086-11062020</tns:TaskID>
+        <tns:StatusID/>
+        <tns:NotificationList>
+            <tns:ListItems>
+                <tns:Item>
+                    <tns:NTFID>1</tns:NTFID>
+                    <tns:NTFMessage>Общая ошибка</tns:NTFMessage>
+                </tns:Item>
+            </tns:ListItems>
+        </tns:NotificationList>
+    </tns:DecisionBO>
+</GetDossierCreditTaskVerificationRes>

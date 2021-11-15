@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="id" 
+
+xmlns="http://java.sun.com/xml/ns/j2ee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_4.xsd" version="2.4">
+
+
+	<description>Diasoft FA# Gate 5NT</description>
+	<display-name>fakeResponser</display-name>
+	<listener>
+		<listener-class>
+			com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+		</listener-class>
+	</listener>
+	
+	<servlet>
+		<description>
+			FakeResponser Web Service
+		</description>
+		<display-name>FakeResponser</display-name>
+		<servlet-name>FakeResponser</servlet-name>
+		<servlet-class>
+			com.sun.xml.ws.transport.http.servlet.WSServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FakeResponser</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>
+			FakeResponser REST Service
+		</description>
+		<servlet-name>jerseyServlet</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>ru.diasoft.integration.vtb.service.stub.rest</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jerseyServlet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- servlet-mapping>
+		<servlet-name>FakeResponser</servlet-name>
+		<url-pattern>/OrganizationService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FakeResponser</servlet-name>
+		<url-pattern>/PersonMatchService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FakeResponser</servlet-name>
+		<url-pattern>/PersonService</url-pattern>
+	</servlet-mapping-->		
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+</web-app>
