@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishPersonLoanApplicationStatusReq xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPersonLoanApplicationStatus/PublishPersonLoanApplicationStatusProvA" xmlns:ns0="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPersonLoanApplicationStatus/PublishPersonLoanApplicationStatusProvA">
+   <ns0:DecisionBO type="java.util.Map">
+      <ns0:AppDecision type="java.util.List">
+         <ns0:ListItems>
+            <ns0:Item type="java.util.Map">
+               <ns0:ApplicationID type="java.lang.String">${appId}</ns0:ApplicationID>
+               <ns0:StatusBrief type="java.lang.String">approved</ns0:StatusBrief>
+               <ns0:DecisionSysName type="java.lang.String">approvedWithChange</ns0:DecisionSysName>
+               <ns0:StageCode type="java.lang.String">Кредит одобрен</ns0:StageCode>
+               <ns0:DecisionDate type="java.util.Date">2016-11-11T14:51:03:135+0400</ns0:DecisionDate>
+               <ns0:DecisionTerm type="java.util.Date">2018-11-11T03:00:00:000+0300</ns0:DecisionTerm>
+               <ns0:IncomeAmt type="java.math.BigDecimal">1.00</ns0:IncomeAmt>
+               <ns0:DecisionDetailsFinState type="java.lang.String">Хорошее</ns0:DecisionDetailsFinState>
+               <ns0:DecisionCategory type="java.lang.String">Approve</ns0:DecisionCategory>
+               <ns0:DecisionComment type="java.lang.String">09</ns0:DecisionComment>
+               <ns0:DecisionDetailsAuto type="java.util.List">
+                  <ns0:ListItems>
+                     <ns0:Item type="java.util.Map">
+                        <ns0:MaxMonthlyPayment type="java.math.BigDecimal">28700</ns0:MaxMonthlyPayment>
+                        <ns0:Score type="java.lang.Integer">12</ns0:Score>
+                        <ns0:CutOff type="java.lang.Integer">25</ns0:CutOff>
+                        <ns0:TriggeredMinRequirements type="java.lang.String" />
+                        <ns0:ThresholdN6 type="java.math.BigDecimal">6</ns0:ThresholdN6>
+                        <ns0:DTI type="java.math.BigDecimal" />
+                        <ns0:PINorm type="java.math.BigDecimal">0.50</ns0:PINorm>
+                        <ns0:PICalc1 type="java.math.BigDecimal">0.61</ns0:PICalc1>
+                        <ns0:PICalc2 type="java.math.BigDecimal">0.62</ns0:PICalc2>
+                        <ns0:L1INorm type="java.math.BigDecimal">0.53</ns0:L1INorm>
+                        <ns0:L1ICalc1 type="java.math.BigDecimal">0.64</ns0:L1ICalc1>
+                        <ns0:L1ICalc2 type="java.math.BigDecimal">0.65</ns0:L1ICalc2>
+                        <ns0:L2INorm type="java.math.BigDecimal">0.56</ns0:L2INorm>
+                        <ns0:L2ICalc1 type="java.math.BigDecimal">0.67</ns0:L2ICalc1>
+                        <ns0:L2ICalc2 type="java.math.BigDecimal">0.68</ns0:L2ICalc2>
+                        <ns0:L2IMCNorm type="java.math.BigDecimal">0.59</ns0:L2IMCNorm>
+                        <ns0:L2IMCCalc1 type="java.math.BigDecimal">0.70</ns0:L2IMCCalc1>
+                        <ns0:L2IMCCalc2 type="java.math.BigDecimal">0.71</ns0:L2IMCCalc2>
+                        <ns0:TotalLiab1 type="java.math.BigDecimal">0.72</ns0:TotalLiab1>
+                        <ns0:TotalLiab2 type="java.math.BigDecimal">0.73</ns0:TotalLiab2>
+                        <ns0:summaryLiability type="java.math.BigDecimal">300000</ns0:summaryLiability>
+                        <ns0:maxLoanAmount type="java.math.BigDecimal">400000</ns0:maxLoanAmount>
+                        <ns0:LevelCompetenceRM type="java.lang.String" />
+                     </ns0:Item>
+                  </ns0:ListItems>
+               </ns0:DecisionDetailsAuto>
+               <ns0:ProductClientDecision type="java.util.List">
+                  <ns0:ListItems>
+                     <ns0:Item type="java.util.Map">
+                        <ns0:OfferID type="java.lang.String">2</ns0:OfferID>
+                        <ns0:AlternativeProductID type="java.lang.String" />
+                        <ns0:OfferPriorityFlag type="java.lang.Boolean" />
+                        <ns0:DecisionCode type="java.lang.String">Одобрено</ns0:DecisionCode>
+                        <ns0:DecisionCategory type="java.lang.String">Approve</ns0:DecisionCategory>
+                        <ns0:DecisionDetailsBeginOfAmtRange type="java.math.BigDecimal" />
+                        <ns0:DecisionDetailsEndOfAmtRange type="java.math.BigDecimal" />
+                        <ns0:DecisionDetailsRateOfRange type="java.math.BigDecimal" />
+                        <ns0:DecisionDetailsTermOfRange type="java.lang.Integer">10</ns0:DecisionDetailsTermOfRange>
+                        <ns0:SalaryCategoryFlag type="java.lang.Boolean" />
+                        <ns0:DecisionDetailsFinState type="java.lang.String">Хорошее</ns0:DecisionDetailsFinState>
+                        <ns0:Score type="java.lang.Integer">101</ns0:Score>
+                        <ns0:CutOff type="java.lang.Integer">199</ns0:CutOff>
+                        <ns0:TriggeredMinRequirements type="java.lang.String">Стоп-фактор 1</ns0:TriggeredMinRequirements>
+                        <ns0:DTI type="java.math.BigDecimal">88</ns0:DTI>
+                        <ns0:TotalMonthlyVerifiedIncome type="java.math.BigDecimal">200</ns0:TotalMonthlyVerifiedIncome>
+                        <ns0:TotalMonthlyFamilyIncomePer1Pers type="java.math.BigDecimal">275000.0</ns0:TotalMonthlyFamilyIncomePer1Pers>
+                        <ns0:TotalMonthlyExpenses type="java.math.BigDecimal">48541.47</ns0:TotalMonthlyExpenses>
+                        <ns0:MonthlyPayment type="java.math.BigDecimal">1200</ns0:MonthlyPayment>
+                        <ns0:PaymentHoliday type="java.lang.Boolean" />
+                        <ns0:SBCommentFES type="java.lang.String" />
+                        <ns0:CustAnalysisFlag type="java.lang.Boolean">true</ns0:CustAnalysisFlag>
+                        <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                        <ns0:Deposits type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:DepositSource type="java.lang.String">cm.SystemInstance.DWH</ns0:DepositSource>
+                                 <ns0:DepositSourceName type="java.lang.String">Корпоративное хранилище данных</ns0:DepositSourceName>
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:DepositAgreement type="java.lang.String" />
+                                 <ns0:DepositIntRate type="java.math.BigDecimal">12</ns0:DepositIntRate>
+                                 <ns0:DepositCurrency type="java.lang.String">USD</ns0:DepositCurrency>
+                                 <ns0:DepositBalance type="java.math.BigDecimal">799000</ns0:DepositBalance>
+                                 <ns0:DepositAddFeeFlag type="java.lang.Boolean">true</ns0:DepositAddFeeFlag>
+                                 <ns0:DepositAdvanceCloseFlag type="java.lang.Boolean">true</ns0:DepositAdvanceCloseFlag>
+                                 <ns0:DepositRemProlongationsAmt type="java.lang.Integer">5</ns0:DepositRemProlongationsAmt>
+                                 <ns0:DepositMinBalance type="java.math.BigDecimal">99000</ns0:DepositMinBalance>
+                                 <ns0:DepositMinContribution type="java.math.BigDecimal">11000</ns0:DepositMinContribution>
+                                 <ns0:DepositMinInstallment type="java.math.BigDecimal">12000</ns0:DepositMinInstallment>
+                                 <ns0:DepositOpenDate type="java.util.Date">2014-01-01T03:00:00:000+0300</ns0:DepositOpenDate>
+                                 <ns0:DepositEndDate type="java.util.Date">2014-03-01T03:00:00:000+0300</ns0:DepositEndDate>
+                                 <ns0:DepositCloseDate type="java.util.Date">2014-02-01T03:00:00:000+0300</ns0:DepositCloseDate>
+                                 <ns0:DepositPaymentFrequency type="java.lang.String">Ежемесячно</ns0:DepositPaymentFrequency>
+                                 <ns0:DepositChannel type="java.lang.String">ВТБО</ns0:DepositChannel>
+                                 <ns0:DepositMinInvestFlag type="java.lang.Boolean">true</ns0:DepositMinInvestFlag>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:Deposits>
+                        <ns0:OtherLiabilities type="java.util.List">
+                           <ns0:ListItems />
+                        </ns0:OtherLiabilities>
+                        <ns0:ContributionsToPFR type="java.util.List">
+                           <ns0:ListItems />
+                        </ns0:ContributionsToPFR>
+                        <ns0:CurrentAccounts type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817810076000004093</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2009-12-30T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">RUB</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00000</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817840835001001934</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2011-12-21T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsEndDate type="java.util.Date">2016-04-25T03:00:00:000+0300</ns0:CurrentAccountsEndDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">USD</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817810035001002174</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2011-12-21T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsEndDate type="java.util.Date">2016-04-25T03:00:00:000+0300</ns0:CurrentAccountsEndDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">RUB</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817810076000004093</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2009-12-30T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">RUB</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.0</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817840835001001934</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2011-12-21T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">USD</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00000</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817810835004007664</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2016-09-20T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">RUB</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Мастер счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817978635001001925</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2011-12-21T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">EUR</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00000</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817840435004006556</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2016-09-20T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">USD</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Мастер счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817978635001001925</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2011-12-21T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsEndDate type="java.util.Date">2016-04-25T03:00:00:000+0300</ns0:CurrentAccountsEndDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">EUR</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817978035004006556</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2016-09-20T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">EUR</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Мастер счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817810035001002174</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2011-12-21T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">RUB</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00000</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:CurrentAccountsNumber type="java.lang.String">40817810076000004093</ns0:CurrentAccountsNumber>
+                                 <ns0:CurrentAccountsOpenDate type="java.util.Date">2009-12-30T03:00:00:000+0300</ns0:CurrentAccountsOpenDate>
+                                 <ns0:CurrentAccountsCode type="java.lang.String">RUB</ns0:CurrentAccountsCode>
+                                 <ns0:CurrentAccountsBalance type="java.math.BigDecimal">0.00000</ns0:CurrentAccountsBalance>
+                                 <ns0:CurrentAccountsSource type="java.lang.String">0000</ns0:CurrentAccountsSource>
+                                 <ns0:CurrentAccountsSourceName type="java.lang.String">Бисквит. Головной Банк</ns0:CurrentAccountsSourceName>
+                                 <ns0:CurrentAccountsType type="java.lang.String">Текущий счет</ns0:CurrentAccountsType>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:CurrentAccounts>
+                        <ns0:Liabilities type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:LoanID type="java.lang.String">1/WSPPLL2</ns0:LoanID>
+                                 <ns0:LiabilityType type="java.lang.String">Потребительский кредит</ns0:LiabilityType>
+                                 <ns0:Type type="java.lang.String">Кредитная заявка</ns0:Type>
+                                 <ns0:OpenDate type="java.util.Date">2016-11-02T03:00:00:000+0300</ns0:OpenDate>
+                                 <ns0:MaturityDate type="java.util.Date">2012-11-02T03:00:00:000+0300</ns0:MaturityDate>
+                                 <ns0:InitialAmount type="java.math.BigDecimal">400000.0</ns0:InitialAmount>
+                                 <ns0:OutstandingAmount type="java.math.BigDecimal">400000.0</ns0:OutstandingAmount>
+                                 <ns0:PastDueAmount type="java.math.BigDecimal">0.0</ns0:PastDueAmount>
+                                 <ns0:PastDueTerm type="java.lang.Integer">0</ns0:PastDueTerm>
+                                 <ns0:MonthlyPaymentAmt type="java.math.BigDecimal">9624.63</ns0:MonthlyPaymentAmt>
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:CloseDate type="java.util.Date">2011-11-19T03:00:00:000+0300</ns0:CloseDate>
+                                 <ns0:ProductCode type="java.lang.String">ПЩ</ns0:ProductCode>
+                                 <ns0:CurrencyCode type="java.lang.String">RUB</ns0:CurrencyCode>
+                                 <ns0:SystemCode type="java.lang.String">0000</ns0:SystemCode>
+                                 <ns0:PmtString84M type="java.lang.String">Да</ns0:PmtString84M>
+                                 <ns0:PmtString84MOpenDate type="java.lang.String">2015-01-01T00:00:00+04:00</ns0:PmtString84MOpenDate>
+                                 <ns0:Delq5 type="java.lang.Integer">0</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">0</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:MaxPastDueAmount type="java.math.BigDecimal">0</ns0:MaxPastDueAmount>
+                                 <ns0:MaxPastDueTerm type="java.math.BigDecimal">0</ns0:MaxPastDueTerm>
+                                 <ns0:InitialCreditNumber type="java.lang.String">НКК-00001</ns0:InitialCreditNumber>
+                                 <ns0:LinksSign type="java.lang.String">Родительская по отношению к договору</ns0:LinksSign>
+                                 <ns0:ProlongationAmt type="java.lang.Integer">0</ns0:ProlongationAmt>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:InterestRate type="java.math.BigDecimal">21</ns0:InterestRate>
+                                 <ns0:Status type="java.lang.String">Открыт</ns0:Status>
+                                 <ns0:DelqF6T30L12M type="java.lang.Integer">1</ns0:DelqF6T30L12M>
+                                 <ns0:DelqF31T60L12M type="java.lang.Integer">2</ns0:DelqF31T60L12M>
+                                 <ns0:DelqF61T90L12M type="java.lang.Integer">3</ns0:DelqF61T90L12M>
+                                 <ns0:Delq90PlusL12M type="java.lang.Integer">4</ns0:Delq90PlusL12M>
+                                 <ns0:ApplyFlag type="java.lang.Boolean">true</ns0:ApplyFlag>
+                                 <ns0:FullSaleFlag type="java.lang.Boolean">false</ns0:FullSaleFlag>
+                                 <ns0:RefinanceFlag type="java.lang.Boolean">false</ns0:RefinanceFlag>
+                                 <ns0:PrincipalRepaymentPart type="java.math.BigDecimal">35</ns0:PrincipalRepaymentPart>
+                                 <ns0:RepaymentSpeed type="java.math.BigDecimal">99</ns0:RepaymentSpeed>
+                                 <ns0:ReducedDocumentSetFlag type="java.lang.Boolean">true</ns0:ReducedDocumentSetFlag>
+                                 <ns0:DebtRecoveryInCourtFlag type="java.lang.Boolean">true</ns0:DebtRecoveryInCourtFlag>
+                                 <ns0:RepayByCollateralFlag type="java.lang.Boolean">true</ns0:RepayByCollateralFlag>
+                                 <ns0:RepayByCollateralStateInfo type="java.lang.String">Информация отсутствует</ns0:RepayByCollateralStateInfo>
+                                 <ns0:SourceID type="java.lang.String">Обязательство из внутренних источников (учетная система)</ns0:SourceID>
+                                 <ns0:ConfirmDate type="java.util.Date">2016-11-11T03:00:00:000+0300</ns0:ConfirmDate>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:LoanID type="java.lang.String">633/3500-0000547</ns0:LoanID>
+                                 <ns0:LiabilityType type="java.lang.String">Кредитная карта</ns0:LiabilityType>
+                                 <ns0:Type type="java.lang.String">Потребительский кредит</ns0:Type>
+                                 <ns0:OpenDate type="java.util.Date">2009-12-26T03:00:00:000+0300</ns0:OpenDate>
+                                 <ns0:MaturityDate type="java.util.Date">2040-01-18T03:00:00:000+0300</ns0:MaturityDate>
+                                 <ns0:InitialAmount type="java.math.BigDecimal">0.0</ns0:InitialAmount>
+                                 <ns0:OutstandingAmount type="java.math.BigDecimal">0.0</ns0:OutstandingAmount>
+                                 <ns0:PastDueAmount type="java.math.BigDecimal">0.0</ns0:PastDueAmount>
+                                 <ns0:PastDueTerm type="java.lang.Integer">0</ns0:PastDueTerm>
+                                 <ns0:MonthlyPaymentAmt type="java.math.BigDecimal">0.0</ns0:MonthlyPaymentAmt>
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:CloseDate type="java.util.Date">2011-12-17T03:00:00:000+0300</ns0:CloseDate>
+                                 <ns0:ProductCode type="java.lang.String">КЗ</ns0:ProductCode>
+                                 <ns0:CurrencyCode type="java.lang.String">RUB</ns0:CurrencyCode>
+                                 <ns0:SystemCode type="java.lang.String">0000</ns0:SystemCode>
+                                 <ns0:PmtString84M type="java.lang.String">111111111111111111A1A1110</ns0:PmtString84M>
+                                 <ns0:PmtString84MOpenDate type="java.lang.String">2009-12-26T00:00:00+03:00</ns0:PmtString84MOpenDate>
+                                 <ns0:Delq5 type="java.lang.Integer">1</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">2</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:MaxPastDueAmount type="java.math.BigDecimal">1951.33000</ns0:MaxPastDueAmount>
+                                 <ns0:MaxPastDueTerm type="java.math.BigDecimal">7</ns0:MaxPastDueTerm>
+                                 <ns0:InitialCreditNumber type="java.lang.String" />
+                                 <ns0:ProlongationAmt type="java.lang.Integer">0</ns0:ProlongationAmt>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:InterestRate type="java.math.BigDecimal" />
+                                 <ns0:Status type="java.lang.String">Закрыт</ns0:Status>
+                                 <ns0:DelqF6T30L12M type="java.lang.Integer" />
+                                 <ns0:DelqF31T60L12M type="java.lang.Integer" />
+                                 <ns0:DelqF61T90L12M type="java.lang.Integer" />
+                                 <ns0:Delq90PlusL12M type="java.lang.Integer" />
+                                 <ns0:ApplyFlag type="java.lang.Boolean">true</ns0:ApplyFlag>
+                                 <ns0:FullSaleFlag type="java.lang.Boolean">false</ns0:FullSaleFlag>
+                                 <ns0:RefinanceFlag type="java.lang.Boolean">false</ns0:RefinanceFlag>
+                                 <ns0:PrincipalRepaymentPart type="java.math.BigDecimal" />
+                                 <ns0:RepaymentSpeed type="java.math.BigDecimal" />
+                                 <ns0:ReducedDocumentSetFlag type="java.lang.Boolean" />
+                                 <ns0:DebtRecoveryInCourtFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralStateInfo type="java.lang.String" />
+                                 <ns0:SourceID type="java.lang.String">Обязательство из внутренних источников (учетная система)</ns0:SourceID>
+                                 <ns0:ConfirmDate type="java.util.Date">2016-11-11T03:00:00:000+0300</ns0:ConfirmDate>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:LoanID type="java.lang.String">625/0000-0202651</ns0:LoanID>
+                                 <ns0:LiabilityType type="java.lang.String">Потребительский кредит</ns0:LiabilityType>
+                                 <ns0:Type type="java.lang.String">Потребительский кредит</ns0:Type>
+                                 <ns0:OpenDate type="java.util.Date">2013-12-20T03:00:00:000+0300</ns0:OpenDate>
+                                 <ns0:MaturityDate type="java.util.Date">2020-12-21T03:00:00:000+0300</ns0:MaturityDate>
+                                 <ns0:InitialAmount type="java.math.BigDecimal">826000.0</ns0:InitialAmount>
+                                 <ns0:OutstandingAmount type="java.math.BigDecimal">630575.03</ns0:OutstandingAmount>
+                                 <ns0:PastDueAmount type="java.math.BigDecimal">0.0</ns0:PastDueAmount>
+                                 <ns0:PastDueTerm type="java.lang.Integer">0</ns0:PastDueTerm>
+                                 <ns0:MonthlyPaymentAmt type="java.math.BigDecimal">19400.87</ns0:MonthlyPaymentAmt>
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:ProductCode type="java.lang.String">ПИ</ns0:ProductCode>
+                                 <ns0:CurrencyCode type="java.lang.String">RUB</ns0:CurrencyCode>
+                                 <ns0:SystemCode type="java.lang.String">0000</ns0:SystemCode>
+                                 <ns0:PmtString84M type="java.lang.String">111111111111111111111111111111111110</ns0:PmtString84M>
+                                 <ns0:PmtString84MOpenDate type="java.lang.String">2013-12-20T00:00:00+04:00</ns0:PmtString84MOpenDate>
+                                 <ns0:Delq5 type="java.lang.Integer">0</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">0</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:MaxPastDueAmount type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmount>
+                                 <ns0:MaxPastDueTerm type="java.math.BigDecimal">0</ns0:MaxPastDueTerm>
+                                 <ns0:InitialCreditNumber type="java.lang.String" />
+                                 <ns0:ProlongationAmt type="java.lang.Integer">0</ns0:ProlongationAmt>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:InterestRate type="java.math.BigDecimal" />
+                                 <ns0:Status type="java.lang.String">Открыт</ns0:Status>
+                                 <ns0:DelqF6T30L12M type="java.lang.Integer" />
+                                 <ns0:DelqF31T60L12M type="java.lang.Integer" />
+                                 <ns0:DelqF61T90L12M type="java.lang.Integer" />
+                                 <ns0:Delq90PlusL12M type="java.lang.Integer" />
+                                 <ns0:ApplyFlag type="java.lang.Boolean">true</ns0:ApplyFlag>
+                                 <ns0:FullSaleFlag type="java.lang.Boolean">false</ns0:FullSaleFlag>
+                                 <ns0:RefinanceFlag type="java.lang.Boolean">false</ns0:RefinanceFlag>
+                                 <ns0:PrincipalRepaymentPart type="java.math.BigDecimal" />
+                                 <ns0:RepaymentSpeed type="java.math.BigDecimal" />
+                                 <ns0:ReducedDocumentSetFlag type="java.lang.Boolean" />
+                                 <ns0:DebtRecoveryInCourtFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralStateInfo type="java.lang.String" />
+                                 <ns0:SourceID type="java.lang.String">Обязательство из внутренних источников (учетная система)</ns0:SourceID>
+                                 <ns0:ConfirmDate type="java.util.Date">2016-11-11T03:00:00:000+0300</ns0:ConfirmDate>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:LoanID type="java.lang.String">1-WSPPLL2</ns0:LoanID>
+                                 <ns0:LiabilityType type="java.lang.String">Потребительский кредит</ns0:LiabilityType>
+                                 <ns0:Type type="java.lang.String">Кредитная заявка</ns0:Type>
+                                 <ns0:OpenDate type="java.util.Date">2016-10-28T03:00:00:000+0300</ns0:OpenDate>
+                                 <ns0:InitialAmount type="java.math.BigDecimal">400000</ns0:InitialAmount>
+                                 <ns0:OutstandingAmount type="java.math.BigDecimal">400000</ns0:OutstandingAmount>
+                                 <ns0:PastDueAmount type="java.math.BigDecimal">0</ns0:PastDueAmount>
+                                 <ns0:PastDueTerm type="java.lang.Integer">0</ns0:PastDueTerm>
+                                 <ns0:MonthlyPaymentAmt type="java.math.BigDecimal">9515.97</ns0:MonthlyPaymentAmt>
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:ProductCode type="java.lang.String">ПЩ</ns0:ProductCode>
+                                 <ns0:CurrencyCode type="java.lang.String">RUB</ns0:CurrencyCode>
+                                 <ns0:SystemCode type="java.lang.String">0002</ns0:SystemCode>
+                                 <ns0:PmtString84M type="java.lang.String" />
+                                 <ns0:PmtString84MOpenDate type="java.lang.String" />
+                                 <ns0:Delq5 type="java.lang.Integer">0</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">0</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:MaxPastDueAmount type="java.math.BigDecimal">0</ns0:MaxPastDueAmount>
+                                 <ns0:MaxPastDueTerm type="java.math.BigDecimal">0</ns0:MaxPastDueTerm>
+                                 <ns0:InitialCreditNumber type="java.lang.String" />
+                                 <ns0:ProlongationAmt type="java.lang.Integer">0</ns0:ProlongationAmt>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:InterestRate type="java.math.BigDecimal" />
+                                 <ns0:Status type="java.lang.String">Открыт</ns0:Status>
+                                 <ns0:DelqF6T30L12M type="java.lang.Integer" />
+                                 <ns0:DelqF31T60L12M type="java.lang.Integer" />
+                                 <ns0:DelqF61T90L12M type="java.lang.Integer" />
+                                 <ns0:Delq90PlusL12M type="java.lang.Integer" />
+                                 <ns0:ApplyFlag type="java.lang.Boolean">false</ns0:ApplyFlag>
+                                 <ns0:FullSaleFlag type="java.lang.Boolean">false</ns0:FullSaleFlag>
+                                 <ns0:RefinanceFlag type="java.lang.Boolean">false</ns0:RefinanceFlag>
+                                 <ns0:PrincipalRepaymentPart type="java.math.BigDecimal" />
+                                 <ns0:RepaymentSpeed type="java.math.BigDecimal" />
+                                 <ns0:ReducedDocumentSetFlag type="java.lang.Boolean" />
+                                 <ns0:DebtRecoveryInCourtFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralStateInfo type="java.lang.String" />
+                                 <ns0:SourceID type="java.lang.String">Обязательство из внутренних источников (учетная система)</ns0:SourceID>
+                                 <ns0:ConfirmDate type="java.util.Date">2016-11-11T03:00:00:000+0300</ns0:ConfirmDate>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:LoanID type="java.lang.String">633/3500-0003047</ns0:LoanID>
+                                 <ns0:LiabilityType type="java.lang.String">Кредитная карта</ns0:LiabilityType>
+                                 <ns0:Type type="java.lang.String">Потребительский кредит</ns0:Type>
+                                 <ns0:OpenDate type="java.util.Date">2011-12-19T03:00:00:000+0300</ns0:OpenDate>
+                                 <ns0:MaturityDate type="java.util.Date">2011-12-23T03:00:00:000+0300</ns0:MaturityDate>
+                                 <ns0:InitialAmount type="java.math.BigDecimal">200000.0</ns0:InitialAmount>
+                                 <ns0:OutstandingAmount type="java.math.BigDecimal">117691.16</ns0:OutstandingAmount>
+                                 <ns0:PastDueAmount type="java.math.BigDecimal">0.0</ns0:PastDueAmount>
+                                 <ns0:PastDueTerm type="java.lang.Integer">0</ns0:PastDueTerm>
+                                 <ns0:MonthlyPaymentAmt type="java.math.BigDecimal">28700.0</ns0:MonthlyPaymentAmt>
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:ProductCode type="java.lang.String">КЩ</ns0:ProductCode>
+                                 <ns0:CurrencyCode type="java.lang.String">RUB</ns0:CurrencyCode>
+                                 <ns0:SystemCode type="java.lang.String">0000</ns0:SystemCode>
+                                 <ns0:PmtString84M type="java.lang.String">11111111111A11A1111111111AAAAA1AA111A11111111111111111111110</ns0:PmtString84M>
+                                 <ns0:PmtString84MOpenDate type="java.lang.String">2011-12-19T00:00:00+04:00</ns0:PmtString84MOpenDate>
+                                 <ns0:Delq5 type="java.lang.Integer">3</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">8</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:MaxPastDueAmount type="java.math.BigDecimal">9342.53000</ns0:MaxPastDueAmount>
+                                 <ns0:MaxPastDueTerm type="java.math.BigDecimal">8</ns0:MaxPastDueTerm>
+                                 <ns0:InitialCreditNumber type="java.lang.String" />
+                                 <ns0:ProlongationAmt type="java.lang.Integer">0</ns0:ProlongationAmt>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:InterestRate type="java.math.BigDecimal" />
+                                 <ns0:Status type="java.lang.String">Открыт</ns0:Status>
+                                 <ns0:DelqF6T30L12M type="java.lang.Integer" />
+                                 <ns0:DelqF31T60L12M type="java.lang.Integer" />
+                                 <ns0:DelqF61T90L12M type="java.lang.Integer" />
+                                 <ns0:Delq90PlusL12M type="java.lang.Integer" />
+                                 <ns0:ApplyFlag type="java.lang.Boolean">true</ns0:ApplyFlag>
+                                 <ns0:FullSaleFlag type="java.lang.Boolean">false</ns0:FullSaleFlag>
+                                 <ns0:RefinanceFlag type="java.lang.Boolean">false</ns0:RefinanceFlag>
+                                 <ns0:PrincipalRepaymentPart type="java.math.BigDecimal" />
+                                 <ns0:RepaymentSpeed type="java.math.BigDecimal" />
+                                 <ns0:ReducedDocumentSetFlag type="java.lang.Boolean" />
+                                 <ns0:DebtRecoveryInCourtFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralStateInfo type="java.lang.String" />
+                                 <ns0:SourceID type="java.lang.String">Обязательство из внутренних источников (учетная система)</ns0:SourceID>
+                                 <ns0:ConfirmDate type="java.util.Date">2016-11-11T03:00:00:000+0300</ns0:ConfirmDate>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                                 <ns0:LoanID type="java.lang.String">625/3500-0002845</ns0:LoanID>
+                                 <ns0:LiabilityType type="java.lang.String">Потребительский кредит</ns0:LiabilityType>
+                                 <ns0:Type type="java.lang.String">Потребительский кредит</ns0:Type>
+                                 <ns0:OpenDate type="java.util.Date">2009-12-30T03:00:00:000+0300</ns0:OpenDate>
+                                 <ns0:MaturityDate type="java.util.Date">2011-12-30T03:00:00:000+0300</ns0:MaturityDate>
+                                 <ns0:InitialAmount type="java.math.BigDecimal">300000.0</ns0:InitialAmount>
+                                 <ns0:OutstandingAmount type="java.math.BigDecimal">0.0</ns0:OutstandingAmount>
+                                 <ns0:PastDueAmount type="java.math.BigDecimal">0.0</ns0:PastDueAmount>
+                                 <ns0:PastDueTerm type="java.lang.Integer">0</ns0:PastDueTerm>
+                                 <ns0:MonthlyPaymentAmt type="java.math.BigDecimal">0.0</ns0:MonthlyPaymentAmt>
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:CloseDate type="java.util.Date">2013-12-27T03:00:00:000+0300</ns0:CloseDate>
+                                 <ns0:ProductCode type="java.lang.String">ПБ</ns0:ProductCode>
+                                 <ns0:CurrencyCode type="java.lang.String">RUB</ns0:CurrencyCode>
+                                 <ns0:SystemCode type="java.lang.String">0000</ns0:SystemCode>
+                                 <ns0:PmtString84M type="java.lang.String">111111111111111111111111111111A111111111111111110</ns0:PmtString84M>
+                                 <ns0:PmtString84MOpenDate type="java.lang.String">2009-12-30T00:00:00+03:00</ns0:PmtString84MOpenDate>
+                                 <ns0:Delq5 type="java.lang.Integer">1</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">1</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:MaxPastDueAmount type="java.math.BigDecimal">8171.48000</ns0:MaxPastDueAmount>
+                                 <ns0:MaxPastDueTerm type="java.math.BigDecimal">1</ns0:MaxPastDueTerm>
+                                 <ns0:InitialCreditNumber type="java.lang.String" />
+                                 <ns0:ProlongationAmt type="java.lang.Integer">0</ns0:ProlongationAmt>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:InterestRate type="java.math.BigDecimal" />
+                                 <ns0:Status type="java.lang.String">Закрыт</ns0:Status>
+                                 <ns0:DelqF6T30L12M type="java.lang.Integer" />
+                                 <ns0:DelqF31T60L12M type="java.lang.Integer" />
+                                 <ns0:DelqF61T90L12M type="java.lang.Integer" />
+                                 <ns0:Delq90PlusL12M type="java.lang.Integer" />
+                                 <ns0:ApplyFlag type="java.lang.Boolean">true</ns0:ApplyFlag>
+                                 <ns0:FullSaleFlag type="java.lang.Boolean">false</ns0:FullSaleFlag>
+                                 <ns0:RefinanceFlag type="java.lang.Boolean">false</ns0:RefinanceFlag>
+                                 <ns0:PrincipalRepaymentPart type="java.math.BigDecimal" />
+                                 <ns0:RepaymentSpeed type="java.math.BigDecimal" />
+                                 <ns0:ReducedDocumentSetFlag type="java.lang.Boolean" />
+                                 <ns0:DebtRecoveryInCourtFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralFlag type="java.lang.Boolean" />
+                                 <ns0:RepayByCollateralStateInfo type="java.lang.String" />
+                                 <ns0:SourceID type="java.lang.String">Обязательство из внутренних источников (учетная система)</ns0:SourceID>
+                                 <ns0:ConfirmDate type="java.util.Date">2016-11-11T03:00:00:000+0300</ns0:ConfirmDate>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:Liabilities>
+                        <ns0:InternalLiabilitiesAggregate type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Delq5 type="java.lang.Integer">0</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">1</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:MaxPastDueAmount5 type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmount5>
+                                 <ns0:MaxPastDueAmountF6T30 type="java.math.BigDecimal" />
+                                 <ns0:MaxPastDueAmountF31T60 type="java.math.BigDecimal" />
+                                 <ns0:MaxPastDueAmountF61T90 type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmountF61T90>
+                                 <ns0:MaxPastDueAmount90Plus type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmount90Plus>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Delq5 type="java.lang.Integer">0</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">1</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:MaxPastDueAmount5 type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmount5>
+                                 <ns0:MaxPastDueAmountF6T30 type="java.math.BigDecimal" />
+                                 <ns0:MaxPastDueAmountF31T60 type="java.math.BigDecimal" />
+                                 <ns0:MaxPastDueAmountF61T90 type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmountF61T90>
+                                 <ns0:MaxPastDueAmount90Plus type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmount90Plus>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Delq5 type="java.lang.Integer">0</ns0:Delq5>
+                                 <ns0:DelqF6T30 type="java.lang.Integer">1</ns0:DelqF6T30>
+                                 <ns0:DelqF31T60 type="java.lang.Integer">0</ns0:DelqF31T60>
+                                 <ns0:DelqF61T90 type="java.lang.Integer">0</ns0:DelqF61T90>
+                                 <ns0:Delq90Plus type="java.lang.Integer">0</ns0:Delq90Plus>
+                                 <ns0:MaxPastDueAmount5 type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmount5>
+                                 <ns0:MaxPastDueAmountF6T30 type="java.math.BigDecimal" />
+                                 <ns0:MaxPastDueAmountF31T60 type="java.math.BigDecimal" />
+                                 <ns0:MaxPastDueAmountF61T90 type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmountF61T90>
+                                 <ns0:MaxPastDueAmount90Plus type="java.math.BigDecimal">0.00000</ns0:MaxPastDueAmount90Plus>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:InternalLiabilitiesAggregate>
+                        <ns0:ExternalLiabilitiesAggregate type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 90 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 7 до 12 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 60 до 89 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 1 до 5 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 1 до 3 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 30 до 59 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 5 до 29 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 1 до 3 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 5 до 29 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 30 до 59 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 1 до 3 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 1 до 5 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 60 до 89 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 1 до 3 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 90 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">Более 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 90 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 1 до 3 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 60 до 89 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">Более 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 1 до 5 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 4 до 6 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 30 до 59 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">Более 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 5 до 29 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 4 до 6 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 5 до 29 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">Более 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 30 до 59 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 4 до 6 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 1 до 5 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">Более 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 60 до 89 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 4 до 6 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 90 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 13 до 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 90 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 4 до 6 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 60 до 89 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 13 до 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 1 до 5 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 7 до 12 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 30 до 59 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 13 до 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 5 до 29 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 7 до 12 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 5 до 29 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 13 до 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 30 до 59 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 7 до 12 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 1 до 5 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 13 до 15 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 60 до 89 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                                 <ns0:TermPeriodType type="java.lang.String">От 7 до 12 месяцев</ns0:TermPeriodType>
+                              </ns0:Item>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:Range type="java.lang.String">От 90 дней</ns0:Range>
+                                 <ns0:Delq type="java.lang.Integer">0</ns0:Delq>
+                                 <ns0:MaxPastDueAmountEver type="java.math.BigDecimal">113</ns0:MaxPastDueAmountEver>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:ExternalLiabilitiesAggregate>
+                        <ns0:FutureMonthlyExpenses type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:ExpenseType type="java.lang.String">N/A</ns0:ExpenseType>
+                                 <ns0:ExpenseValue type="java.math.BigDecimal">48541.47</ns0:ExpenseValue>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:FutureMonthlyExpenses>
+                     </ns0:Item>
+                  </ns0:ListItems>
+               </ns0:ProductClientDecision>
+            </ns0:Item>
+         </ns0:ListItems>
+      </ns0:AppDecision>
+      <ns0:RbgResponse type="java.util.List">
+         <ns0:ListItems>
+            <ns0:Item type="java.util.Map">
+               <ns0:RbgPerson type="java.util.List">
+                  <ns0:ListItems>
+                     <ns0:Item type="java.util.Map">
+                        <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                        <ns0:ClientUIC type="java.lang.String">1069764912</ns0:ClientUIC>
+                        <ns0:Surname type="java.lang.String">Иванов</ns0:Surname>
+                        <ns0:Name type="java.lang.String">Иван</ns0:Name>
+                        <ns0:MiddleName type="java.lang.String">Иванович</ns0:MiddleName>
+                        <ns0:BirthDate type="java.util.Date">1980-09-10T03:00:00:000+0300</ns0:BirthDate>
+                        <ns0:BirthPlace type="java.lang.String">Калининградская область, г. Калининград</ns0:BirthPlace>
+                        <ns0:Gender type="java.lang.Byte">0</ns0:Gender>
+                        <ns0:Documents type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:ClientUIC type="java.lang.String">1069764912</ns0:ClientUIC>
+                                 <ns0:CountryCode type="java.lang.String">RU</ns0:CountryCode>
+                                 <ns0:DocType type="java.lang.String">PassportRF</ns0:DocType>
+                                 <ns0:Series type="java.lang.String">5703</ns0:Series>
+                                 <ns0:Number type="java.lang.String">123321</ns0:Number>
+                                 <ns0:IssueDate type="java.util.Date">2000-08-13T03:00:00:000+0300</ns0:IssueDate>
+                                 <ns0:ExpDate type="java.util.Date">2025-08-13T03:00:00:000+0300</ns0:ExpDate>
+                                 <ns0:Issuer type="java.lang.String">РОВД по г. Калининграду</ns0:Issuer>
+                                 <ns0:IssueDivisionCode type="java.lang.String">212</ns0:IssueDivisionCode>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:Documents>
+                     </ns0:Item>
+                  </ns0:ListItems>
+               </ns0:RbgPerson>
+               <ns0:RbgLegalPerson type="java.util.List">
+                  <ns0:ListItems>
+                     <ns0:Item type="java.util.Map">
+                        <ns0:ClientID type="java.lang.Long" />
+                        <ns0:ClientUIC type="java.lang.String">1069764912</ns0:ClientUIC>
+                        <ns0:FullName type="java.lang.String">ООО Рога и копыта</ns0:FullName>
+                        <ns0:ShortName type="java.lang.String">Рога и копыта</ns0:ShortName>
+                        <ns0:Country type="java.lang.String">RU</ns0:Country>
+                        <ns0:LegalStatus type="java.lang.String">Не указан</ns0:LegalStatus>
+                        <ns0:RegistrationDocuments type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:ClientUIC type="java.lang.String">1069764912</ns0:ClientUIC>
+                                 <ns0:CorpIdentDocument type="java.lang.String">890939</ns0:CorpIdentDocument>
+                                 <ns0:LoggingOrganisation type="java.lang.String">Налоговая инспекция</ns0:LoggingOrganisation>
+                                 <ns0:RegistrationDate type="java.util.Date">2014-08-13T03:00:00:000+0300</ns0:RegistrationDate>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:RegistrationDocuments>
+                        <ns0:RbgBusinessIdentifiers type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                                 <ns0:ClientUIC type="java.lang.String">1069764912</ns0:ClientUIC>
+                                 <ns0:OrgTaxCode type="java.lang.String">7709123456</ns0:OrgTaxCode>
+                                 <ns0:Rnnbo type="java.lang.String">876543321</ns0:Rnnbo>
+                                 <ns0:Psrn type="java.lang.String">1234567890123</ns0:Psrn>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:RbgBusinessIdentifiers>
+                     </ns0:Item>
+                  </ns0:ListItems>
+               </ns0:RbgLegalPerson>
+               <ns0:Links type="java.util.List">
+                  <ns0:ListItems>
+                     <ns0:Item type="java.util.Map">
+                        <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+                        <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                        <ns0:ClientUIC type="java.lang.String">1069764912</ns0:ClientUIC>
+                        <ns0:SubjToSubjLinkType type="java.lang.String">Son</ns0:SubjToSubjLinkType>
+                        <ns0:SubjToSubjLinkSort type="java.lang.String">Прямая</ns0:SubjToSubjLinkSort>
+                        <ns0:LinkEstablishDate type="java.util.Date">2015-08-13T03:00:00:000+0300</ns0:LinkEstablishDate>
+                        <ns0:LinkBreakDate type="java.util.Date">2016-08-13T03:00:00:000+0300</ns0:LinkBreakDate>
+                        <ns0:RGBNumber type="java.lang.String">12</ns0:RGBNumber>
+                        <ns0:ClientIDFrom type="java.lang.Long">1069664912</ns0:ClientIDFrom>
+                        <ns0:ClientUICFrom type="java.lang.String">1069764912</ns0:ClientUICFrom>
+                        <ns0:AttributesLink type="java.util.List">
+                           <ns0:ListItems>
+                              <ns0:Item type="java.util.Map">
+                                 <ns0:LinkAttID type="java.lang.Long">1</ns0:LinkAttID>
+                                 <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+                                 <ns0:Agreement type="java.lang.String">120909</ns0:Agreement>
+                                 <ns0:Part type="java.math.BigDecimal">12</ns0:Part>
+                              </ns0:Item>
+                           </ns0:ListItems>
+                        </ns0:AttributesLink>
+                     </ns0:Item>
+                  </ns0:ListItems>
+               </ns0:Links>
+               <ns0:LiabilitiesDetails type="java.util.List">
+                  <ns0:ListItems>
+                     <ns0:Item type="java.util.Map">
+                        <ns0:Branch type="java.lang.String">0000</ns0:Branch>
+                        <ns0:ProductCode type="java.lang.String">PRODUCT-1</ns0:ProductCode>
+                        <ns0:SystemCode type="java.lang.String">OM</ns0:SystemCode>
+                        <ns0:InitialCreditNumber type="java.lang.String">178500</ns0:InitialCreditNumber>
+                        <ns0:CreditStatus type="java.lang.String">Открыт</ns0:CreditStatus>
+                        <ns0:LiabilityType type="java.lang.String">Потребительский кредит</ns0:LiabilityType>
+                        <ns0:Type type="java.lang.String">Потребительский кредит</ns0:Type>
+                        <ns0:OpenDate type="java.util.Date">2016-01-01T03:00:00:000+0300</ns0:OpenDate>
+                        <ns0:MaturityDate type="java.util.Date">2018-01-01T03:00:00:000+0300</ns0:MaturityDate>
+                        <ns0:CloseDate type="java.util.Date">2017-12-31T03:00:00:000+0300</ns0:CloseDate>
+                        <ns0:InitialAmount type="java.math.BigDecimal">6000000</ns0:InitialAmount>
+                        <ns0:CurrentAmount type="java.math.BigDecimal">3000000</ns0:CurrentAmount>
+                        <ns0:PastDueAmount type="java.math.BigDecimal">1000</ns0:PastDueAmount>
+                        <ns0:PastDueTerm type="java.lang.Integer">2</ns0:PastDueTerm>
+                        <ns0:MonthlyPaymentAmt type="java.math.BigDecimal">2.71</ns0:MonthlyPaymentAmt>
+                        <ns0:Delq5 type="java.lang.Integer">5</ns0:Delq5>
+                        <ns0:DelqF6T30 type="java.lang.Integer">4</ns0:DelqF6T30>
+                        <ns0:DelqF31T60 type="java.lang.Integer">3</ns0:DelqF31T60>
+                        <ns0:DelqF61T90 type="java.lang.Integer">2</ns0:DelqF61T90>
+                        <ns0:Delq90Plus type="java.lang.Integer">1</ns0:Delq90Plus>
+                        <ns0:LinksSign type="java.lang.String">Родительская по отношению к договору</ns0:LinksSign>
+                        <ns0:ClientUIC type="java.lang.String">1069764912</ns0:ClientUIC>
+                        <ns0:ClientID type="java.lang.Long">1069664912</ns0:ClientID>
+                     </ns0:Item>
+                  </ns0:ListItems>
+               </ns0:LiabilitiesDetails>
+            </ns0:Item>
+         </ns0:ListItems>
+      </ns0:RbgResponse>
+      <ns0:LiabilitiesRGB type="java.util.List">
+         <ns0:ListItems>
+            <ns0:Item type="java.util.Map">
+               <ns0:InitialAmountRGB type="java.math.BigDecimal" />
+            </ns0:Item>
+            <ns0:Item type="java.util.Map">
+               <ns0:InitialAmountRGB type="java.math.BigDecimal" />
+            </ns0:Item>
+         </ns0:ListItems>
+      </ns0:LiabilitiesRGB>
+      <ns0:SDRResults type="java.util.List">
+         <ns0:ListItems>
+            <ns0:Item type="java.util.Map">
+               <ns0:SBOnSiteDecision type="java.lang.String">01</ns0:SBOnSiteDecision>
+               <ns0:SBurlReportLpr type="java.lang.String">http://example.org</ns0:SBurlReportLpr>
+               <ns0:Operator_id type="java.lang.String">EXP</ns0:Operator_id>
+               <ns0:SBCodeGroup type="java.lang.String">Группа СПЗ-2</ns0:SBCodeGroup>
+               <ns0:SBCode type="java.lang.String">СПЗ-2</ns0:SBCode>
+               <ns0:SBActualLevel type="java.lang.String">1</ns0:SBActualLevel>
+               <ns0:SBDecisionStage type="java.lang.String">1</ns0:SBDecisionStage>
+               <ns0:SBCheckLog type="java.lang.String">Вектор проверки</ns0:SBCheckLog>
+               <ns0:SBMaxLevel type="java.lang.String">9</ns0:SBMaxLevel>
+               <ns0:SBCommentFES type="java.lang.String">Ответ сформирован автоматически.</ns0:SBCommentFES>
+               <ns0:CommentRisk type="java.lang.String">http://dev-globex:5353/Inquiry.aspx?id=2194416</ns0:CommentRisk>
+               <ns0:DecisionDate type="java.util.Date">2017-01-13T00:00:00:000+0400</ns0:DecisionDate>
+               <ns0:DecisionTime type="java.lang.String">19:10:00</ns0:DecisionTime>
+               <ns0:SDRChecks type="java.util.List">
+                  <ns0:ListItems>
+                     <ns0:Item type="java.util.Map">
+                        <ns0:OutCheckReason type="java.lang.String">не вызывает доверия</ns0:OutCheckReason>
+                        <ns0:OutChecker type="java.lang.String">Иванов Иван Иванович</ns0:OutChecker>
+                        <ns0:OutCheckBox type="java.lang.String">нет</ns0:OutCheckBox>
+                        <ns0:OutCheck type="java.lang.String">да</ns0:OutCheck>
+                        <ns0:OutCheckDecision type="java.lang.String">Рекомендуется</ns0:OutCheckDecision>
+                     </ns0:Item>
+                  </ns0:ListItems>
+               </ns0:SDRChecks>
+               <ns0:ParticipantSDRResults type="java.util.List">
+                  <ns0:ListItems />
+               </ns0:ParticipantSDRResults>
+            </ns0:Item>
+         </ns0:ListItems>
+      </ns0:SDRResults>
+      <ns0:NonStandart type="java.util.List">
+         <ns0:ListItems>
+            <ns0:Item type="java.util.Map">
+               <ns0:ConditionIdentifier type="java.lang.String" />
+               <ns0:ConditionName type="java.lang.String">Сумма</ns0:ConditionName>
+               <ns0:ConditionType type="java.lang.String">0</ns0:ConditionType>
+               <ns0:ControlType type="java.lang.String" />
+               <ns0:MinValue type="java.math.BigDecimal">0</ns0:MinValue>
+               <ns0:MaxValue type="java.math.BigDecimal">0</ns0:MaxValue>
+               <ns0:Value type="java.math.BigDecimal" />
+               <ns0:CodeBookName type="java.lang.String" />
+               <ns0:ManuallyCapturedValue type="java.lang.String">10000</ns0:ManuallyCapturedValue>
+            </ns0:Item>
+            <ns0:Item type="java.util.Map">
+               <ns0:ConditionIdentifier type="java.lang.String" />
+               <ns0:ConditionName type="java.lang.String">Комплектность кредитного досье</ns0:ConditionName>
+               <ns0:ConditionType type="java.lang.String">0</ns0:ConditionType>
+               <ns0:ControlType type="java.lang.String" />
+               <ns0:MinValue type="java.math.BigDecimal">0</ns0:MinValue>
+               <ns0:MaxValue type="java.math.BigDecimal">0</ns0:MaxValue>
+               <ns0:Value type="java.math.BigDecimal" />
+               <ns0:CodeBookName type="java.lang.String" />
+               <ns0:ManuallyCapturedValue type="java.lang.String">N</ns0:ManuallyCapturedValue>
+            </ns0:Item>
+            <ns0:Item type="java.util.Map">
+               <ns0:ConditionIdentifier type="java.lang.String" />
+               <ns0:ConditionName type="java.lang.String">Должность</ns0:ConditionName>
+               <ns0:ConditionType type="java.lang.String">0</ns0:ConditionType>
+               <ns0:ControlType type="java.lang.String" />
+               <ns0:MinValue type="java.math.BigDecimal">0</ns0:MinValue>
+               <ns0:MaxValue type="java.math.BigDecimal">0</ns0:MaxValue>
+               <ns0:Value type="java.math.BigDecimal" />
+               <ns0:CodeBookName type="java.lang.String" />
+               <ns0:ManuallyCapturedValue type="java.lang.String">N</ns0:ManuallyCapturedValue>
+            </ns0:Item>
+            <ns0:Item type="java.util.Map">
+               <ns0:ConditionIdentifier type="java.lang.String" />
+               <ns0:ConditionName type="java.lang.String">Сумма</ns0:ConditionName>
+               <ns0:ConditionType type="java.lang.String">0</ns0:ConditionType>
+               <ns0:ControlType type="java.lang.String" />
+               <ns0:MinValue type="java.math.BigDecimal">0</ns0:MinValue>
+               <ns0:MaxValue type="java.math.BigDecimal">0</ns0:MaxValue>
+               <ns0:Value type="java.math.BigDecimal" />
+               <ns0:CodeBookName type="java.lang.String" />
+               <ns0:ManuallyCapturedValue type="java.lang.String">10000</ns0:ManuallyCapturedValue>
+            </ns0:Item>
+            <ns0:Item type="java.util.Map">
+               <ns0:ConditionIdentifier type="java.lang.String" />
+               <ns0:ConditionName type="java.lang.String">Комплектность кредитного досье</ns0:ConditionName>
+               <ns0:ConditionType type="java.lang.String">0</ns0:ConditionType>
+               <ns0:ControlType type="java.lang.String" />
+               <ns0:MinValue type="java.math.BigDecimal">0</ns0:MinValue>
+               <ns0:MaxValue type="java.math.BigDecimal">0</ns0:MaxValue>
+               <ns0:Value type="java.math.BigDecimal" />
+               <ns0:CodeBookName type="java.lang.String" />
+               <ns0:ManuallyCapturedValue type="java.lang.String">N</ns0:ManuallyCapturedValue>
+            </ns0:Item>
+            <ns0:Item type="java.util.Map">
+               <ns0:ConditionIdentifier type="java.lang.String" />
+               <ns0:ConditionName type="java.lang.String">Должность</ns0:ConditionName>
+               <ns0:ConditionType type="java.lang.String">0</ns0:ConditionType>
+               <ns0:ControlType type="java.lang.String" />
+               <ns0:MinValue type="java.math.BigDecimal">0</ns0:MinValue>
+               <ns0:MaxValue type="java.math.BigDecimal">0</ns0:MaxValue>
+               <ns0:Value type="java.math.BigDecimal" />
+               <ns0:CodeBookName type="java.lang.String" />
+               <ns0:ManuallyCapturedValue type="java.lang.String">N</ns0:ManuallyCapturedValue>
+            </ns0:Item>
+         </ns0:ListItems>
+      </ns0:NonStandart>
+      <ns0:NotificationList>
+         <ns0:ListItems />
+      </ns0:NotificationList>
+   </ns0:DecisionBO>
+</PublishPersonLoanApplicationStatusReq>

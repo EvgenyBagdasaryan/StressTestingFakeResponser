@@ -1,0 +1,143 @@
+<PrescoreCustomerResponse xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Organization" xmlns:ns7="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Organization">
+   <ns7:DecisionBO type="java.util.Map">
+      <ns7:AppDecision type="java.util.List">
+         <ns7:ListItems>
+            <ns7:Item type="java.util.Map">
+               <ns7:ApplicationID type="java.lang.String">${appId}</ns7:ApplicationID>
+               <ns7:StatusBrief type="java.lang.String">prescoreApproved</ns7:StatusBrief>
+               <ns7:StageCode type="java.lang.String">Заявка направлена во фронт с предварительным решением</ns7:StageCode>
+               <ns7:DecisionDate type="java.util.Date">2016-10-01T13:56:09:842+0400</ns7:DecisionDate>
+               <ns7:DecisionTerm type="java.util.Date">2016-11-01T03:00:00:000+0300</ns7:DecisionTerm>
+               <ns7:DecisionCategory type="java.lang.String">Approve</ns7:DecisionCategory>
+               <ns7:DecisionComment type="java.lang.String">1123</ns7:DecisionComment>
+               <ns7:DecisionDetailsMortgage type="java.util.List">
+                  <ns7:ListItems>
+                     <ns7:Item type="java.util.Map">
+                        <ns7:MaxMonthlyPayment type="java.lang.String">28700</ns7:MaxMonthlyPayment>
+                        <ns7:TriggeredMinRequirements type="java.lang.String">14</ns7:TriggeredMinRequirements>
+                     </ns7:Item>
+                  </ns7:ListItems>
+               </ns7:DecisionDetailsMortgage>
+               <ns7:ProductClientDecision type="java.util.List">
+                  <ns7:ListItems>
+                     <ns7:Item type="java.util.Map">
+                        <ns7:ClientID type="java.lang.String">${clientId}</ns7:ClientID>
+                        <ns7:DecisionCode type="java.lang.String">Одобрено</ns7:DecisionCode>
+                        <ns7:DecisionCategory type="java.lang.String">Approve</ns7:DecisionCategory>
+                        <ns7:SalaryCategoryFlag type="java.lang.Boolean">true</ns7:SalaryCategoryFlag>
+                        <ns7:TriggeredMinRequirements type="java.lang.String">10456</ns7:TriggeredMinRequirements>
+                        <ns7:MonthlyPayment type="java.math.BigDecimal">28700</ns7:MonthlyPayment>
+                        <ns7:SBCommentFES type="java.lang.String" />
+                        <ns7:CustAnalysisFlag type="java.lang.Boolean" />
+                        <ns7:Liabilities type="java.util.List">
+                           <ns7:ListItems>
+                              <ns7:Item type="java.util.Map">
+                                 <ns7:LoanID type="java.lang.String">102893</ns7:LoanID>
+                                 <ns7:Branch type="java.lang.String">100005</ns7:Branch>
+                                 <ns7:LiabilityType type="java.lang.String">Кредит</ns7:LiabilityType>
+                                 <ns7:Type type="java.lang.String">Кредит</ns7:Type>
+                                 <ns7:OpenDate type="java.util.Date">2013-01-01T03:00:00:000+0300</ns7:OpenDate>
+                                 <ns7:MaturityDate type="java.util.Date">2015-05-05T03:00:00:000+0300</ns7:MaturityDate>
+                                 <ns7:InitialAmount type="java.math.BigDecimal">1250</ns7:InitialAmount>
+                                 <ns7:OutstandingAmount type="java.math.BigDecimal">900</ns7:OutstandingAmount>
+                                 <ns7:PastDueAmount type="java.math.BigDecimal">500</ns7:PastDueAmount>
+                                 <ns7:PastDueTerm type="java.lang.Integer">12</ns7:PastDueTerm>
+                                 <ns7:MonthlyPaymentAmt type="java.math.BigDecimal">4000</ns7:MonthlyPaymentAmt>
+                                 <ns7:ClientID type="java.lang.Long" >${clientId}</ns7:ClientID>
+                                 <ns7:CloseDate type="java.util.Date">2015-07-12T03:00:00:000+0300</ns7:CloseDate>
+                                 <ns7:ProductCode type="java.lang.String">131207879</ns7:ProductCode>
+                                 <ns7:CurrencyCode type="java.lang.String">USD</ns7:CurrencyCode>
+                                 <ns7:PmtString84M type="java.lang.String">2</ns7:PmtString84M>
+                                 <ns7:PmtString84MOpenDate type="java.lang.String">2012-09-09</ns7:PmtString84MOpenDate>
+                                 <ns7:Delq5 type="java.lang.Integer">1</ns7:Delq5>
+                                 <ns7:DelqF6T30 type="java.lang.Integer">2</ns7:DelqF6T30>
+                                 <ns7:DelqF31T60 type="java.lang.Integer">3</ns7:DelqF31T60>
+                                 <ns7:DelqF61T90 type="java.lang.Integer">4</ns7:DelqF61T90>
+                                 <ns7:MaxPastDueAmount type="java.lang.String">1512</ns7:MaxPastDueAmount>
+                                 <ns7:MaxPastDueTerm type="java.lang.String">12</ns7:MaxPastDueTerm>
+                                 <ns7:InitialCreditNumber type="java.lang.String">800446655</ns7:InitialCreditNumber>
+                                 <ns7:LinksSign type="java.lang.String">Родительская по отношению к договору</ns7:LinksSign>
+                                 <ns7:ProlongationAmt type="java.lang.Integer">12</ns7:ProlongationAmt>
+                                 <ns7:Delq90Plus type="java.lang.Integer">1</ns7:Delq90Plus>
+                                 <ns7:InterestRate type="java.math.BigDecimal">12.5</ns7:InterestRate>
+                                 <ns7:Status type="java.lang.String">Открыт</ns7:Status>
+                                 <ns7:DelqF6T30L12M type="java.lang.Integer">1</ns7:DelqF6T30L12M>
+                                 <ns7:DelqF31T60L12M type="java.lang.Integer">2</ns7:DelqF31T60L12M>
+                                 <ns7:DelqF61T90L12M type="java.lang.Integer">3</ns7:DelqF61T90L12M>
+                                 <ns7:Delq90PlusL12M type="java.lang.Integer">4</ns7:Delq90PlusL12M>
+                                 <ns7:ApplyFlag type="java.lang.Boolean">false</ns7:ApplyFlag>
+                                 <ns7:FullSaleFlag type="java.lang.Boolean">false</ns7:FullSaleFlag>
+                                 <ns7:RefinanceFlag type="java.lang.Boolean">false</ns7:RefinanceFlag>
+                                 <ns7:PrincipalRepaymentPart type="java.math.BigDecimal">56</ns7:PrincipalRepaymentPart>
+                                 <ns7:RepaymentSpeed type="java.math.BigDecimal">2</ns7:RepaymentSpeed>
+                                 <ns7:ReducedDocumentSetFlag type="java.lang.Boolean" />
+                                 <ns7:DebtRecoveryInCourtFlag type="java.lang.Boolean">false</ns7:DebtRecoveryInCourtFlag>
+                                 <ns7:RepayByCollateralFlag type="java.lang.Boolean">true</ns7:RepayByCollateralFlag>
+                                 <ns7:SourceID type="java.lang.String">Обязательство из внешних источников (БКИ, и т.д.)</ns7:SourceID>
+                                 <ns7:ConfirmDate type="java.util.Date">2016-02-14T03:00:00:000+0300</ns7:ConfirmDate>
+                              </ns7:Item>
+                           </ns7:ListItems>
+                        </ns7:Liabilities>
+                        <ns7:ReturningClientFlag type="java.lang.Boolean">false</ns7:ReturningClientFlag>
+                        <ns7:OtherLiabilities type="java.util.List">
+                           <ns7:ListItems>
+                              <ns7:Item type="java.util.Map">
+                                 <ns7:LoanID type="java.lang.String">LNID-02</ns7:LoanID>
+                                 <ns7:Branch type="java.lang.String">100005</ns7:Branch>
+                                 <ns7:LiabilityType type="java.lang.String">Кредит</ns7:LiabilityType>
+                                 <ns7:Type type="java.lang.String">Кредит</ns7:Type>
+                                 <ns7:OpenDate type="java.util.Date">2000-01-01T03:00:00:000+0300</ns7:OpenDate>
+                                 <ns7:MaturityDate type="java.util.Date">2019-01-01T03:00:00:000+0300</ns7:MaturityDate>
+                                 <ns7:InitialAmount type="java.math.BigDecimal">100000000</ns7:InitialAmount>
+                                 <ns7:OutstandingAmount type="java.math.BigDecimal" />
+                                 <ns7:PastDueAmount type="java.math.BigDecimal">1000000</ns7:PastDueAmount>
+                                 <ns7:PastDueTerm type="java.lang.Integer">12</ns7:PastDueTerm>
+                                 <ns7:MonthlyPaymentAmt type="java.math.BigDecimal">50000</ns7:MonthlyPaymentAmt>
+                                 <ns7:ClientID type="java.lang.Long">${clientId}</ns7:ClientID>
+                                 <ns7:CloseDate type="java.util.Date">2018-02-02T03:00:00:000+0300</ns7:CloseDate>
+                                 <ns7:ProductCode type="java.lang.String">PC-01</ns7:ProductCode>
+                                 <ns7:CurrencyCode>RUB</ns7:CurrencyCode>
+                                 <ns7:SystemCode type="java.lang.String">100005</ns7:SystemCode>
+                                 <ns7:PmtString84M type="java.lang.String">10</ns7:PmtString84M>
+                                 <ns7:PmtString84MOpenDate type="java.lang.String">15</ns7:PmtString84MOpenDate>
+                                 <ns7:Delq5 type="java.lang.Integer">1</ns7:Delq5>
+                                 <ns7:DelqF6T30 type="java.lang.Integer">2</ns7:DelqF6T30>
+                                 <ns7:DelqF31T60 type="java.lang.Integer">3</ns7:DelqF31T60>
+                                 <ns7:DelqF61T90 type="java.lang.Integer">4</ns7:DelqF61T90>
+                                 <ns7:MaxPastDueAmount type="java.math.BigDecimal">14</ns7:MaxPastDueAmount>
+                                 <ns7:MaxPastDueTerm type="java.math.BigDecimal">160</ns7:MaxPastDueTerm>
+                                 <ns7:InitialCreditNumber type="java.lang.String">ICN-00001</ns7:InitialCreditNumber>
+                                 <ns7:LinksSign type="java.lang.String">Родительская по отношению к договору</ns7:LinksSign>
+                                 <ns7:ProlongationAmt>1</ns7:ProlongationAmt>
+                                 <ns7:Delq90Plus type="java.lang.Integer" />
+                                 <ns7:InterestRate type="java.math.BigDecimal">10</ns7:InterestRate>
+                                 <ns7:Status type="java.lang.String">Открыт</ns7:Status>
+                                 <ns7:DelqF6T30L12M type="java.lang.Integer">6</ns7:DelqF6T30L12M>
+                                 <ns7:DelqF31T60L12M type="java.lang.Integer">7</ns7:DelqF31T60L12M>
+                                 <ns7:DelqF61T90L12M type="java.lang.Integer">8</ns7:DelqF61T90L12M>
+                                 <ns7:Delq90PlusL12M type="java.lang.Integer">9</ns7:Delq90PlusL12M>
+                                 <ns7:ApplyFlag type="java.lang.Boolean">true</ns7:ApplyFlag>
+                                 <ns7:FullSaleFlag type="java.lang.Boolean">true</ns7:FullSaleFlag>
+                                 <ns7:RefinanceFlag type="java.lang.Boolean">true</ns7:RefinanceFlag>
+                                 <ns7:PrincipalRepaymentPart type="java.math.BigDecimal">2</ns7:PrincipalRepaymentPart>
+                                 <ns7:RepaymentSpeed type="java.math.BigDecimal">20</ns7:RepaymentSpeed>
+                                 <ns7:ReducedDocumentSetFlag type="java.lang.Boolean">true</ns7:ReducedDocumentSetFlag>
+                                 <ns7:DebtRecoveryInCourtFlag type="java.lang.Boolean">true</ns7:DebtRecoveryInCourtFlag>
+                                 <ns7:RepayByCollateralFlag type="java.lang.Boolean">true</ns7:RepayByCollateralFlag>
+                                 <ns7:RepayByCollateralStateInfo type="java.lang.String">Информация</ns7:RepayByCollateralStateInfo>
+                                 <ns7:SourceID type="java.lang.String">Обязательство из внутренних источников (учетная система)</ns7:SourceID>
+                                 <ns7:ConfirmDate type="java.util.Date">2000-01-02T03:00:00:000+0300</ns7:ConfirmDate>
+                              </ns7:Item>
+                           </ns7:ListItems>
+                        </ns7:OtherLiabilities>
+                     </ns7:Item>
+                  </ns7:ListItems>
+               </ns7:ProductClientDecision>
+            </ns7:Item>
+         </ns7:ListItems>
+      </ns7:AppDecision>
+      <ns7:NotificationList type="java.util.List">
+         <ns7:ListItems />
+      </ns7:NotificationList>
+   </ns7:DecisionBO>
+</PrescoreCustomerResponse>

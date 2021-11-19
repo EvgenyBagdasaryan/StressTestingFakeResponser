@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="fakeResponser-ear:ear">
+    <output-path>$PROJECT_DIR$/fakeResponser-ear/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>fakeResponser-ear</module>
+        <packaging>ear</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="fakeResponser-1.0.16.ear">
+      <element id="artifact" artifact-name="fakeResponser-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

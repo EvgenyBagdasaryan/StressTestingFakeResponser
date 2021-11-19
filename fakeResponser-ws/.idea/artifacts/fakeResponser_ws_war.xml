@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fakeResponser-ws:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="fakeResponser-ws-1.0.11.war">
+      <element id="artifact" artifact-name="fakeResponser-ws:war exploded" />
+    </root>
+  </artifact>
+</component>

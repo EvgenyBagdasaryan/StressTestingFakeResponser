@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fakeResponser-ws:war">
+    <output-path>$PROJECT_DIR$/fakeResponser-ws/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>fakeResponser-ws</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="fakeResponser-ws-1.0.16.war">
+      <element id="artifact" artifact-name="fakeResponser-ws:war exploded" />
+    </root>
+  </artifact>
+</component>

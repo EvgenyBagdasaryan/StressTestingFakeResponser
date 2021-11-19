@@ -1,0 +1,3 @@
+﻿<CancelProductDossierRegistrationResponse xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Organization">
+   <Status xmlns="" type="java.lang.String">OK</Status>
+</CancelProductDossierRegistrationResponse>

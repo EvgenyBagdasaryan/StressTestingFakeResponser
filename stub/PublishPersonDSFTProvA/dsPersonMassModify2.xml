@@ -1,0 +1,194 @@
+<PublishPersonRq xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPerson" xmlns:ns3="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPerson">
+   <PersonList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <MessageID type="java.lang.String" />
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <Surname type="java.lang.String">Ivanov</Surname>
+            <Name type="java.lang.String">Иван</Name>
+            <PatronymicName type="java.lang.String">Ivanovich</PatronymicName>
+            <ResidentFlag type="java.lang.Boolean">true</ResidentFlag>
+            <ClientFlag type="java.lang.Boolean">true</ClientFlag>
+            <INN type="java.lang.String">50</INN>
+            <BirthPlace type="java.lang.String">BPlIvanovsk</BirthPlace>
+            <BirthDay type="java.util.Date">1991-01-02T00:00:00:000+00:00</BirthDay>
+            <TaxResidenceFlag type="java.lang.Boolean">true</TaxResidenceFlag>
+            <LastActualizationDate type="java.util.Date">2000-04-30T20:00:00.0Z</LastActualizationDate>
+            <PDPAgreement type="java.lang.Integer">0</PDPAgreement>
+            <ChildModificationMode type="java.lang.String">2</ChildModificationMode>
+            <PreviousLastName type="java.lang.String">Ivanov2</PreviousLastName>
+            <PreviousFirstName type="java.lang.String">Ivan2</PreviousFirstName>
+            <PreviousMiddleName type="java.lang.String">Ivanovich2</PreviousMiddleName>
+            <ChangeDateFullName type="java.util.Date">2000-02-01T00:00:00:000+00:00</ChangeDateFullName>
+         </Item>
+      </ListItems>
+   </PersonList>
+   <PersonAddressList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <AddressTypeBrief type="java.lang.String">2dict23</AddressTypeBrief>
+            <Name type="java.lang.String">INSPersonalAddressName0</Name>
+            <AlterName type="java.lang.String">INSPersonalNotFormAddrName0</AlterName>
+            <CountryCode type="java.lang.String">GM</CountryCode>
+            <PostIndex type="java.lang.String">INSPersonalPostalCode0</PostIndex>
+            <RegionBrief type="java.lang.String">INSPersonalPrefState0</RegionBrief>
+            <RegionKind type="java.lang.String">INSPersonalPrefStateType0</RegionKind>
+            <AreaBrief type="java.lang.String">INSPersonalPrefDistrict0</AreaBrief>
+            <AreaKind type="java.lang.String">INSPersonalPrefDistrictType0</AreaKind>
+            <CityBrief type="java.lang.String">INSPersonalPrefCity0</CityBrief>
+            <CityKind type="java.lang.String">INSPersonalPrefCityType0</CityKind>
+            <TownBrief type="java.lang.String">INSPersonalPrefSettlement0</TownBrief>
+            <TownKind type="java.lang.String">INSPersonalPrefSettlementType0</TownKind>
+            <StreetBrief type="java.lang.String">INSPersonalPrefStreet1</StreetBrief>
+            <StreetKind type="java.lang.String">INSPersonalPrefStreetType1</StreetKind>
+            <House type="java.lang.String">INSPHouse</House>
+            <Frame type="java.lang.String">INSPHousng</Frame>
+            <Construction type="java.lang.String">INSPBuild</Construction>
+            <Flat type="java.lang.String">INSPApt</Flat>
+            <DateOfRegistration type="java.util.Date">2000-09-01T00:00:00:000+00:00</DateOfRegistration>
+            <DateOfExpiration type="java.util.Date">2000-10-01T00:00:00:000+00:00</DateOfExpiration>
+         </Item>
+      </ListItems>
+   </PersonAddressList>
+   <PersonAlterNameList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <AlterNameTypeBrief type="java.lang.String">PartitiveName</AlterNameTypeBrief>
+            <Name type="java.lang.String">IvanovaIvanaIvanovicha</Name>
+            <BaseAlterNameFlag type="java.lang.Boolean">true</BaseAlterNameFlag>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+         </Item>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <AlterNameTypeBrief type="java.lang.String">DativeName</AlterNameTypeBrief>
+            <Name type="java.lang.String">IvanovuIvanuIvanovichu</Name>
+            <BaseAlterNameFlag type="java.lang.Boolean">true</BaseAlterNameFlag>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+         </Item>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <AlterNameTypeBrief type="java.lang.String">InstrumentalName</AlterNameTypeBrief>
+            <Name type="java.lang.String">IvanovymIvanomIvanovichem</Name>
+            <BaseAlterNameFlag type="java.lang.Boolean">true</BaseAlterNameFlag>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+         </Item>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <AlterNameTypeBrief type="java.lang.String">EnglishName</AlterNameTypeBrief>
+            <Name type="java.lang.String">IvanovLat1 IvanLat1</Name>
+            <BaseAlterNameFlag type="java.lang.Boolean">true</BaseAlterNameFlag>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+         </Item>
+      </ListItems>
+   </PersonAlterNameList>
+   <PersonContactList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <ContactTypeBrief type="java.lang.String">Contact</ContactTypeBrief>
+            <ContactCode type="java.lang.String">PhoneRegion0</ContactCode>
+            <ContactValue type="java.lang.String">89274568998</ContactValue>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+         </Item>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <ContactTypeBrief type="java.lang.String">PersonalEmail</ContactTypeBrief>
+            <ContactValue type="java.lang.String">Email1</ContactValue>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+         </Item>
+      </ListItems>
+   </PersonContactList>
+   <PersonEducationList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <EducationTypeBrief type="java.lang.String">Высшее образование</EducationTypeBrief>
+            <EducationPlaceName type="java.lang.String">EducationName1</EducationPlaceName>
+            <Qualification type="java.lang.String">Speciality1</Qualification>
+            <EducationStartDate type="java.util.Date">2000-07-01T00:00:00:000+00:00</EducationStartDate>
+            <EducationEndDate type="java.util.Date">2000-08-01T00:00:00:000+00:00</EducationEndDate>
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+         </Item>
+      </ListItems>
+   </PersonEducationList>
+   <PersonExtraAttributeList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <Name type="java.lang.Long">StateEmployeeVTB</Name>
+            <Value type="java.lang.Long">Не сотрудник ВТБ24</Value>
+         </Item>
+      </ListItems>
+   </PersonExtraAttributeList>
+   <PersonIdentityCardList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <IdentityCardCodeType type="java.lang.String">1</IdentityCardCodeType>
+            <IdentityCardTypeBrief type="java.lang.String">PassportUSSR</IdentityCardTypeBrief>
+            <Series type="java.lang.String">Series0</Series>
+            <Number type="java.lang.String">Number0</Number>
+            <DateOfIssue type="java.util.Date">2000-11-08T00:00:00:000+00:00</DateOfIssue>
+            <DateOfExpiration type="java.util.Date">2000-11-09T00:00:00:000+00:00</DateOfExpiration>
+            <Department type="java.lang.String">Issued0</Department>
+            <DepartmentCode type="java.lang.String">DivisionCode0</DepartmentCode>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+            <Comment type="java.lang.String">Comment0</Comment>
+         </Item>
+      </ListItems>
+   </PersonIdentityCardList>
+   <PersonCitizenCountryList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <CitizenCountryBrief type="java.lang.String">GM</CitizenCountryBrief>
+            <CitizenCountryCode type="java.lang.String">GM</CitizenCountryCode>
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+         </Item>
+      </ListItems>
+   </PersonCitizenCountryList>
+   <PersonCrossRefList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <MDMID type="java.lang.String">123</MDMID>
+         </Item>
+      </ListItems>
+   </PersonCrossRefList>
+   <PersonEmployerList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <DateEnd type="java.util.Date">2000-10-07T00:00:00:000+00:00</DateEnd>
+            <DateStart type="java.util.Date">2000-10-07T00:00:00:000+00:00</DateStart>
+            <PositionBrief type="java.lang.String">Position3</PositionBrief>
+            <Organization type="java.lang.String">Organization2</Organization>
+            <OrganizationLocation type="java.lang.String">OrganizationLocation3</OrganizationLocation>
+            <INNKIO type="java.lang.String">50</INNKIO>
+            <EmploymentType type="java.lang.String">2</EmploymentType>
+         </Item>
+      </ListItems>
+   </PersonEmployerList>
+   <PersonRelativesList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <Surname type="java.lang.String">Ivanova</Surname>
+            <Name type="java.lang.String">Svetlana</Name>
+            <PatronymicName type="java.lang.String">Ivanovna</PatronymicName>
+            <BirthDay type="java.util.Date">1980-01-11</BirthDay>
+            <DependentFlag type="java.lang.Boolean">true</DependentFlag>
+            <DegreeOfRelationship type="java.lang.String">9</DegreeOfRelationship>
+         </Item>
+      </ListItems>
+   </PersonRelativesList>
+   <PersonGroupList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${extId}</PersonID>
+            <GroupBrief type="java.lang.String">3</GroupBrief>
+         </Item>
+      </ListItems>
+   </PersonGroupList>
+</PublishPersonRq>
+

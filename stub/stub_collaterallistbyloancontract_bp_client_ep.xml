@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<dsCreditContractFindListByParamResp>
+    <CreditContractList>
+        <VCTNumber>52  УЕ</VCTNumber>
+        <VTCSeries>01151</VTCSeries>
+        <VCTIssueDate>2017-10-05</VCTIssueDate>
+        <VehicleBrandPTS>AUDI</VehicleBrandPTS>
+        <VehicleModelPTS>A1</VehicleModelPTS>
+        <VIN>WAUZZZ8E57A167523</VIN>
+        <BodyColor>Белый</BodyColor>
+        <EngineCapacity>75</EngineCapacity>
+        <YearOfManufacture>2017</YearOfManufacture>
+        <EnginePower>192</EnginePower>
+    </CreditContractList>
+</dsCreditContractFindListByParamResp>

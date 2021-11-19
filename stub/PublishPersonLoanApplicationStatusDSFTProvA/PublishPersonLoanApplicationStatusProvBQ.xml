@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishPersonLoanApplicationStatusReq xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPersonLoanApplicationStatus/PublishPersonLoanApplicationStatusProvA" xmlns:ns0="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPersonLoanApplicationStatus/PublishPersonLoanApplicationStatusProvA">
+	<ContractBQ type="java.util.Map">
+		<CreditContNumber type="java.lang.String">1</CreditContNumber>
+		<ApplicationID type="java.lang.String">${appId}</ApplicationID>
+		<NumOrder type="java.lang.String">1</NumOrder>
+		<NumOrderExec type="java.lang.String">1</NumOrderExec>
+		<NumOrderExecDate type="java.util.Date">2017-04-01T03:00:00:000+0300</NumOrderExecDate>
+		<StatusBrief type="java.lang.String">approved</StatusBrief>
+	</ContractBQ>
+</PublishPersonLoanApplicationStatusReq>

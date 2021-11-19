@@ -1,0 +1,5 @@
+<CreateServiceContractResponse xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Organization">
+   <SNILS xmlns="" type="java.lang.String">${snils}</SNILS>
+   <ResultCode xmlns="" />
+   <ResultDescription xmlns="" />
+</CreateServiceContractResponse>

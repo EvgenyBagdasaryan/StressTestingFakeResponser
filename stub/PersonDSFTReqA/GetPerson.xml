@@ -1,0 +1,127 @@
+﻿<GetPersonResponse xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Person/GetPerson">
+<PersonFindList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<MDMID type="java.lang.String">17</MDMID>
+<Surname type="java.lang.String">Жуков</Surname>
+<Name type="java.lang.String">Сергей</Name>
+<PatronymicName type="java.lang.String">Сергеевич</PatronymicName>
+<ResidentFlag type="java.lang.Boolean">true</ResidentFlag>
+<INN type="java.lang.String">12345678</INN>
+<Sex type="java.lang.Byte">0</Sex>
+<BirthPlace type="java.lang.String">г.Москва</BirthPlace>
+<BirthDay type="java.util.Date">1965-10-10T03:00:00:000+0300</BirthDay>
+<CitizenCountryCode type="java.lang.String">AO</CitizenCountryCode>
+<TaxResidenceFlag type="java.lang.Boolean">false</TaxResidenceFlag>
+<PDPAgreement type="java.lang.Integer">0</PDPAgreement>
+<ClientFlag type="java.lang.Boolean">true</ClientFlag>
+<PreviousLastName type="java.lang.String">Маус</PreviousLastName>
+<PreviousFirstName type="java.lang.String">Микки</PreviousFirstName>
+<PreviousMiddleName type="java.lang.String">Маусович</PreviousMiddleName>
+<MaritalStatusCode type="java.lang.String">inDivorce</MaritalStatusCode>
+</Item>
+</ListItems>
+</PersonFindList>
+<PersonAddressList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<MDMID type="java.lang.String">17</MDMID>
+<AddressTypeBrief type="java.lang.String">RegisterAddress</AddressTypeBrief>
+<Name type="java.lang.String">119415, г. Москва, проспект Вернадского, д.59а, кв.47</Name>
+<AlterName type="java.lang.String">119415 Россия г Москва пр-кт Вернадского дом 59А кв 47</AlterName>
+<CountryCode type="java.lang.String">RU</CountryCode>
+<PostIndex type="java.lang.String">119415</PostIndex>
+<RegionBrief type="java.lang.String">Москва</RegionBrief>
+<RegionKind type="java.lang.String">г</RegionKind>
+<AreaBrief type="java.lang.String"/>
+<AreaKind type="java.lang.String"/>
+<CityBrief type="java.lang.String"/>
+<CityKind type="java.lang.String"/>
+<TownBrief type="java.lang.String"/>
+<TownKind type="java.lang.String"/>
+<StreetKind type="java.lang.String">пр-кт</StreetKind>
+<StreetBrief type="java.lang.String">Вернадского</StreetBrief>
+<House type="java.lang.String">59</House>
+<Frame type="java.lang.String">а</Frame>
+<Construction type="java.lang.String"/>
+<Flat type="java.lang.String">47</Flat>
+<ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+<State type="java.lang.String">22</State>
+<KLADR type="java.lang.String">77000000000095300</KLADR>
+<OKATO type="java.lang.String">4546456456456</OKATO>
+</Item>
+</ListItems>
+</PersonAddressList>
+<PersonContactList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<MDMID type="java.lang.String">17</MDMID>
+<ContactTypeBrief type="java.lang.String">RegisterAddressPhone</ContactTypeBrief>
+<ContactValue type="java.lang.String">4954345654</ContactValue>
+<ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+<AreaName type="java.lang.String"/>
+<ProviderName type="java.lang.String"/>
+</Item>
+</ListItems>
+</PersonContactList>
+<PersonAlterNameList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<MDMID type="java.lang.String">17</MDMID>
+<AlterNameTypeBrief type="java.lang.String">EnglishName</AlterNameTypeBrief>
+<Name type="java.lang.String">Жуков Сергей</Name>
+</Item>
+<Item type="java.util.Map">
+<AlterNameTypeBrief type="java.lang.String">PartitiveName</AlterNameTypeBrief>
+<Name type="java.lang.String">Жукова Сергея Сергеевича</Name>
+</Item>
+<Item type="java.util.Map">
+<AlterNameTypeBrief type="java.lang.String">DativeName</AlterNameTypeBrief>
+<Name type="java.lang.String">Жукову Сергею Сергеевичу</Name>
+</Item>
+<Item type="java.util.Map">
+<AlterNameTypeBrief type="java.lang.String">InstrumentalName</AlterNameTypeBrief>
+<Name type="java.lang.String">Жукова Сергея Сергеевича</Name>
+</Item>
+</ListItems>
+</PersonAlterNameList>
+<PersonExtraAttributeList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<Name type="java.lang.String">StateEmployeeVTB</Name>
+<Value type="java.lang.String">Уволен (бывший сотрудник ВТБ24)</Value>
+<MDMID type="java.lang.String">17</MDMID>
+</Item>
+</ListItems>
+</PersonExtraAttributeList>
+<PersonIdentityCardList xmlns="" type="java.util.List">
+<ListItems>
+<Item type="java.util.Map">
+<MDMID type="java.lang.String">17</MDMID>
+<IdentityCardTypeBrief type="java.lang.String">PassportRF</IdentityCardTypeBrief>
+<Series type="java.lang.String">55 55</Series>
+<Number type="java.lang.String">555555</Number>
+<DateOfIssue type="java.util.Date">2012-06-04T03:00:00:000+0300</DateOfIssue>
+<Department type="java.lang.String">УВД г.Москвы</Department>
+<DepartmentCode type="java.lang.String">156-059</DepartmentCode>
+<ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+<IssuingCountryCode type="java.lang.String">RU</IssuingCountryCode>
+</Item>
+</ListItems>
+</PersonIdentityCardList>
+<PersonEducationList xmlns="" type="java.util.List">
+<ListItems/>
+</PersonEducationList>
+<PersonCrossRefList xmlns="" type="java.util.List">
+<ListItems/>
+</PersonCrossRefList>
+<PersonEmployerList xmlns="" type="java.util.List">
+<ListItems/>
+</PersonEmployerList>
+<PersonRelativesList xmlns="" type="java.util.List">
+<ListItems/>
+</PersonRelativesList>
+<PersonGroupList xmlns="" type="java.util.List">
+<ListItems/>
+</PersonGroupList>
+</GetPersonResponse>

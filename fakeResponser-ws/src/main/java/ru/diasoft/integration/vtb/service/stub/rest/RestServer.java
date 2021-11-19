@@ -377,7 +377,7 @@ public class RestServer {
         String id = UUID.randomUUID().toString();
 
         final KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
-        ProducerRecord<String, String> records = new ProducerRecord(String.valueOf(kafkaConfig.get("Topic")), 0, id,"{\"id\":\""+ id + "\",\"status\":\"SENT\",\"description\":\"Уведомление отправлено в ѕ‘–\",\"active\":true,\"availableAmount\":null}", headerma);
+        ProducerRecord<String, String> records = new ProducerRecord(String.valueOf(kafkaConfig.get("Topic")), 0, id,"{\"id\":\""+ id + "\",\"status\":\"SUCCESS\",\"description\":\"Ответ предоставлен. По вашему запросу сформировано уведомление о наличии права владельца сертификата МСК на распоряжение средствами (частью средств) материнского (семейного) капитала\",\"active\":\"false\",\"availableAmount\":1000000}", headerma);
         producer.send(records);
 
         producer.flush();

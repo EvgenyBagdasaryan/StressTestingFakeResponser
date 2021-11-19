@@ -1,0 +1,198 @@
+﻿<MatchPersonResponse xmlns:ns9="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Person" xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Person">
+<ns9:TOTALCOUNT type="java.lang.Integer">3</ns9:TOTALCOUNT>
+<ns9:PersonBrowseList type="java.util.List">
+<ns9:ListItems>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long"/>
+<ns9:MDMID type="java.lang.Long">100</ns9:MDMID>
+<ns9:Surname type="java.lang.String">Жуков</ns9:Surname>
+<ns9:Name type="java.lang.String">Сергей</ns9:Name>
+<ns9:PatronymicName type="java.lang.String">Андреевич</ns9:PatronymicName>
+<ns9:INN type="java.lang.String">13775455</ns9:INN>
+<ns9:MatchScore type="java.lang.Integer">77</ns9:MatchScore>
+<ns9:Sex type="java.lang.String">0</ns9:Sex>
+<ns9:BirthDay type="java.util.Date">1988-10-10T03:00:00:000+03:00</ns9:BirthDay>
+<ns9:BirthPlace type="java.lang.String">Мурманск</ns9:BirthPlace>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">55260</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">19013</ns9:MDMID>
+<ns9:Surname type="java.lang.String">Жуков</ns9:Surname>
+<ns9:Name type="java.lang.String">Сергей</ns9:Name>
+<ns9:PatronymicName type="java.lang.String">Сергеевич</ns9:PatronymicName>
+<ns9:INN type="java.lang.String">1000001</ns9:INN>
+<ns9:MatchScore type="java.lang.Integer"/>
+<ns9:Sex type="java.lang.String">0</ns9:Sex>
+<ns9:BirthDay type="java.util.Date">1965-10-10T03:00:00:000+03:00</ns9:BirthDay>
+<ns9:BirthPlace type="java.lang.String">Москва</ns9:BirthPlace>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">50001</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">200</ns9:MDMID>
+<ns9:Surname type="java.lang.String">Жуков</ns9:Surname>
+<ns9:Name type="java.lang.String">Сергей</ns9:Name>
+<ns9:PatronymicName type="java.lang.String">Игоревич</ns9:PatronymicName>
+<ns9:INN type="java.lang.String">13775455</ns9:INN>
+<ns9:MatchScore type="java.lang.Integer"/>
+<ns9:Sex type="java.lang.String">0</ns9:Sex>
+<ns9:BirthDay type="java.util.Date">1978-02-11T03:00:00:000+03:00</ns9:BirthDay>
+<ns9:BirthPlace type="java.lang.String">Нижний Тагил</ns9:BirthPlace>
+</ns9:Item>
+</ns9:ListItems>
+</ns9:PersonBrowseList>
+<ns9:PersonAddressList type="java.util.List">
+<ns9:ListItems>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long"/>
+<ns9:MDMID type="java.lang.Long">100</ns9:MDMID>
+<ns9:AddressTypeBrief type="java.lang.String">RegisterAddress</ns9:AddressTypeBrief>
+<ns9:Name type="java.lang.String">119424, г. Москва, ул. 2-я Парковая, д.6, кв.123</ns9:Name>
+<ns9:AlterName type="java.lang.String">119424, г. Москва, ул. 2-я Парковая, д.6, кв.123</ns9:AlterName>
+<ns9:CountryCode type="java.lang.String">RU</ns9:CountryCode>
+<ns9:PostIndex type="java.lang.String">119424</ns9:PostIndex>
+<ns9:RegionBrief type="java.lang.String">Москва</ns9:RegionBrief>
+<ns9:RegionKind type="java.lang.String">г</ns9:RegionKind>
+<ns9:AreaBrief type="java.lang.String"/>
+<ns9:AreaKind type="java.lang.String"/>
+<ns9:CityBrief type="java.lang.String"/>
+<ns9:CityKind type="java.lang.String"/>
+<ns9:TownBrief type="java.lang.String"/>
+<ns9:TownKind type="java.lang.String"/>
+<ns9:StreetBrief type="java.lang.String">2-я Парковая</ns9:StreetBrief>
+<ns9:StreetKind type="java.lang.String">ул</ns9:StreetKind>
+<ns9:House type="java.lang.String">6</ns9:House>
+<ns9:Frame type="java.lang.String"/>
+<ns9:Construction type="java.lang.String"/>
+<ns9:Flat type="java.lang.String">123</ns9:Flat>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+<ns9:DateOfRegistration type="java.util.Date">2016-03-01T03:00:00:000+03:00</ns9:DateOfRegistration>
+<ns9:DateOfExpiration type="java.util.Date">2016-03-30T03:00:00:000+03:00</ns9:DateOfExpiration>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">55260</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">19013</ns9:MDMID>
+<ns9:AddressTypeBrief type="java.lang.String">RegisterAddress</ns9:AddressTypeBrief>
+<ns9:Name type="java.lang.String">119415, г. Москва, проспект Вернадского, д.59а, кв.47</ns9:Name>
+<ns9:AlterName type="java.lang.String">119415 Россия г Москва пр-кт Вернадского дом 59А кв 47</ns9:AlterName>
+<ns9:CountryCode type="java.lang.String">RU</ns9:CountryCode>
+<ns9:PostIndex type="java.lang.String">119415</ns9:PostIndex>
+<ns9:RegionBrief type="java.lang.String">Москва</ns9:RegionBrief>
+<ns9:RegionKind type="java.lang.String">г</ns9:RegionKind>
+<ns9:AreaBrief type="java.lang.String"/>
+<ns9:AreaKind type="java.lang.String"/>
+<ns9:CityBrief type="java.lang.String"/>
+<ns9:CityKind type="java.lang.String"/>
+<ns9:TownBrief type="java.lang.String"/>
+<ns9:TownKind type="java.lang.String"/>
+<ns9:StreetBrief type="java.lang.String">Вернадского</ns9:StreetBrief>
+<ns9:StreetKind type="java.lang.String">пр-кт</ns9:StreetKind>
+<ns9:House type="java.lang.String">59</ns9:House>
+<ns9:Frame type="java.lang.String">а</ns9:Frame>
+<ns9:Construction type="java.lang.String"/>
+<ns9:Flat type="java.lang.String">47</ns9:Flat>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+<ns9:DateOfRegistration type="java.util.Date">2016-03-01T03:00:00:000+03:00</ns9:DateOfRegistration>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">50001</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">200</ns9:MDMID>
+<ns9:AddressTypeBrief type="java.lang.String">RegisterAddress</ns9:AddressTypeBrief>
+<ns9:Name type="java.lang.String">119415, г. Нижневартовск, ул.Мира, д.1а, кв.17</ns9:Name>
+<ns9:AlterName type="java.lang.String">119415, Россия, г. Нижневартовск, ул.Мира, д.1а, кв.17</ns9:AlterName>
+<ns9:CountryCode type="java.lang.String">RU</ns9:CountryCode>
+<ns9:PostIndex type="java.lang.String">119415</ns9:PostIndex>
+<ns9:RegionBrief type="java.lang.String">Нижневартовск</ns9:RegionBrief>
+<ns9:RegionKind type="java.lang.String">г</ns9:RegionKind>
+<ns9:AreaBrief type="java.lang.String"/>
+<ns9:AreaKind type="java.lang.String"/>
+<ns9:CityBrief type="java.lang.String"/>
+<ns9:CityKind type="java.lang.String"/>
+<ns9:TownBrief type="java.lang.String"/>
+<ns9:TownKind type="java.lang.String"/>
+<ns9:StreetBrief type="java.lang.String">Мира</ns9:StreetBrief>
+<ns9:StreetKind type="java.lang.String">ул</ns9:StreetKind>
+<ns9:House type="java.lang.String">1</ns9:House>
+<ns9:Frame type="java.lang.String">а</ns9:Frame>
+<ns9:Construction type="java.lang.String"/>
+<ns9:Flat type="java.lang.String">17</ns9:Flat>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+<ns9:DateOfRegistration type="java.util.Date">2012-01-10T03:00:00:000+03:00</ns9:DateOfRegistration>
+<ns9:DateOfExpiration type="java.util.Date">2016-03-30T03:00:00:000+03:00</ns9:DateOfExpiration>
+</ns9:Item>
+</ns9:ListItems>
+</ns9:PersonAddressList>
+<ns9:PersonCrossRefList>
+<ns9:ListItems>
+<ns9:Item>
+<ns9:PersonID type="java.lang.Long">55260</ns9:PersonID>
+<ns9:MDMID type="java.lang.String">19013</ns9:MDMID>
+</ns9:Item>
+<ns9:Item>
+<ns9:PersonID type="java.lang.Long">50001</ns9:PersonID>
+<ns9:MDMID type="java.lang.String">200</ns9:MDMID>
+</ns9:Item>
+</ns9:ListItems>
+</ns9:PersonCrossRefList>
+<ns9:PersonContactList type="java.util.List">
+<ns9:ListItems>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long"/>
+<ns9:MDMID type="java.lang.Long">100</ns9:MDMID>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">55260</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">19013</ns9:MDMID>
+<ns9:ContactTypeBrief type="java.lang.String">ForNotifications</ns9:ContactTypeBrief>
+<ns9:ContactCode type="java.lang.String">Республика Коми</ns9:ContactCode>
+<ns9:ContactValue type="java.lang.String">912 1111111</ns9:ContactValue>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">50001</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">200</ns9:MDMID>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+</ns9:Item>
+</ns9:ListItems>
+</ns9:PersonContactList>
+<ns9:PersonIdentityCardList type="java.util.List">
+<ns9:ListItems>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long"/>
+<ns9:MDMID type="java.lang.Long">100</ns9:MDMID>
+<ns9:IdentityCardTypeBrief type="java.lang.String">PassportRF</ns9:IdentityCardTypeBrief>
+<ns9:Series type="java.lang.String">46 58</ns9:Series>
+<ns9:Number type="java.lang.String">365982</ns9:Number>
+<ns9:DateOfIssue type="java.util.Date">2012-06-04T03:00:00:000+03:00</ns9:DateOfIssue>
+<ns9:IssuingCountryCode type="java.lang.String">RU</ns9:IssuingCountryCode>
+<ns9:Department type="java.lang.String">УВД г.Москвы</ns9:Department>
+<ns9:DepartmentCode type="java.lang.String">156-059</ns9:DepartmentCode>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">55260</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">19013</ns9:MDMID>
+<ns9:IdentityCardTypeBrief type="java.lang.String">PassportRF</ns9:IdentityCardTypeBrief>
+<ns9:Series type="java.lang.String">55 55</ns9:Series>
+<ns9:Number type="java.lang.String">555550</ns9:Number>
+<ns9:DateOfIssue type="java.util.Date">2002-06-04T03:00:00:000+03:00</ns9:DateOfIssue>
+<ns9:IssuingCountryCode type="java.lang.String">RU</ns9:IssuingCountryCode>
+<ns9:Department type="java.lang.String">УВД г.Кургана</ns9:Department>
+<ns9:DepartmentCode type="java.lang.String">798-084</ns9:DepartmentCode>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+</ns9:Item>
+<ns9:Item type="java.util.Map">
+<ns9:PersonID type="java.lang.Long">50001</ns9:PersonID>
+<ns9:MDMID type="java.lang.Long">200</ns9:MDMID>
+<ns9:IdentityCardTypeBrief type="java.lang.String">PassportRF</ns9:IdentityCardTypeBrief>
+<ns9:Series type="java.lang.String">55 12</ns9:Series>
+<ns9:Number type="java.lang.String">432221</ns9:Number>
+<ns9:DateOfIssue type="java.util.Date">2007-06-08T03:00:00:000+03:00</ns9:DateOfIssue>
+<ns9:IssuingCountryCode type="java.lang.String">RU</ns9:IssuingCountryCode>
+<ns9:Department type="java.lang.String">УВД г.Воркуты</ns9:Department>
+<ns9:DepartmentCode type="java.lang.String">156-054</ns9:DepartmentCode>
+<ns9:ActiveFlag type="java.lang.Boolean">true</ns9:ActiveFlag>
+</ns9:Item>
+</ns9:ListItems>
+</ns9:PersonIdentityCardList>
+</MatchPersonResponse>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<dsCreditContractFindListByParamResp>
+    <CreditContractList>
+        <ContractNumber>001/0010-4102018</ContractNumber>
+        <LoanAmount>4000000</LoanAmount>
+        <LoanRestAmount>3000000</LoanRestAmount>
+        <LoanCurrency>Рубль</LoanCurrency>
+        <ContractBeginDate>2017-10-04</ContractBeginDate>
+        <ContractEndDate>2017-10-04</ContractEndDate>
+    </CreditContractList>
+</dsCreditContractFindListByParamResp>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fakeResponser-ws" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fakeResponser" target="1.8" />
+      <module name="fakeResponser-ear" target="1.8" />
+      <module name="fakeResponser-ws" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fakeResponser-ws" options="-endorseddirs &quot;C:\Users\ebagdasaryan\Documents\VTB\tasks\036 - кафка\fakeResponser\2\StressTestingFakeResponser\fakeResponser-ws\target/endorsed&quot;" />
+    </option>
+  </component>
+</project>

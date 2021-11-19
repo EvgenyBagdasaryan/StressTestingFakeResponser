@@ -1,0 +1,6 @@
+<PublishPersonLoanApplicationStatusRes xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPersonLoanApplicationStatus/PublishPersonLoanApplicationStatusReqA">
+    <ApplicationID xmlns="" type="java.lang.String">${appId}</ApplicationID>
+    <Status xmlns="" type="java.lang.String">OK</Status>
+    <NTFID type="java.lang.Long">1</NTFID>
+    <NTFMessage type="java.lang.String">APMApplication not exist in OM database for the given VTBApplicationId ${appId}</NTFMessage>
+</PublishPersonLoanApplicationStatusRes>

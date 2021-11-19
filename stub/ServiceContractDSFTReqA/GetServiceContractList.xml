@@ -1,0 +1,9 @@
+﻿<GetServiceContractListResponse xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Organization">
+   <SNILS xmlns="" type="java.lang.String">${snils}</SNILS>
+   <ContractNumber xmlns="" type="java.lang.String">ServiceContractID-123</ContractNumber>
+   <RegistrationDate xmlns="" type="java.util.Date">1000-00-00T00:00:00:000+00:00</RegistrationDate>
+   <EndDate xmlns="" type="java.util.Date">1000-00-00T00:00:00:000+00:00</EndDate>
+   <NTFID xmlns="" type="java.lang.Long" />
+   <ResultCode xmlns="" />
+   <ResultDescription xmlns="" />
+</GetServiceContractListResponse>

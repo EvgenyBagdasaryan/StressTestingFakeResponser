@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.diasoft.fa.platform.lib:commons-cache:7.01.01-SP11-HF14-13112601">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/fa/platform/lib/commons-cache/7.01.01-SP11-HF14-13112601/commons-cache-7.01.01-SP11-HF14-13112601.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/fa/platform/lib/commons-cache/7.01.01-SP11-HF14-13112601/commons-cache-7.01.01-SP11-HF14-13112601-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/fa/platform/lib/commons-cache/7.01.01-SP11-HF14-13112601/commons-cache-7.01.01-SP11-HF14-13112601-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

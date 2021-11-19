@@ -1,0 +1,5 @@
+<BODY version="2.11">
+    <ObjectID type="java.lang.Long">${objid}</ObjectID>
+    <MDMID type="java.lang.String">${mdmid}</MDMID>
+    <SystemNumber type="java.lang.String">DSFT</SystemNumber>
+</BODY>

@@ -1,0 +1,73 @@
+﻿<GetPersonLoanApplicationHistoryResponse xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PersonLoanApplicationHistory" xmlns:ns0="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PersonLoanApplicationHistory">
+   <ns0:LoanApplicationList type="java.util.List">
+      <ns0:ListItems>
+         <ns0:Item type="java.util.Map">
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:LoanApplicationDate type="java.util.Date">2016-11-20T03:00:00:000+03:00</ns0:LoanApplicationDate>
+            <ns0:SaleManagerName type="java.lang.String">Сидоров А.А.</ns0:SaleManagerName>
+            <ns0:ProductName type="java.lang.String">Кредит</ns0:ProductName>
+            <ns0:LoanApplicationProcessStage type="java.lang.String">issued</ns0:LoanApplicationProcessStage>
+            <ns0:BranchCode type="java.lang.String">cm.OrganizationUnit.00000</ns0:BranchCode>
+            <ns0:LoanApplicationCreateDate type="java.util.Date">2016-11-21T03:00:00:000+03:00</ns0:LoanApplicationCreateDate>
+         </ns0:Item>
+      </ns0:ListItems>
+   </ns0:LoanApplicationList>
+   <ns0:ExtAttributeList type="java.util.List">
+      <ns0:ListItems>
+         <ns0:Item type="java.util.Map">
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:ExtAttributeName type="java.lang.String">step</ns0:ExtAttributeName>
+            <ns0:ExtAttributeValue type="java.lang.String">На рассмотрении</ns0:ExtAttributeValue>
+         </ns0:Item>
+         <ns0:Item type="java.util.Map">
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:ExtAttributeName type="java.lang.String">step</ns0:ExtAttributeName>
+            <ns0:ExtAttributeValue type="java.lang.String">Высшее образование</ns0:ExtAttributeValue>
+         </ns0:Item>
+         <ns0:Item type="java.util.Map">
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:ExtAttributeName type="java.lang.String">MainPlaceofEmpl</ns0:ExtAttributeName>
+            <ns0:ExtAttributeValue type="java.lang.String">ООО Рога и копыта</ns0:ExtAttributeValue>
+         </ns0:Item>
+         <ns0:Item type="java.util.Map">
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:ExtAttributeName type="java.lang.String">PositionBrief</ns0:ExtAttributeName>
+            <ns0:ExtAttributeValue type="java.lang.String">Инженер</ns0:ExtAttributeValue>
+         </ns0:Item>
+         <ns0:Item type="java.util.Map">
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:ExtAttributeName type="java.lang.String">NumberOfEmployees</ns0:ExtAttributeName>
+            <ns0:ExtAttributeValue type="java.lang.String">100</ns0:ExtAttributeValue>
+         </ns0:Item>
+         <ns0:Item type="java.util.Map">
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:ExtAttributeName type="java.lang.String">JobDurationCode</ns0:ExtAttributeName>
+            <ns0:ExtAttributeValue type="java.lang.String">Хорошее</ns0:ExtAttributeValue>
+         </ns0:Item>
+      </ns0:ListItems>
+   </ns0:ExtAttributeList>
+   <ns0:LoanTermList type="java.util.List">
+      <ns0:ListItems>
+         <ns0:Item type="java.util.Map">
+            <ns0:ParticipantID type="java.lang.Long">${participantId}</ns0:ParticipantID>
+            <ns0:LinkID type="java.lang.Long">1</ns0:LinkID>
+            <ns0:LoanApplicationID type="java.lang.String">167890012</ns0:LoanApplicationID>
+            <ns0:LoanAmount type="java.math.BigDecimal">90000</ns0:LoanAmount>
+         </ns0:Item>
+      </ns0:ListItems>
+   </ns0:LoanTermList>
+</GetPersonLoanApplicationHistoryResponse>

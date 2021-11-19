@@ -1,0 +1,105 @@
+<CreatePersonRs xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Person/CreatePersonRs" xmlns:ns7="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/Person/CreatePersonRs">
+   <PersonCrossRefList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long" >${personId}</PersonID>
+            <MDMID type="java.lang.Long">${mdmid}</MDMID>
+         </Item>
+      </ListItems>
+   </PersonCrossRefList>
+   <PersonList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long">${personId}</PersonID>
+            <Surname type="java.lang.String" />
+            <Name type="java.lang.String" />
+            <PatronymicName type="java.lang.String">Иванович1234</PatronymicName>
+            <ResidentFlag type="java.lang.Boolean">false</ResidentFlag>
+            <ClientFlag type="java.lang.Boolean">N/A</ClientFlag>
+            <INN type="java.lang.String" />
+            <Sex type="java.lang.String">0</Sex>
+            <BirthPlace type="java.lang.String">Москва</BirthPlace>
+            <BirthDay type="java.util.Date">1940-04-02T03:00:00:000+03:00</BirthDay>
+            <TaxResidenceFlag type="java.lang.Boolean">true</TaxResidenceFlag>
+            <PreviousLastName type="java.lang.String">Сидоров</PreviousLastName>
+            <PreviousFirstName type="java.lang.String" />
+            <PreviousMiddleName type="java.lang.String">Петрович</PreviousMiddleName>
+            <ChangeDateFullName type="java.util.Date">1962-10-12T03:00:00:000+03:00</ChangeDateFullName>
+         </Item>
+      </ListItems>
+   </PersonList>
+   <PersonAddressList xmlns="" type="java.util.List">
+      <ListItems />
+   </PersonAddressList>
+   <PersonAlterNameList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <AlterNameTypeBrief type="java.lang.String">PartitiveName</AlterNameTypeBrief>
+            <Name type="java.lang.String" />
+         </Item>
+      </ListItems>
+   </PersonAlterNameList>
+   <PersonContactList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long" >${personId}</PersonID>
+            <ActiveFlag type="java.lang.Boolean">true</ActiveFlag>
+         </Item>
+      </ListItems>
+   </PersonContactList>
+   <PersonIdentityCardList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long" >${personId}</PersonID>
+            <Series type="java.lang.String" />
+            <Number type="java.lang.String" />
+            <DepartmentCode type="java.lang.String" />
+            <ActiveFlag />
+         </Item>
+      </ListItems>
+   </PersonIdentityCardList>   
+   <PersonEmployerList xmlns="" type="java.util.List">      
+      <ListItems>         
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long" >${personId}</PersonID>
+            <DateEnd type="java.util.Date">2020-02-12T03:00:00:000+03:00</DateEnd>
+            <DateStart type="java.util.Date">2001-03-05T03:00:00:000+03:00</DateStart>
+            <PositionBrief type="java.lang.String">Начальник отдела снабжения</PositionBrief>
+            <Organization type="java.lang.String">ОАО "РЖД"</Organization>
+            <OrganizationLocation type="java.lang.String">Москва, ул. Краснопрудная, 18</OrganizationLocation>
+            <INNKIO type="java.lang.String">275272727880128527</INNKIO>
+            <EmploymentType type="java.lang.String">N/A</EmploymentType>
+         </Item>
+      </ListItems>
+   </PersonEmployerList>
+   <PersonRelativesList xmlns="" type="java.util.List">
+      <ListItems>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long" >${personId}</PersonID>
+            <Surname type="java.lang.String">toropylka</Surname>
+            <Name type="java.lang.String">toropylka</Name>
+            <PatronymicName type="java.lang.String">toropylka</PatronymicName>
+            <BirthDay type="java.util.Date">12.09.2012T03:00:00:000+03:00</BirthDay>
+            <DependentFlag type="java.lang.Boolean">false</DependentFlag>
+            <DegreeOfRelationship type="java.lang.String">N/A</DegreeOfRelationship>
+         </Item>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long" >${personId}</PersonID>
+            <Surname type="java.lang.String">toropylkina</Surname>
+            <Name type="java.lang.String">toropylkina</Name>
+            <PatronymicName type="java.lang.String">toropylkina</PatronymicName>
+            <BirthDay type="java.util.Date">11.10.2013T03:00:00:000+03:00</BirthDay>
+            <DependentFlag type="java.lang.Boolean">true</DependentFlag>
+            <DegreeOfRelationship type="java.lang.String">N/A</DegreeOfRelationship>
+         </Item>
+         <Item type="java.util.Map">
+            <PersonID type="java.lang.Long" >${personId}</PersonID>
+            <Surname type="java.lang.String">toropylchik</Surname>
+            <Name type="java.lang.String">toropylchik</Name>
+            <PatronymicName type="java.lang.String">toropylchik</PatronymicName>
+            <BirthDay type="java.util.Date">14.10.2014T03:00:00:000+03:00</BirthDay>
+            <DependentFlag type="java.lang.Boolean">false</DependentFlag>
+         </Item>
+      </ListItems>
+   </PersonRelativesList>
+</CreatePersonRs>

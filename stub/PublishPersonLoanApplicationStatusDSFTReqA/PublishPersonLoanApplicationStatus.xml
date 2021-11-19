@@ -1,0 +1,4 @@
+﻿<PublishPersonLoanApplicationStatusRes xmlns="http://vtb24.ru/ApplicationObjectLibrary/DSFT/schemas/PublishPersonLoanApplicationStatus/PublishPersonLoanApplicationStatusReqA">
+   <ApplicationID xmlns="" type="java.lang.String">${appId}</ApplicationID>
+   <Status xmlns="" type="java.lang.String">OK</Status>
+</PublishPersonLoanApplicationStatusRes>
