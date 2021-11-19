@@ -411,6 +411,18 @@ public class RestServer {
     public Response dsQualifyCustomerByPayroll(String params) {
         return getData("DsQualifyCustomerByPayroll", params);
     }
+	
+	/*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsMarketingOffer
+     */
+    @Path("/DsMarketingOffer")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsMarketingOffer(String params) {
+        return getData("DsMarketingOffer", params);
+    }
 
     private Response getData(String command, String params) {
         logger.debug("fake " + command + " start");

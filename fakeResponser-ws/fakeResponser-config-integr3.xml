@@ -622,5 +622,13 @@
 				</response>
 			</DsQualifyCustomerByPayroll>
 		</DsQualifyCustomerByPayrollReqA>
+		<DsMarketingOfferReqA>
+			<DsMarketingOffer>
+				<type>CALL</type>
+				<response>
+					<template>stub\DsMarketingOfferReqA\DsMarketingOffer.json</template>
+				</response>
+			</DsMarketingOffer>
+		</DsMarketingOfferReqA>
 	</STUB>
 </root>
