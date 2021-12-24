@@ -61,7 +61,160 @@
             "riskOfferMatrixId": "123331123",
             "riskOfferMatrixDttm": 1606828603000,
             "pilotFlg": "Y",
-            "individualFlg": "N",
+            "individualFlg": "Y",
+            "controlGroupCd": "TG",
+            "offerTemplate": [
+                {
+                    "templateId": "123",
+                    "viewFlg": "Y",
+                    "sourceSystemCd": "DAM",
+                    "templateNo": "258",
+                    "readyFlg": "Y"
+                },
+                {
+                    "templateId": "789",
+                    "viewFlg": "Y",
+                    "sourceSystemCd": "SIEBEL",
+                    "templateNo": "258",
+                    "readyFlg": "Y"
+                }
+            ]
+        },
+		{
+            "offerId": "645654",
+            "offerType": "PAML",
+            "variantPriorityNum": 1,
+            "priority": 1,
+            "currency": "₽",
+            "minRate": 8.5,
+            "maxCreditMonthCnt": 144,
+            "maxLimitAmt": 2000000.0,
+            "newFlg": "N",
+            "rejectFlg": "N",
+            "offerIssueCd": "ONLINE",
+            "offerParams": [
+                {
+                    "variantId": 1,
+                    "variantNm": "12fffw",
+                    "creditMonthCnt": 144,
+                    "minLimitAmt": 100000.0,
+                    "maxLimitAmt": 1000000.0,
+                    "rate": 8.5,
+                    "insuranceFlg": "Y",
+                    "insuranceAmt": 6000.0,
+                    "productSubId": "wef11234",
+                    "monthlyPaymentAmt": 30000.0,
+                    "riskOfferVariantId": 4,
+                    "eroaRate": 4.7
+                }
+            ],
+            "variable": [
+                {
+                    "attrName": "FIO",
+                    "udfNm": "Иванов Иван Иванович",
+                    "sourceSystemCd": "DAM",
+                    "templateNo": "258"
+                },
+                {
+                    "attrName": "FIO",
+                    "udfNm": "Иванов Иван Иванович",
+                    "sourceSystemCd": "SIEBEL",
+                    "templateNo": "258"
+                }
+            ],
+            "contract": [
+                {
+                    "contractNo": 123,
+                    "contractId": "456",
+                    "placeCode": "789",
+                    "branchCode": "147"
+                }
+            ],
+            "onlineIssueFlg": "N",
+            "mainOfferId": "1122",
+            "offer2OfferTypeCd": "RECALC",
+            "offerDesc": "Описание оффера",
+            "startDttm": 1607522400000,
+            "riskOfferMatrixId": "123331123",
+            "riskOfferMatrixDttm": 1606828603000,
+            "pilotFlg": "Y",
+            "individualFlg": "Y",
+            "controlGroupCd": "TG",
+            "offerTemplate": [
+                {
+                    "templateId": "123",
+                    "viewFlg": "Y",
+                    "sourceSystemCd": "DAM",
+                    "templateNo": "258",
+                    "readyFlg": "Y"
+                },
+                {
+                    "templateId": "789",
+                    "viewFlg": "Y",
+                    "sourceSystemCd": "SIEBEL",
+                    "templateNo": "258",
+                    "readyFlg": "Y"
+                }
+            ]
+        },
+		{
+            "offerId": "645675754",
+            "offerType": "PAML",
+            "variantPriorityNum": 1,
+            "priority": 1,
+            "currency": "₽",
+            "minRate": 8.5,
+            "maxCreditMonthCnt": 144,
+            "newFlg": "N",
+            "rejectFlg": "N",
+            "offerIssueCd": "ONLINE",
+            "offerParams": [
+                {
+                    "variantId": 1,
+                    "variantNm": "12fffw",
+                    "creditMonthCnt": 144,
+                    "minLimitAmt": 100000.0,
+                    "maxLimitAmt": 1000000.0,
+                    "rate": 8.5,
+                    "insuranceFlg": "Y",
+                    "insuranceAmt": 6000.0,
+                    "productSubId": "wef11234",
+                    "monthlyPaymentAmt": 30000.0,
+                    "riskOfferVariantId": 4,
+                    "eroaRate": 4.7
+                }
+            ],
+            "variable": [
+                {
+                    "attrName": "FIO",
+                    "udfNm": "Иванов Иван Иванович",
+                    "sourceSystemCd": "DAM",
+                    "templateNo": "258"
+                },
+                {
+                    "attrName": "FIO",
+                    "udfNm": "Иванов Иван Иванович",
+                    "sourceSystemCd": "SIEBEL",
+                    "templateNo": "258"
+                }
+            ],
+            "contract": [
+                {
+                    "contractNo": 123,
+                    "contractId": "456",
+                    "placeCode": "789",
+                    "branchCode": "147"
+                }
+            ],
+            "onlineIssueFlg": "N",
+            "mainOfferId": "1122",
+            "offer2OfferTypeCd": "RECALC",
+            "offerDesc": "Описание оффера",
+            "startDttm": 1607522400000,
+            "riskOfferMatrixId": "123331123",
+            "riskOfferMatrixDttm": 1606828603000,
+            "pilotFlg": "Y",
+            "individualFlg": "Y",
             "controlGroupCd": "TG",
             "offerTemplate": [
                 {
