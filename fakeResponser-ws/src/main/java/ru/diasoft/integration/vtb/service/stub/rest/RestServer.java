@@ -387,6 +387,49 @@ public class RestServer {
     }
 
     /*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsSendDataToPFRNotification
+     */
+    @Path("/DsPublishPersonFromMDM")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsPublishPersonFromMDM(String params) {
+
+        Map<String, Object> kafkaConfig = StubConfig.getKafkaConfig();
+
+        Properties props = new Properties();
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, String.valueOf(kafkaConfig.get("Url")));
+
+        props.put(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SSL");
+        props.put(SslConfigs.SSL_TRUSTSTORE_LOCATION_CONFIG, String.valueOf(kafkaConfig.get("SslTruststoreLocation")));
+        props.put(SslConfigs.SSL_TRUSTSTORE_PASSWORD_CONFIG,  String.valueOf(kafkaConfig.get("SslTruststorePassword")));
+
+        props.put(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG, String.valueOf(kafkaConfig.get("SslKeystoreLocation")));
+        props.put(SslConfigs.SSL_KEYSTORE_PASSWORD_CONFIG, String.valueOf(kafkaConfig.get("SslKeystorePassword")));
+        props.put(SslConfigs.SSL_KEY_PASSWORD_CONFIG, String.valueOf(kafkaConfig.get("SslKeyPassword")));
+
+        //props.put(ProducerConfig.ACKS_CONFIG, "all");
+        //props.put(ProducerConfig.RETRIES_CONFIG, 0);
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+
+        Header headerm = new RecordHeader("keyHeader", "from fakeResponser with love".getBytes());
+        List<Header> headerma = Arrays.asList(headerm);
+
+        String id = UUID.randomUUID().toString();
+
+        final KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
+        ProducerRecord<String, String> records = new ProducerRecord(String.valueOf(kafkaConfig.get("Topic")), 0, id,"{\"headerRequest\":{\"messageID\":\"85ff3295-ee64-4a8b-9789-d4ef01fc71ca\",\"creationDateTime\":\"2020-12-15T12:01:59\",\"systemFrom\":\"MDM_CH\",\"systemTo\":\"Kafka\",\"contactName\":\"MS Person Fl\"},\"messageRequest\":{\"person\":[{\"partyUId\":\"1542025959\",\"consentCreditBureauVerification\":false,\"consentCreditBureauUpload\":false,\"terminated\":false,\"underInvestigationFlag\":false,\"criminalRecordFlag\":false,\"taxRezident\":true,\"rezidentFlag\":true,\"type\":\"1\",\"status\":\"1\",\"genderCode\":\"1\",\"birthDateTime\":\"1990-12-10T00:00:00\",\"firstName\":\"Олег\",\"middleName\":\"Олегович\",\"lastName\":\"Воронин\",\"lastNameLat\":\"VORONIN\",\"firstNameLat\":\"OLEG\",\"pubOfficialStatus\":0,\"nationalityCountryCode\":\"643\",\"loginExternalSystem\":\"4516\",\"nameExternalSystem\":\"EID\",\"updateDate\":\"2021-11-23T14:16:25\",\"startDate\":\"2021-11-23T14:17:34\",\"employment\":[],\"riskLevelJustification\":[],\"education\":[],\"relatives\":[],\"personDocumentIdentity\":[{\"number\":\"560560\",\"trustFlag\":true,\"loginExternalSystem\":\"4516\",\"nameExternalSystem\":\"EID\",\"updateDate\":\"2021-11-23T14:16:25\",\"series\":\"56 07\",\"issueDate\":\"2018-08-08\",\"expirationDate\":null,\"startDate\":null,\"endDate\":null,\"typeCode\":\"21\",\"issueCountryCode\":null,\"issueName\":null,\"issueCode\":null,\"startOfRightToStay\":null,\"endOfRightToStay\":null,\"comment\":null}],\"address\":[],\"contactPhoneCommunication\":[],\"emailCommunication\":[],\"contactRelationship\":[],\"segment\":[{\"nameExternalSystem\":\"EID\",\"startDate\":null,\"endDate\":null,\"updateDate\":\"2021-11-23T14:16:25\",\"loginExternalSystem\":\"4516\",\"value\":\"N\",\"status\":0,\"type\":\"39\",\"criterion\":null}],\"blackList\":[],\"personCrossRef\":[{\"organizationFlag\":false,\"id\":\"29262131\",\"externalSystemId\":\"EID\"},{\"organizationFlag\":false,\"id\":\"29262131\",\"externalSystemId\":\"EID2\"},{\"organizationFlag\":true,\"id\":\"1-VSKAWMS\",\"externalSystemId\":\"SBL_FR\"},{\"organizationFlag\":true,\"id\":\"86516039\",\"externalSystemId\":\"IVR\"}]}]}}", headerma);
+        producer.send(records);
+
+        producer.flush();
+        producer.close();
+
+        return Response.status(200).entity("{" + "\"id\": \"" + id + "\"" + "}").build();
+    }
+
+    /*
      * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsSendDataToPFROrder
      */
     @Path("/DsSendDataToPFROrder")
