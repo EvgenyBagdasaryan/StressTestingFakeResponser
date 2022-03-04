@@ -351,9 +351,9 @@ public class RestServer {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(TYPE_JSON)
     @ResourceFilters({RestLoggingFilter.class})
-    public Response dsSendDataToPFRNotification(String params) {
+    public Response dsSendDataToPFRNotification(String params) throws InterruptedException {
 
-        Map<String, Object> kafkaConfig = StubConfig.getKafkaConfig();
+        /*Map<String, Object> kafkaConfig = StubConfig.getKafkaConfig();
 
         Properties props = new Properties();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, String.valueOf(kafkaConfig.get("Url")));
@@ -378,10 +378,17 @@ public class RestServer {
 
         final KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
         ProducerRecord<String, String> records = new ProducerRecord(String.valueOf(kafkaConfig.get("Topic")), 0, id,"{\"id\":\""+ id + "\",\"status\":\"SUCCESS\",\"description\":\"Ответ предоставлен. По вашему запросу сформировано уведомление о наличии права владельца сертификата МСК на распоряжение средствами (частью средств) материнского (семейного) капитала\",\"active\":\"false\",\"availableAmount\":1000000}", headerma);
-        producer.send(records);
+        */
 
-        producer.flush();
-        producer.close();
+        String id = UUID.randomUUID().toString();
+
+        new TmpThread(id).start();
+
+        //Thread.sleep(3000);
+        //producer.send(records);
+
+        //producer.flush();
+        //producer.close();
 
         return Response.status(200).entity("{" + "\"id\": \"" + id + "\"" + "}").build();
     }
@@ -481,6 +488,56 @@ public class RestServer {
                     "\"ReturnCode\": " + 1 + " ," +
                     "\"ReturnMsg\": \"" + e.getMessage() + "\"," +
                     "}").build();
+        }
+    }
+}
+
+class TmpThread extends Thread {
+
+    private String id;
+
+    TmpThread(String idNew){
+        id = idNew;
+    }
+
+    @Override
+    public void run() {
+        try {
+
+            Map<String, Object> kafkaConfig = StubConfig.getKafkaConfig();
+
+            Properties props = new Properties();
+            props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, String.valueOf(kafkaConfig.get("Url")));
+
+            props.put(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SSL");
+            props.put(SslConfigs.SSL_TRUSTSTORE_LOCATION_CONFIG, String.valueOf(kafkaConfig.get("SslTruststoreLocation")));
+            props.put(SslConfigs.SSL_TRUSTSTORE_PASSWORD_CONFIG,  String.valueOf(kafkaConfig.get("SslTruststorePassword")));
+
+            props.put(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG, String.valueOf(kafkaConfig.get("SslKeystoreLocation")));
+            props.put(SslConfigs.SSL_KEYSTORE_PASSWORD_CONFIG, String.valueOf(kafkaConfig.get("SslKeystorePassword")));
+            props.put(SslConfigs.SSL_KEY_PASSWORD_CONFIG, String.valueOf(kafkaConfig.get("SslKeyPassword")));
+
+            //props.put(ProducerConfig.ACKS_CONFIG, "all");
+            //props.put(ProducerConfig.RETRIES_CONFIG, 0);
+            props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+            props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+
+            Header headerm = new RecordHeader("keyHeader", "from fakeResponser with love".getBytes());
+            List<Header> headerma = Arrays.asList(headerm);
+
+            //String id = UUID.randomUUID().toString();
+
+            final KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
+            ProducerRecord<String, String> records = new ProducerRecord(String.valueOf(kafkaConfig.get("Topic")), 0, id,"{\"id\":\""+ id + "\",\"status\":\"SUCCESS\",\"description\":\"Ответ предоставлен. По вашему запросу сформировано уведомление о наличии права владельца сертификата МСК на распоряжение средствами (частью средств) материнского (семейного) капитала\",\"active\":\"false\",\"availableAmount\":1000000}", headerma);
+
+            Thread.sleep(3000);
+            producer.send(records);
+
+            producer.flush();
+            producer.close();
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }
