@@ -225,12 +225,10 @@ public class RestServer {
                     "\"ReturnMsg\": \"" + e.getMessage() + "\"," +
                     "}").build();
         }*/
-        return Response.status(200).entity(
-                new AuthorizationResponse(
-                        BaseResponse.SUCCESS,
-                        "You're authenticated successfully. Private key will be valid for 30 mins",
-                        "privateKey")
-        ).build();
+        String uuid = UUID.randomUUID().toString();
+        return Response.status(200).entity("{" +
+                "\"access_token\": \"" + uuid + "\"" +
+                "}").build();
     }
 
     /*
@@ -473,6 +471,25 @@ public class RestServer {
     public Response dsMarketingOffer(String params) {
         return getData("DsMarketingOffer", params);
     }
+
+
+    /*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsAddCustomerDigitalDocument
+     */
+    @Path("/DsAddCustomerDigitalDocument")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsAddCustomerDigitalDocument(String params) {
+        String uuid = UUID.randomUUID().toString();
+        return Response.status(200).entity("{" +
+                "\"errorCode\": " + 0 + " ," +
+                "\"requestId\": \"" + uuid + "\"," +
+                "\"errorDescription\": Успех" +
+                "}").build();
+    }
+
 
     private Response getData(String command, String params) {
         logger.debug("fake " + command + " start");
