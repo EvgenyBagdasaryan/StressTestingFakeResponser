@@ -206,6 +206,7 @@ public class StubConfig {
 
 	private Map<String, Adapter> config;
 	private Map<String, Object> kafkaConfig;
+	private Map<String, Object> kafkaTS73Config;
 	private String defaultUrl;
 	private static boolean notUseCacheForResponse;
 
@@ -268,6 +269,11 @@ public class StubConfig {
 				kafkaConfig = (Map<String, Object>) e.getValue();
 				continue;
 			}
+			else if ("KAFKA_TS73_CONFIG".equals(e.getKey())) {
+
+				kafkaTS73Config = (Map<String, Object>) e.getValue();
+				continue;
+			}
             Adapter adapter = new Adapter(e.getKey(), (Map<String, Object>) e.getValue());
             config.put(e.getKey(), adapter);
         }
@@ -320,4 +326,7 @@ public class StubConfig {
 
 	public static Map<String, Object> getKafkaConfig() {
 		return StubConfig.getStubConfig().kafkaConfig;	}
+
+	public static Map<String, Object> getKafkaTS73Config() {
+		return StubConfig.getStubConfig().kafkaTS73Config;	}
 }

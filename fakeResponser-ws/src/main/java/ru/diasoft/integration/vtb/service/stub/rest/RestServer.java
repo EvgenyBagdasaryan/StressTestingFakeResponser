@@ -12,7 +12,9 @@ import org.apache.kafka.common.config.SslConfigs;
 import org.apache.kafka.common.header.Header;
 import org.apache.kafka.common.header.internals.RecordHeader;
 import org.apache.log4j.Logger;
+import ru.diasoft.integration.vtb.service.stub.Constants;
 import ru.diasoft.integration.vtb.service.stub.impl.StubConfig;
+import ru.diasoft.integration.vtb.service.stub.kafka.MessageSender;
 import ru.diasoft.integration.vtb.service.stub.rest.model.Device;
 import ru.diasoft.integration.vtb.service.stub.rest.response.AuthorizationResponse;
 import ru.diasoft.integration.vtb.service.stub.rest.response.BaseResponse;
@@ -501,6 +503,40 @@ public class RestServer {
                     "\"ReturnMsg\": \"" + e.getMessage() + "\"," +
                     "}").build();
         }
+    }
+
+    public void mortgageContractKafkaRouter (String type, Map<String, Object> dataFromKafka) throws Exception {
+        List<Map<String, Object>> headers = (List<Map<String, Object>>) dataFromKafka.get("headers");
+        Map<String, Object> kafkaTS73Config = StubConfig.getKafkaTS73Config();
+        MessageSender sender = new MessageSender(kafkaTS73Config);
+        List<Header> headerList = new ArrayList<>();
+        for(Map<String, Object> head : headers) {
+
+            for(Map.Entry<String, Object> entryHead : head.entrySet()) {
+                if(entryHead.getKey().equals("__TypeId__")) {
+                    String typeId = "";
+                    if(entryHead.getValue().equals(Constants.AZS_CREATEUPDATE_CONTRACT_OPERATION_NAME)) {
+                        typeId = Constants.AZS_KAFKA_CREATEUPDATE_CONTRACT_REPLY_MESSAGE;
+                    }
+                    headerList.add(new RecordHeader("__TypeId__", typeId.getBytes()));
+                } else {
+                    headerList.add(new RecordHeader(entryHead.getKey(), entryHead.getValue().toString().getBytes()));
+                }
+            }
+        }
+
+        Response resp = dsCreateUpdateContract("");
+        String json = resp.getEntity().toString();
+        sender.send(json, headerList, UUID.randomUUID().toString());
+    }
+
+    @Path("/DsCreateUpdateContract")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsCreateUpdateContract(String params) {
+        return getData("DsCreateUpdateContract", params);
     }
 }
 

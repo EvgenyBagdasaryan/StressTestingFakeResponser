@@ -668,5 +668,13 @@
 				</response>
 			</DsMarketingOffer>
 		</DsMarketingOfferReqA>
+		<DsCreateUpdateContractReqA>
+			<DsCreateUpdateContract>
+				<type>CALL</type>
+				<response>
+					<template>stub\DsCreateUpdateContractReqA\DsCreateUpdateContract.json</template>
+				</response>
+			</DsCreateUpdateContract>
+		</DsCreateUpdateContractReqA>
 	</STUB>
 </root>
