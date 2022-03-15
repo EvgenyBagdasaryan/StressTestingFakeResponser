@@ -2,6 +2,7 @@ package ru.diasoft.integration.vtb.service.stub.impl;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+import ru.diasoft.integration.vtb.service.stub.kafka.KafkaConsumersController;
 import ru.diasoft.integration.vtb.utils.Utl;
 import ru.diasoft.integration.vtb.service.stub.flexadt.*;
 
@@ -176,12 +177,25 @@ public class UlbsStub implements WSPORTTYPE {
 
 	public void setContext(WebServiceContext context) {
 		this.context = context;
+		try {
+		    logger.info("setContext in fakeResponser");
+			KafkaConsumersController.AllConsumersInConfigStart();
+
+		} catch (Exception e) {
+			logger.info("contextInitialized error: " + e.getMessage());
+		}
 	}
 
 	@PreDestroy
 	void preDestroy(){
 		System.out.println("Config destroyed");
 		StubConfig.clear();
+		try {
+			KafkaConsumersController.AllConsumersInConfigStop();
+
+		} catch (Exception e) {
+			logger.info("contextDestroyed error: " + e.getMessage());
+		}
 	}
 
 }
