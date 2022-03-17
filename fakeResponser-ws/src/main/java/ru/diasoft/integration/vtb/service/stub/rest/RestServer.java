@@ -352,14 +352,14 @@ public class RestServer {
     public Response dsSendDataToPFRNotification(String params) throws InterruptedException {
 
         String id = UUID.randomUUID().toString();
-        
+
         new TmpThread(id).start();
 
         return Response.status(200).entity("{" + "\"id\": \"" + id + "\"" + "}").build();
     }
 
     /*
-     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/files"
      */
     @Path("/DsPutFileToECM/files")
     @POST
@@ -372,7 +372,7 @@ public class RestServer {
         return Response.status(200).entity("{" + "\"uuid\": \"" + uuid + "\"" + "}").build();
     }
     /*
-     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/permission-sharings
      */
     @Path("/DsPutFileToECM/permission-sharings")
     @POST
