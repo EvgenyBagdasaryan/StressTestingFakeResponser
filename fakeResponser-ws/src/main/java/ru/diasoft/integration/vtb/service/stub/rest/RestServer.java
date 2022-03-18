@@ -481,7 +481,7 @@ public class RestServer {
         return Response.status(200).entity("{" +
                 "\"errorCode\": " + 0 + " ," +
                 "\"requestId\": \"" + uuid + "\"," +
-                "\"errorDescription\": Успех" +
+                "\"errorDescription\": \"" + "Успех" + "\"" +
                 "}").build();
     }
 
