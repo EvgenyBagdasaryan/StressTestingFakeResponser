@@ -358,6 +358,16 @@ public class RestServer {
         return Response.status(200).entity("{" + "\"id\": \"" + id + "\"" + "}").build();
     }
 
+    @Path("/DsProductDossierConverter")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsProductDossierConverter(String params) throws InterruptedException {
+
+       return Response.status(200).entity("{" + "\"ErrorCode\": \"" + 0 + "\"" + "}").build();
+    }
+
     /*
      * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/files"
      */
