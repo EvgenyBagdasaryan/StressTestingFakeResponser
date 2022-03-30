@@ -359,9 +359,9 @@ public class RestServer {
     }
 
     /*
-     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/files"
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/files?folder=DOSE"
      */
-    @Path("/DsPutFileToECM/files")
+    @Path("/DsPutFileToECM/files?folder=DOSE")
     @POST
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces(TYPE_JSON)
@@ -372,9 +372,9 @@ public class RestServer {
         return Response.status(200).entity("{" + "\"uuid\": \"" + uuid + "\"" + "}").build();
     }
     /*
-     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/permission-sharings
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/permission-sharings/transfer
      */
-    @Path("/DsPutFileToECM/permission-sharings")
+    @Path("/DsPutFileToECM/permission-sharings/transfer")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(TYPE_JSON)
