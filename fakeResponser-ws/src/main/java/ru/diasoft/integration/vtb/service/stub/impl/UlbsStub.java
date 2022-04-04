@@ -6,8 +6,11 @@ import ru.diasoft.integration.vtb.service.stub.kafka.KafkaConsumersController;
 import ru.diasoft.integration.vtb.utils.Utl;
 import ru.diasoft.integration.vtb.service.stub.flexadt.*;
 
+import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
 import javax.xml.ws.WebServiceContext;
 
 @javax.jws.WebService(endpointInterface = "ru.diasoft.integration.vtb.service.stub.flexadt.WSPORTTYPE", 
@@ -179,7 +182,6 @@ public class UlbsStub implements WSPORTTYPE {
 		this.context = context;
 		try {
 		    logger.info("setContext in fakeResponser");
-			KafkaConsumersController.AllConsumersInConfigStart();
 
 		} catch (Exception e) {
 			logger.info("contextInitialized error: " + e.getMessage());
@@ -188,13 +190,24 @@ public class UlbsStub implements WSPORTTYPE {
 
 	@PreDestroy
 	void preDestroy(){
-		System.out.println("Config destroyed");
+		System.out.println("Config destroyed fake");
 		StubConfig.clear();
 		try {
 			KafkaConsumersController.AllConsumersInConfigStop();
 
 		} catch (Exception e) {
 			logger.info("contextDestroyed error: " + e.getMessage());
+		}
+	}
+
+	@PostConstruct
+	public void postConstruct() {
+		logger.info("set fakeResp Context ");
+		try {
+			KafkaConsumersController.AllConsumersInConfigStart();
+
+		} catch (Exception e) {
+			logger.info("contextInitialized fakeResponce error: " + e.getMessage());
 		}
 	}
 

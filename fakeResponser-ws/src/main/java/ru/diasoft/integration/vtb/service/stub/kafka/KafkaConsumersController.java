@@ -417,6 +417,7 @@ public class KafkaConsumersController {
                 String urlKafkaConsumerProp = ParamsUtil.getString(kafkaConsumerProp.get("Url"));
                 // стартуем консюмер
                 if(start){
+                    logger.debug("----------------------------------------------------------started  AllConsumersInConfigStart from fakeResponser start = true");
                     MessageReceiver tmpMessageReceiver = new MessageReceiver(kafkaConsumerProp);
                     KafkaConsumersController.messageReceiverList.add(tmpMessageReceiver);
                     tmpMessageReceiver.start();

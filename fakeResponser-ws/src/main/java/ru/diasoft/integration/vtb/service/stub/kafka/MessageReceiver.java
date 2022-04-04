@@ -4,7 +4,6 @@ import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.config.SslConfigs;
 import org.apache.kafka.common.header.Header;
@@ -58,7 +57,7 @@ public class MessageReceiver {
      */
     public MessageReceiver(Map<String, Object> kafkaProps) {
 
-
+        logger.debug("start MessageReceiver for fakeResponcer");
         url = ParamsUtil.getString(kafkaProps.get("Url"));
         topic = ParamsUtil.getString(kafkaProps.get("Topic"));
         groupId = ParamsUtil.getString(kafkaProps.get("GroupId"));
@@ -207,7 +206,7 @@ public class MessageReceiver {
         if (isInterrupted.get()) {
             throw new IllegalStateException("Method MessageSender::start used after receiver was interrupted");
         }
-        logger.debug("MessageSender started successfully");
+        logger.debug("MessageSender started successfully for fakeResponcer");
         receiverThread.start();
     }
 
