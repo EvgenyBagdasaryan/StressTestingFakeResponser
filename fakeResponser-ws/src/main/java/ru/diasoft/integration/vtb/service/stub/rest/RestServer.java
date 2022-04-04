@@ -361,7 +361,7 @@ public class RestServer {
     /*
      * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/files?folder=DOSE"
      */
-    @Path("/DsPutFileToECM/files?folder=DOSE")
+    @Path("/DsPutFileToECM/files")
     @POST
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces(TYPE_JSON)
