@@ -377,7 +377,7 @@ public class RestServer {
 
         String barCode = "259362045688178167605669812097352137891";
 
-        return Response.status(200).entity("{" + "\"UUID\": \"" + barCode + "\"" + "}").build();
+        return Response.status(200).entity(barCode).build();
     }
 
     /*
