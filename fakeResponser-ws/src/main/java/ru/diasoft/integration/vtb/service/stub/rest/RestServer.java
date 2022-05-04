@@ -521,10 +521,10 @@ public class RestServer {
         }
     }
 
-    public void mortgageContractKafkaRouter (String type, Map<String, Object> dataFromKafka) throws Exception {
+    public void mortgageContracAndHoldLimittKafkaRouter (String type, Map<String, Object> dataFromKafka) throws Exception {
         List<Map<String, Object>> headers = (List<Map<String, Object>>) dataFromKafka.get("headers");
-        Map<String, Object> kafkaTS73Config = StubConfig.getKafkaTS73Config();
-        MessageSender sender = new MessageSender(kafkaTS73Config);
+        Map<String, Object> kafkaAZSconfig = StubConfig.getKafkaAZSonfig();
+        MessageSender sender = new MessageSender(kafkaAZSconfig);
         List<Header> headerList = new ArrayList<>();
         String command = "";
         for(Map<String, Object> head : headers) {
@@ -548,6 +548,10 @@ public class RestServer {
                         typeId = Constants.AZS_KAFKA_UPDATE_COLLATERAL_REPLY_MESSAGE;
                         command = "DsUpdateMortgageCollateral";
                     }
+                    if(entryHead.getValue().equals(Constants.AZS_HOLD_LIMIT_OPERATION_NAME)) {
+                        typeId = Constants.AZS_KAFKA_HOLD_LIMIT_REPLY_MESSAGE;
+                        command = "DsResponseProcessingHoldLimit";
+                    }
                     headerList.add(new RecordHeader("__TypeId__", typeId.getBytes()));
                 } else {
                     headerList.add(new RecordHeader(entryHead.getKey(), entryHead.getValue().toString().getBytes()));
@@ -555,7 +559,7 @@ public class RestServer {
             }
         }
 
-        Response resp = dsCommonTs73Router("", command);
+        Response resp = dsCommonTS73_74Router("", command);
         String json = resp.getEntity().toString();
         sender.send(json, headerList, UUID.randomUUID().toString());
     }
@@ -564,7 +568,7 @@ public class RestServer {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(TYPE_JSON)
     @ResourceFilters({RestLoggingFilter.class})
-    public Response dsCommonTs73Router(String params, String command) {
+    public Response dsCommonTS73_74Router(String params, String command) {
         return getDataForKafka(command, params);
     }
 }

@@ -20,5 +20,10 @@ public class Constants {
 	public static final String AZS_KAFKA_CREATE_CREDITING_ORDER_REPLY_MESSAGE = "ru.vtb.maps.externalrouter.api.dto.external.bq.contractprocessing.v1.reply.ExtBqCreateCreditingOrderReplyMessage";
 	public static final String AZS_KAFKA_UPDATE_COLLATERAL_REPLY_MESSAGE = "ru.vtb.maps.externalrouter.api.dto.external.bq.contractprocessing.v1.reply.ExtBqUpdateMortgageCollateralReplyMessage";
 
+	//[TS74] для запроса от адаптера
+	public static final String AZS_HOLD_LIMIT_OPERATION_NAME = "ru.vtb.maps.externalrouter.api.dto.external.bq.creditlimitholding.v1.ExtBqCreditLimitHoldMessage";
+
+	//[TS74] для ответа в адаптер
+	public static final String AZS_KAFKA_HOLD_LIMIT_REPLY_MESSAGE = "ru.vtb.maps.bqdataservice.api.dto.creditlimitholding.v1.reply.ExtBqCreditLimitHoldReplyMessage";
 
 }
