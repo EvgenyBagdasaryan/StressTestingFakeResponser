@@ -358,6 +358,28 @@ public class RestServer {
         return Response.status(200).entity("{" + "\"id\": \"" + id + "\"" + "}").build();
     }
 
+    @Path("/DsProductDossierConverter")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsProductDossierConverter(String params) throws InterruptedException {
+
+       return Response.status(200).entity("{" + "\"ErrorCode\": \"" + 0 + "\"" + "}").build();
+    }
+
+    @Path("/DsProductDossierBarCode")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsProductDossierBarCode(String params) throws InterruptedException {
+
+        String barCode = "259362045688178167605669812097352137891";
+
+        return Response.status(200).entity(barCode).build();
+    }
+
     /*
      * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsPutFileToECM/files?folder=DOSE"
      */
