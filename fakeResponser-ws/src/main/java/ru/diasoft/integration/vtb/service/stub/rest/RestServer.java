@@ -353,7 +353,7 @@ public class RestServer {
 
         String id = UUID.randomUUID().toString();
 
-        new TmpThread(id).start();
+        new PFRNotificationThread(id).start();
 
         return Response.status(200).entity("{" + "\"id\": \"" + id + "\"" + "}").build();
     }
@@ -524,54 +524,72 @@ public class RestServer {
                     "}").build();
         }
     }
-}
 
-class TmpThread extends Thread {
+    /*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/tessa/GetTaskStatus
+     */
+    @Path("/tessa/GetTaskStatus")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsTessaGetTaskStatus(String params) throws InterruptedException {
 
-    private String id;
+        Map<String, Object> mapParams = DataConvertUtil.jsonToMap(params);
+        String requestID = ParamsUtil.getString(mapParams.get("RequestID"));
+        String cRMTaskID = ParamsUtil.getString(mapParams.get("CRMTaskID"));
 
-    TmpThread(String idNew){
-        id = idNew;
+        return Response.status(200).entity("{\n" +
+                "   \"RequestID\": \"" + requestID + "\",\n"  +
+                "   \"CRMTaskID\": \"" + cRMTaskID + "\",\n"  +
+                "   \"TessaTasks\": [   {\n" +
+                "      \"TessaTaskID\": \"4785c12d-76aa-459f-8bf3-7a90d943a835\",\n" +
+                "      \"TessaTaskState\": \"9\",\n" +
+                "      \"ErrorDescription\": \"Успех\",\n" +
+                "      \"Description\": null,\n" +
+                "      \"TaskErrors\": [],\n" +
+                "      \"Contracts\": [      {\n" +
+                "      \"ContractNumber\": \"634/0100-0006168\",\n" +
+                "      \"ContractDate\": \"0001-01-01T00:00:00\"\n" +
+                "      }],\n" +
+                "      \"BOD\": \"ОКСФПН УКДОФЛ ДОПБ\",\n" +
+                "      \"EmployeeClockNumber\": null,\n" +
+                "      \"EmployeeFIO\": null,\n" +
+                "      \"EmployeeComment\": null\n" +
+                "   }],\n" +
+                "   \"TaskType\": 31,\n" +
+                "   \"Files\": [],\n" +
+                "   \"InitSystem\": null\n" +
+                "}").build();
     }
 
-    @Override
-    public void run() {
-        try {
+    /*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/tessa/CreateOrUpdateCreditTaskAndFiles
+     */
+    @Path("/tessa/CreateOrUpdateCreditTaskAndFiles")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsTessaCreateOrUpdateCreditTaskAndFiles(String params) throws InterruptedException {
 
-            Map<String, Object> kafkaConfig = StubConfig.getKafkaConfig();
+        Map<String, Object> mapParams = DataConvertUtil.jsonToMap(params);
+        String requestID = ParamsUtil.getString(mapParams.get("RequestID"));
+        String cRMTaskID = ParamsUtil.getString(mapParams.get("CRMTaskID"));
 
-            Properties props = new Properties();
-            props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, String.valueOf(kafkaConfig.get("Url")));
+        //new TessaResponseThread(requestID, cRMTaskID).start();
 
-            props.put(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SSL");
-            props.put(SslConfigs.SSL_TRUSTSTORE_LOCATION_CONFIG, String.valueOf(kafkaConfig.get("SslTruststoreLocation")));
-            props.put(SslConfigs.SSL_TRUSTSTORE_PASSWORD_CONFIG,  String.valueOf(kafkaConfig.get("SslTruststorePassword")));
-
-            props.put(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG, String.valueOf(kafkaConfig.get("SslKeystoreLocation")));
-            props.put(SslConfigs.SSL_KEYSTORE_PASSWORD_CONFIG, String.valueOf(kafkaConfig.get("SslKeystorePassword")));
-            props.put(SslConfigs.SSL_KEY_PASSWORD_CONFIG, String.valueOf(kafkaConfig.get("SslKeyPassword")));
-
-            //props.put(ProducerConfig.ACKS_CONFIG, "all");
-            //props.put(ProducerConfig.RETRIES_CONFIG, 0);
-            props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
-            props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
-
-            Header headerm = new RecordHeader("keyHeader", "from fakeResponser with love".getBytes());
-            List<Header> headerma = Arrays.asList(headerm);
-
-            //String id = UUID.randomUUID().toString();
-
-            final KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
-            ProducerRecord<String, String> records = new ProducerRecord(String.valueOf(kafkaConfig.get("Topic")), 0, id,"{\"id\":\""+ id + "\",\"status\":\"SUCCESS\",\"description\":\"Ответ предоставлен. По вашему запросу сформировано уведомление о наличии права владельца сертификата МСК на распоряжение средствами (частью средств) материнского (семейного) капитала\",\"active\":\"false\",\"availableAmount\":1000000}", headerma);
-
-            Thread.sleep(3000);
-            producer.send(records);
-
-            producer.flush();
-            producer.close();
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        return Response.status(200).entity("{\n" +
+                "   \"RequestID\": \"" + requestID + "\",\n"  +
+                "   \"TraceID\": null,\n" +
+                "   \"CRMTaskID\": null,\n" +
+                "   \"TessaTaskState\": 0,\n" +
+                "   \"Message\": \"Общая ошибка обработки запроса.\",\n" +
+                "   \"ErrList\": [   {\n" +
+                "      \"Code\": \"1\",\n" +
+                "      \"Description\": \"Общая ошибка обработки запроса.\"\n" +
+                "   }]\n" +
+                "}").build();
     }
 }
+
