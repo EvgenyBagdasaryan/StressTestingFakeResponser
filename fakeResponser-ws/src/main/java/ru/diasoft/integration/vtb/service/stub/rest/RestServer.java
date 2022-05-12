@@ -591,5 +591,17 @@ public class RestServer {
                 "   }]\n" +
                 "}").build();
     }
+
+    /*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/dsCustomerRelationshipCreateOrModify
+     */
+    @Path("/dsCustomerRelationshipCreateOrModify")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsCustomerRelationshipCreateOrModify(String params) {
+        return getData("dsCustomerRelationshipCreateOrModify", params);
+    }
 }
 
