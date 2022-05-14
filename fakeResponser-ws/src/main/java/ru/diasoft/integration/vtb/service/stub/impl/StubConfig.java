@@ -206,7 +206,10 @@ public class StubConfig {
 
 	private Map<String, Adapter> config;
 	private Map<String, Object> kafkaConfig;
+	private String tessaAsyncCallbackUrl;
 	private String defaultUrl;
+	private String adminLogin;
+	private String adminPassword;
 	private static boolean notUseCacheForResponse;
 
 	private JmsConfig jmsConfig;
@@ -261,6 +264,9 @@ public class StubConfig {
             } else if ("DEFAULT_CONFIG".equals(e.getKey())) {
                 Map<String, Object> config = (Map<String, Object>) e.getValue();
                 defaultUrl = (String) config.get("CallbackUrl");
+				tessaAsyncCallbackUrl = (String) config.get("TessaAsyncCallbackUrl");
+				adminLogin = (String) config.get("AdminLogin");
+				adminPassword = (String) config.get("AdminPassword");
                 notUseCacheForResponse = Boolean.valueOf(String.valueOf(config.get("NotUseCaheForResponse")));
                 continue;
             } else if ("KAFKA_CONFIG".equals(e.getKey())) {
@@ -313,11 +319,19 @@ public class StubConfig {
 	public static String getCallbackUrl() {
 		return StubConfig.getStubConfig().defaultUrl;
 	}
-
+	public static String getTessaAsyncCallbackUrl() {
+		return StubConfig.getStubConfig().tessaAsyncCallbackUrl;
+	}
+	public static String getAdminLogin() {
+		return StubConfig.getStubConfig().adminLogin;
+	}
+	public static String getAdminPassword() {
+		return StubConfig.getStubConfig().adminPassword;
+	}
 	public static JmsConfig getJmsConfig() {
 		return StubConfig.getStubConfig().jmsConfig;
 	}
-
 	public static Map<String, Object> getKafkaConfig() {
-		return StubConfig.getStubConfig().kafkaConfig;	}
+		return StubConfig.getStubConfig().kafkaConfig;
+	}
 }

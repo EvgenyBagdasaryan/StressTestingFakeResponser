@@ -1,38 +1,17 @@
 package ru.diasoft.integration.vtb.service.stub.rest;
 
-import com.sun.jersey.spi.container.ResourceFilters;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.StringUtils;
-import org.apache.kafka.clients.CommonClientConfigs;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.common.config.SslConfigs;
-import org.apache.kafka.common.header.Header;
-import org.apache.kafka.common.header.internals.RecordHeader;
 import org.apache.log4j.Logger;
 import ru.diasoft.integration.vtb.service.stub.impl.StubConfig;
-import ru.diasoft.integration.vtb.service.stub.impl.StubProcessor;
-import ru.diasoft.integration.vtb.utils.DataConvertUtil;
-import ru.diasoft.integration.vtb.utils.MyFileUtils;
-import ru.diasoft.integration.vtb.utils.ParamsUtil;
-import ru.diasoft.integration.vtb.utils.Utl;
-
-import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.UriInfo;
-import java.io.File;
-import java.net.URLEncoder;
-import java.util.*;
-//import ru.diasoft.integration.vtb.services.DSCALLSender;
+import sun.misc.BASE64Encoder;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
 
 class TessaResponseThread extends Thread {
 
     private String reqID;
     private String crmTaskID;
-    //private final DSCALLSender dscallService = ServiceFactory.getInstance().getDsCallService();
+    private static Logger logger = Logger.getLogger(TessaResponseThread.class);
 
     TessaResponseThread(String requestID, String cRMTaskID){
         reqID = requestID;
@@ -43,10 +22,33 @@ class TessaResponseThread extends Thread {
     public void run() {
         try {
 
-            //Map<String, Object> crossRes = dscallService.dscall(AdtConfig.getUrl_VTB24CONVWS(), "dsGetCrossRefPerson", crossReq);
-
             Thread.sleep(3000);
 
+            String url = StubConfig.getTessaAsyncCallbackUrl();//"http://k6-sfr-app01.vtb24.ru:8004/vtbadt24conv/rest/dsGetResultTaskInTessa/application";
+            String name = StubConfig.getAdminLogin();
+            String password = StubConfig.getAdminPassword();
+            String authString = name + ":" + password;
+            String authStringEnc = new BASE64Encoder().encode(authString.getBytes());
+            logger.debug("Base64 encoded auth string: " + authStringEnc);
+            Client restClient = Client.create();
+            WebResource webResource = restClient.resource(url);
+            String json = "{ \"RequestID\": \"" + reqID + "\", " +
+                    "\"TraceID\":\"8F2C9524-EF18-4303-AAE0-0011E4C07D60\", " +
+                    "\"CRMTaskID\": \"" + crmTaskID + "\", " +
+                    "\"TessaTaskState\":12, " +
+                    "\"Message\":\"\\n\", " +
+                    "\"ErrList\":null }";
+            logger.debug("income dsGetResultTaskInTessa json: " + json);
+            ClientResponse resp = webResource
+                    .type("application/json;charset=UTF-8")
+                    .header("Authorization", "Basic " + authStringEnc)
+                    .post(ClientResponse.class, json);
+            logger.debug("output dsGetResultTaskInTessa Status: " + resp.getStatus());
+            if(resp.getStatus() != 200){
+                logger.debug("Unable to connect to the server");
+            }
+            String output = resp.getEntity(String.class);
+            logger.debug("response dsGetResultTaskInTessa: " + output);
 
         } catch (InterruptedException e) {
             e.printStackTrace();

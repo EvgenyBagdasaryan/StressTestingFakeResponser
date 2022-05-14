@@ -4,6 +4,9 @@
 	<STUB>
 		<DEFAULT_CONFIG>
 			<CallbackUrl>http://integr3.diasoft.ru:7002/vtb24adt/vtbadtws</CallbackUrl>
+			<TessaAsyncCallbackUrl>http://k6-sfr-app01.vtb24.ru:8004/vtbadt24conv/rest/dsGetResultTaskInTessa/application</TessaAsyncCallbackUrl>
+			<AdminLogin>weblogicRSN</AdminLogin>
+			<AdminPassword>weblogicRSN1q</AdminPassword>
 			<!--NotUseCaheForResponse>true</NotUseCaheForResponse-->
 			<!-- Charset>UTF-8</Charset -->
 		</DEFAULT_CONFIG>

@@ -577,7 +577,7 @@ public class RestServer {
         String requestID = ParamsUtil.getString(mapParams.get("RequestID"));
         String cRMTaskID = ParamsUtil.getString(mapParams.get("CRMTaskID"));
 
-        //new TessaResponseThread(requestID, cRMTaskID).start();
+        new TessaResponseThread(requestID, cRMTaskID).start();
 
         return Response.status(200).entity("{\n" +
                 "   \"RequestID\": \"" + requestID + "\",\n"  +
