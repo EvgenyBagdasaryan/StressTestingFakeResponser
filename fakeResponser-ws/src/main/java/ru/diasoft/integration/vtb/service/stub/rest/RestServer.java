@@ -584,10 +584,10 @@ public class RestServer {
                 "   \"TraceID\": null,\n" +
                 "   \"CRMTaskID\": null,\n" +
                 "   \"TessaTaskState\": 0,\n" +
-                "   \"Message\": \"Общая ошибка обработки запроса.\",\n" +
+                "   \"Message\": \"Успех.\",\n" +
                 "   \"ErrList\": [   {\n" +
-                "      \"Code\": \"1\",\n" +
-                "      \"Description\": \"Общая ошибка обработки запроса.\"\n" +
+                "      \"Code\": \"0\",\n" +
+                "      \"Description\": \"Успех.\"\n" +
                 "   }]\n" +
                 "}").build();
     }
