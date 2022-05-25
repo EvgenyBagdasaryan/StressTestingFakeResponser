@@ -603,5 +603,29 @@ public class RestServer {
     public Response dsCustomerRelationshipCreateOrModify(String params) {
         return getData("dsCustomerRelationshipCreateOrModify", params);
     }
+
+    /*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsLegalBrowseListByParam
+     */
+    @Path("/DsLegalBrowseListByParam")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response DsLegalBrowseListByParam(String params) {
+        return getData("DsLegalBrowseListByParam", params);
+    }
+
+    /*
+     * Пример: http://debwlsapp05:8004/fakeResponser/rest/fake/DsCreateGuarantorOrganization
+     */
+    @Path("/DsCreateGuarantorOrganization")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response DsCreateGuarantorOrganization(String params) {
+        return getData("DsCreateGuarantorOrganization", params);
+    }
 }
 
