@@ -365,7 +365,7 @@ public class RestServer {
     @ResourceFilters({RestLoggingFilter.class})
     public Response dsProductDossierConverter(String params) throws InterruptedException {
 
-       return Response.status(200).entity("{" + "\"ErrorCode\": \"" + 0 + "\"" + "}").build();
+       return Response.status(200).entity("{" + "\"errorCode\": \"" + 0 + "\"" + "}").build();
     }
 
     @Path("/DsProductDossierBarCode")
