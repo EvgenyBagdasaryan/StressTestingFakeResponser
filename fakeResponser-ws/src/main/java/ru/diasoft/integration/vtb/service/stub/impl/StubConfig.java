@@ -206,6 +206,7 @@ public class StubConfig {
 
 	private Map<String, Adapter> config;
 	private Map<String, Object> kafkaConfig;
+	private Map<String, Object> kafkaAZSConfig;
 	private String tessaAsyncCallbackUrl;
 	private String defaultUrl;
 	private String adminLogin;
@@ -273,6 +274,9 @@ public class StubConfig {
 
 				kafkaConfig = (Map<String, Object>) e.getValue();
 				continue;
+			} else if ("KAFKA_AZS_CONFIG".equals(e.getKey())) {
+            	kafkaAZSConfig = (Map<String, Object>) e.getValue();
+            	continue;
 			}
             Adapter adapter = new Adapter(e.getKey(), (Map<String, Object>) e.getValue());
             config.put(e.getKey(), adapter);
@@ -333,5 +337,9 @@ public class StubConfig {
 	}
 	public static Map<String, Object> getKafkaConfig() {
 		return StubConfig.getStubConfig().kafkaConfig;
+	}
+
+	public static Map<String, Object> getKafkaAZSConfig() {
+		return StubConfig.getStubConfig().kafkaAZSConfig;
 	}
 }

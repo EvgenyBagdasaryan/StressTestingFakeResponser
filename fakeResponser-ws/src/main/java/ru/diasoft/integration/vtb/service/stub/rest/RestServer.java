@@ -545,7 +545,7 @@ public class RestServer {
 
     public void mortgageContractKafkaRouter (String type, Map<String, Object> dataFromKafka) throws Exception {
         List<Map<String, Object>> headers = (List<Map<String, Object>>) dataFromKafka.get("headers");
-        Map<String, Object> kafkaTS73Config = StubConfig.getKafkaTS73Config();
+        Map<String, Object> kafkaTS73Config = StubConfig.getKafkaAZSConfig();
         MessageSender sender = new MessageSender(kafkaTS73Config);
         List<Header> headerList = new ArrayList<>();
         String command = "";
