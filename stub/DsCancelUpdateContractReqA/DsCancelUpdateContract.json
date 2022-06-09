@@ -1,0 +1,43 @@
+{
+	"Response": {
+		"PledgeContracts": [{
+			"PledgeNumber": "",
+			"PledgeContractNumber": "46236482146"
+		}],
+		"GuaranteeContracts": [{
+			"GuaranteeContractNumber": "62356265",
+			"ClientId": 123
+		}],
+		"ClientCurrentAccounts": [{
+			"ClientCurrentAccount": "40817810099910004312"
+		},
+		{
+			"ClientCurrentAccount": "40817810084748521222"
+		}],
+		"PaymentSchedules": [{
+			"PaymentNumber": 789,
+			"PaymentDateBegin": "2021-10-27",
+			"PaymentDateEnd": "2021-10-27",
+			"PaymentCurrency": "cm.Currency.643",
+			"DebtBalance": 456
+		}],
+		"ContractNumber": "4164616451",
+		"OrderCreditingId": "35geguitw5",
+		"ContractStatus": "hfuwueuwue",
+		"LoanFullCostExpensesRate": 1,
+		"LoanAmount": 2,
+		"PaymentAmount": 3,
+		"PaymentPeriodEndDate": "2021-10-27",
+		"Loans": "12345",
+		"LoanPortfolio": "612345",
+		"PaymentDiscipline": "2121913",
+		"FinStatus": "2112113",
+		"DebtQuality": "212113",
+		"LoanCategoryF124": "3212113",
+		"LoanCategoryF125": "2123113",
+		"ReserveAmountF126": "21214513",
+		"ReserveAmountF127": "21213313",
+		"LoanFullCostExpensesPrice": 1500000,
+		"ApproximateMonthlyPayment": 45000
+	}
+}

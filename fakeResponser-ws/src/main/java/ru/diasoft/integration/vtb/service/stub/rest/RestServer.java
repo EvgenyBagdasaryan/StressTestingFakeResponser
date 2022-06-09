@@ -12,7 +12,9 @@ import org.apache.kafka.common.config.SslConfigs;
 import org.apache.kafka.common.header.Header;
 import org.apache.kafka.common.header.internals.RecordHeader;
 import org.apache.log4j.Logger;
+import ru.diasoft.integration.vtb.service.stub.Constants;
 import ru.diasoft.integration.vtb.service.stub.impl.StubConfig;
+import ru.diasoft.integration.vtb.service.stub.kafka.MessageSender;
 import ru.diasoft.integration.vtb.service.stub.rest.model.Device;
 import ru.diasoft.integration.vtb.service.stub.rest.response.AuthorizationResponse;
 import ru.diasoft.integration.vtb.service.stub.rest.response.BaseResponse;
@@ -523,6 +525,69 @@ public class RestServer {
                     "\"ReturnMsg\": \"" + e.getMessage() + "\"," +
                     "}").build();
         }
+    }
+
+    private Response getDataForKafka(String command, String params) {
+        logger.debug("fake " + command + " start for kafka");
+        try {
+            String response = StubProcessor.processSyncJson(command + "ReqA", command, params);
+            return Response.status(200).entity(response).build();
+
+        } catch (Exception e) {
+            logger.error("fake " + command + " error: " + e.getMessage());
+            return Response.status(400).entity("{" +
+                    "\"Status\": ERROR," +
+                    "\"ReturnCode\": " + 1 + " ," +
+                    "\"ReturnMsg\": \"" + e.getMessage() + "\"," +
+                    "}").build();
+        }
+    }
+
+    public void mortgageContractKafkaRouter (String type, Map<String, Object> dataFromKafka) throws Exception {
+        List<Map<String, Object>> headers = (List<Map<String, Object>>) dataFromKafka.get("headers");
+        Map<String, Object> kafkaTS73Config = StubConfig.getKafkaTS73Config();
+        MessageSender sender = new MessageSender(kafkaTS73Config);
+        List<Header> headerList = new ArrayList<>();
+        String command = "";
+        for(Map<String, Object> head : headers) {
+
+            for(Map.Entry<String, Object> entryHead : head.entrySet()) {
+                if(entryHead.getKey().equals("__TypeId__")) {
+                    String typeId = "";
+                    if(entryHead.getValue().equals(Constants.AZS_CREATEUPDATE_CONTRACT_OPERATION_NAME)) {
+                        typeId = Constants.AZS_KAFKA_CREATEUPDATE_CONTRACT_REPLY_MESSAGE;
+                        command = "DsCreateUpdateContract";
+                    }
+                    if(entryHead.getValue().equals(Constants.AZS_CANCEL_CONTRACT_OPERATION_NAME)) {
+                        typeId = Constants.AZS_KAFKA_CANCEL_CONTRACT_REPLY_MESSAGE;
+                        command = "DsCancelUpdateContract";
+                    }
+                    if(entryHead.getValue().equals(Constants.AZS_CREATE_CREDITING_ORDER_OPERATION_NAME)) {
+                        typeId = Constants.AZS_KAFKA_CREATE_CREDITING_ORDER_REPLY_MESSAGE;
+                        command = "DsCreateCreditingOrder";
+                    }
+                    if(entryHead.getValue().equals(Constants.AZS_UPDATE_COLLATERAL_OPERATION_NAME)) {
+                        typeId = Constants.AZS_KAFKA_UPDATE_COLLATERAL_REPLY_MESSAGE;
+                        command = "DsUpdateMortgageCollateral";
+                    }
+                    headerList.add(new RecordHeader("__TypeId__", typeId.getBytes()));
+                } else {
+                    headerList.add(new RecordHeader(entryHead.getKey(), entryHead.getValue().toString().getBytes()));
+                }
+            }
+        }
+
+        Response resp = dsCommonTs73Router("", command);
+        String json = resp.getEntity().toString();
+        sender.send(json, headerList, UUID.randomUUID().toString());
+    }
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(TYPE_JSON)
+    @ResourceFilters({RestLoggingFilter.class})
+    public Response dsCommonTs73Router(String params, String command) {
+        return getDataForKafka(command, params);
     }
 
     /*

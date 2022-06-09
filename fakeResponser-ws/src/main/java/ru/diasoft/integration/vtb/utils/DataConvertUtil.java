@@ -24,4 +24,19 @@ public class DataConvertUtil {
             return new HashMap<>();
         }
     }
+
+    public static String mapToJson(Map<String, Object> map) {
+        try {
+            if (map == null) {
+                logger.debug("return from JsonUtil.mapToJson because input params is null");
+                return "";
+            }
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.writeValueAsString(map);
+
+        } catch (Exception e) {
+            logger.error("DataConvertUtil.mapToJson error: " + e.getMessage());
+            return "";
+        }
+    }
 }
