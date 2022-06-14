@@ -56,6 +56,8 @@ public class MessageSender {
         sslKeyPassword = ParamsUtil.getString(kafkaProps.get("SslKeyPassword"));
         compressionType = ParamsUtil.getString(kafkaProps.get("CompressionType"));
 
+        logger.debug("create message sender for topic: " + topic);
+
         properties = new Properties();
         if (ParamsUtil.isNotEmpty(url)) {
             properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, url);

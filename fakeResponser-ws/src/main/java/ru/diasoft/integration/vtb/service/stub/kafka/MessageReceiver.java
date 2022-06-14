@@ -335,10 +335,12 @@ public class MessageReceiver {
                                         if(type.equals(Constants.AZS_CREATEUPDATE_CONTRACT_OPERATION_NAME) ||
                                                 type.equals(Constants.AZS_CANCEL_CONTRACT_OPERATION_NAME)  ||
                                                 type.equals(Constants.AZS_CREATE_CREDITING_ORDER_OPERATION_NAME) ||
-                                                type.equals(Constants.AZS_UPDATE_COLLATERAL_OPERATION_NAME)
+                                                type.equals(Constants.AZS_UPDATE_COLLATERAL_OPERATION_NAME) ||
+                                                type.equals(Constants.AZS_HOLD_LIMIT_OPERATION_NAME)
                                         ) {
                                             RestServer rest = new RestServer();
-                                            rest.mortgageContractKafkaRouter(type, dataFromKafka);
+                                            logger.debug("get ts73/ts74 message");
+                                            rest.mortgageContracAndHoldLimittKafkaRouter(type, dataFromKafka);
                                         }
                                     }
                                 }

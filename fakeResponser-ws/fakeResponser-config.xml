@@ -679,5 +679,13 @@
 				</response>
 			</DsCreateUpdateContract>
 		</DsCreateUpdateContractReqA>
+		<DsResponseProcessingHoldLimitReqA>
+			<DsResponseProcessingHoldLimit>
+				<type>CALL</type>
+				<response>
+					<template>stub\DsResponseProcessingHoldLimitReqA\DsResponseProcessingHoldLimit.json</template>
+				</response>
+			</DsResponseProcessingHoldLimit>
+		</DsResponseProcessingHoldLimitReqA>
 	</STUB>
 </root>
